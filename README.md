@@ -17,4 +17,4 @@ Dann http://localhost:8000 öffnen.
 
 ## Veröffentlichen
 Installierbar wird die App nur über HTTPS, z. B. mit Vercel (Projektordner direkt als statische Seite) oder GitHub Pages.
-Nach jeder Änderung in `service-worker.js` die Cache-Version (`rosary-musik-v3`) hochzählen.
+Nach jeder Änderung in `service-worker.js` die Cache-Version (`rosary-musik-v4`) hochzählen.

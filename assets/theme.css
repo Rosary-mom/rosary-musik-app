@@ -1,0 +1,45 @@
+/* Rosary Musik · Design „Magnifica Humanitas“: Sand, Bordeaux, Gold, dunkle Schrift */
+@font-face{font-family:"Rosario";src:url(fonts/Rosario.woff2) format("woff2");font-weight:300 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Rosario";src:url(fonts/Rosario-Italic.woff2) format("woff2");font-weight:300 800;font-style:italic;font-display:swap}
+@font-face{font-family:"Roboto Slab";src:url(fonts/RobotoSlab.woff2) format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"EB Garamond";src:url(fonts/EBGaramond.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"EB Garamond";src:url(fonts/EBGaramond-Italic.woff2) format("woff2");font-weight:400 800;font-style:italic;font-display:swap}
+:root{--sand:#efe6d6;--sand2:#e8dcc4;--sand3:#dccaa5;--bord:#6b1028;--bord2:#4a0814;--gold:#b8902f;--gold2:#d9b75a;--ink:#2a1a12;--ink2:#5a4636;
+ --f-text:"Rosario",system-ui,sans-serif;--f-head:"Rockwell Extra Bold","Rockwell","Roboto Slab",Georgia,serif;--f-quote:"Palatino Linotype",Palatino,"Book Antiqua","EB Garamond","Tex Gyre Pagella",serif}
+html body{background:var(--sand) radial-gradient(ellipse at top,#f6efe2 0%,var(--sand) 55%,var(--sand2) 100%) fixed!important;color:var(--ink)!important;font-family:var(--f-text)!important}
+body h1,body h2,body h3,body #mt3 h1,body #mt3 h2,body #mt3 h3{font-family:var(--f-head)!important;font-weight:800!important;color:var(--bord)!important}
+body p,body label,body #mt3 p,body #mt3 label,body #mt3,body #sh,body #st,body #nt,body main{color:var(--ink)!important}
+body a{color:var(--bord)!important}
+.rm-top{background:var(--bord);border-bottom:4px solid var(--gold);padding:8px 14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.rm-top img{height:56px;width:auto;max-width:100%;border:1px solid var(--gold);border-radius:4px;display:block}
+.rm-top .rm-title{font-family:var(--f-head);font-weight:800;color:var(--sand);font-size:24px;letter-spacing:.02em}
+.rm-top a{color:var(--gold2)!important;text-decoration:none;font-family:var(--f-text);margin-left:auto;font-size:16px}
+/* Knöpfe */
+body button{background:var(--bord)!important;color:var(--sand)!important;border:1px solid var(--gold)!important;font-family:var(--f-text)!important;font-weight:700!important}
+body button.on{background:var(--gold)!important;color:var(--ink)!important}
+body #sh .grid button{background:#fbf6ea!important;color:var(--bord)!important;border:2px solid var(--gold)!important}
+body #sh button.bass{background:var(--bord)!important;color:var(--gold2)!important}
+body #sh .flag{background:transparent!important;color:var(--bord)!important;border:2px dashed var(--gold)!important}
+body #sh .grid div{color:var(--bord)!important}
+/* Flächen, Tabellen, Eingaben */
+body section{border-top:2px solid var(--gold)!important}
+body select,body input[type=number],body input[type=text]{background:#fbf6ea!important;color:var(--ink)!important;border:1px solid var(--gold)!important;font-family:var(--f-text)!important}
+body table td,body table th,body #mt3 table td,body #mt3 table th{background:#fbf6ea!important;color:var(--ink)!important;border-color:var(--sand3)!important}
+body table th,body #mt3 th{color:var(--bord)!important}
+body #nt td.on{background:var(--gold)!important}body #nt td.play{outline:3px solid var(--bord)!important}
+body #mt3,body #mt3 #mt3-stage{background:transparent!important}
+body #mt3 .tree{background:#2a0610!important;border-color:var(--gold)!important}
+body #mt3 pre{background:#fbf6ea!important;color:var(--ink)!important;border-color:var(--sand3)!important}
+body #mt3 .score{color:var(--bord)!important}
+body .take,body a.k{background:#fbf6ea!important;border:2px solid var(--gold)!important;color:var(--bord)!important}
+body a.k span{color:var(--ink2)!important}
+body .hint{background:#f6ead0!important;border-left-color:var(--bord)!important;color:var(--ink)!important}
+body .meter{background:var(--sand3)!important;border-color:var(--bord)!important}
+/* Zitate und Karaoke in Palatino */
+body .motto,body #mt3 #mt3-lyric,body .karaoke,body blockquote,body .quote{font-family:var(--f-quote)!important}
+body .motto{color:var(--bord)!important;font-size:19px}
+body #mt3 #mt3-lyric{color:var(--bord)!important}
+body .karaoke span{color:#a89478!important}body .karaoke span.done{color:var(--ink2)!important}
+body .karaoke span.on{color:var(--bord)!important;text-shadow:0 0 6px var(--gold2)!important}
+body #st-status{color:var(--bord)!important}body #sh .bar{display:none}
+body input[type=file]{color:var(--ink)!important}body #sh .grid button,body #nt th{font-variant-numeric:lining-nums}

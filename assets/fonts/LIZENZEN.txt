@@ -1,0 +1,1 @@
+Rosario, Roboto Slab, EB Garamond: SIL Open Font License 1.1 (Google Fonts). Rockwell Extra Bold und Palatino werden nicht mitgeliefert, nur genutzt, wenn auf dem Gerät installiert.
