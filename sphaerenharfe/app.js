@@ -41,18 +41,9 @@ BASS.forEach(function(m,i){var col=document.createElement("div");col.className="
  col.appendChild(btn);col.appendChild(fb);$("sh-bass").appendChild(col);});
 // Karaoke / Texte (gesang-plan.md, Fidelio)
 var MOTIV=[72,71,69,71,69,62,69,72],ANTW_FIS=[69,71,69,67,66,64,66,62],ANTW_F=[69,71,69,67,65,64,65,62],RHY=[1,0.5,0.5,1,1,1.5,0.5,2];
-var LINES=[["Finale","Bau-mei-ster, bau uns dei-nen Hain","M"],["Finale","aus-Ro-sen, Was-ser, Licht-und-Stein","F"],
- ["Finale","Voll-en-det-ist-der-Kreis, der-Ring","M"],["Finale","zu-dem-die-gan-ze-Schöp-fung-singt","F"],["Finale","der-Teich, das-Licht, die-Ro-se, du","M"],["Finale","in-Gott-kommt-al-les-nun-zur-Ruh","F"],
- ["A · Tanz im Nebel","Im-Ne-bel-tan-zen-Geis-ter-leis","M"],["A · Tanz im Nebel","um-Ro-sen, Teich-und-Hü-gel-kreis","S"],["A · Tanz im Nebel","sie-tra-gen-Licht-in-je-de-Hand","M"],["A · Tanz im Nebel","und-seg-nen-still-das-Al-ben-land","S"],
- ["A · Tanz im Nebel","Der-Him-mel-ruht-im-Was-ser-grund","M"],["A · Tanz im Nebel","ein-Ring-aus-Blü-ten, hell-und-rund","S"],["A · Tanz im Nebel","Christ-geht-mit-uns-durch-Tau-und-Zeit","M"],["A · Tanz im Nebel","der-Tanz-wird-Lob, der-Kreis-wird-weit","S"],
- ["C · Ein Ring ist rund","Im-Sü-den-steht-das-hel-le-Licht","M"],["C · Ein Ring ist rund","sechs-Li-ni-en, die-Stil-le-spricht","S"],["C · Ein Ring ist rund","der-Wind-geht-sanft-durchs-Fe-der-gras","M"],["C · Ein Ring ist rund","und-Was-ser-hält, was-nie-mand-maß","S"],
- ["C · Ein Ring ist rund","Im-Nor-den-wohnt-der-Schat-ten-mild","M"],["C · Ein Ring ist rund","die-Er-de-birgt-das-stil-le-Bild","F"],["C · Ein Ring ist rund","was-dun-kel-ist, wird-bald-zum-Keim","M"],["C · Ein Ring ist rund","die-Wie-der-kehr-ruft-al-les-heim","F"],
- ["C · Refrain","Ein-Ring-ist-rund, ein-Ring-ist-ganz","M"],["C · Refrain","aus-Licht-und-Schat-ten-wird-ein-Tanz","S"],
- ["D · Begegnung","Ich-kom-me-von-dem-grü-nen-Meer","M"],["D · Begegnung","ich-kom-me-von-den-Ber-gen-her","S"],["D · Begegnung","ich-brin-ge-dir-das-Har-fen-lied","M"],["D · Begegnung","ich-brin-ge-dir-den-Bam-bus-wind","S"],
- ["D · Begegnung","Wir-spre-chen-fremd-und-doch-ver-traut","M"],["D · Begegnung","weil-je-der-Ton-auf-Lie-be-baut","S"],["D · Begegnung","Am-Teich-wird-aus-den-Stim-men-eins","M"],["D · Begegnung","ein-Lied, ein-Licht, ein-Grund, ein-Sein","S"],
- ["D · Begegnung","Nun-ruht-die-Spi-ra-le-am-Teich","M"],["D · Begegnung","die-Rin-ge-sind-sich-al-le-gleich","S"],["D · Begegnung","von-au-ßen-weit-nach-in-nen-still","M"],["D · Begegnung","der-Hain-hält-A-tem, wie-Gott-will","S"]];
+var LINES=window.SH_LINES||[];
 function syl(t){return t.split(/[-\s]+/).filter(Boolean);}
-LINES.forEach(function(l,i){$("sh-line").add(new Option(l[0]+": "+l[1].replace(/-/g,""),i));});
+LINES.forEach(function(l,i){$("sh-line").add(new Option(l[0]+": "+l[1].replace(/-/g," "),i));});
 function melodyFor(l){return l[2]==="M"?MOTIV:l[2]==="F"?ANTW_F:ANTW_FIS;}
 function clearKara(){var k=$("sh-kara");if(k)Array.prototype.forEach.call(k.children,function(s){s.className="";});}
 function showKara(text){var k=$("sh-kara");k.innerHTML="";syl(text).forEach(function(s){var sp=document.createElement("span");sp.textContent=s;k.appendChild(sp);});}
@@ -69,7 +60,7 @@ $("sh-fin").onclick=function(){stopAll();var a=ctx(),t=a.currentTime+0.1;
  chord([50,54,57,60],t,2.2);chord([43,55,59,62],t+2,3);          // D7 -> G
  chord([45,57,61,64,67],t+4.5,2.2);chord([38,50,57,62,69],t+6.5,4); // A7 -> leere Quinte D-A
  var t2=t+9;pluck(38,t2,7,true,0.3);
- var end=singLine(LINES[0],t2,MOTIV.map(function(){return 0.8;}));   // adagio 0,8 s/Ton
+ var end=singLine(LINES.filter(function(l){return /^Finale/.test(l[0]);})[0]||LINES[0],t2,MOTIV.map(function(){return 0.8;}));   // adagio 0,8 s/Ton
  flag(50,2,end+0.2,0.25);flag(50,4,end+0.9,0.2);flag(38,4,end+1.6,0.18);flag(50,8,end+2.3,0.12); // Flageolett-Oktaven auf D
  $("sh-motto").textContent="Christus baut auf, bau auch Du auf Christus";};
 $("sh-stopall").onclick=stopAll;
@@ -93,6 +84,14 @@ $("sh-offline").onclick=function(){var u=$("sh-track").value;if(!u){info("Bitte 
  caches.open(AC).then(function(c){return c.add(u);}).then(function(){info("✓ offline gespeichert");}).catch(function(e){info("Speichern fehlgeschlagen: "+e.message);});};
 $("sh-file").onchange=function(){var f=this.files&&this.files[0];if(!f)return;if(cur)URL.revokeObjectURL(cur);cur=URL.createObjectURL(f);au.src=cur;au.play().catch(function(){});info(f.name);};
 $("sh-loop").onclick=function(){au.loop=!au.loop;this.textContent="Loop: "+(au.loop?"an":"aus");this.classList.toggle("on",au.loop);};
-window.__sh={TUNINGS:TUNINGS,BASS:BASS,LINES:LINES,buildMidi:buildMidi,get tuning(){return tuning;}};
+// Karaoke synchron zur Begleitspur (Silben-Zeitstempel aus karaoke.json)
+var syncLine=-1;function trackKey(){var m=(($("sh-track").value||"")+"").match(/(lang-[a-z-]+?)(-mit-chor)?\.mp3$/);return m?m[1]:null;}
+function syncKara(){var rows=window.SH_KARA&&window.SH_KARA[trackKey()],t=au.currentTime;if(!rows)return;var r=null;
+ for(var i=0;i<rows.length;i++)if(t>=rows[i][1]&&t<rows[i][2]){r=rows[i];break;}
+ if(!r){if(syncLine!==-1){syncLine=-1;$("sh-kara").innerHTML="";$("sh-hex").textContent="";}return;}
+ if(syncLine!==r[0]){syncLine=r[0];showKara(LINES[r[0]][1]);$("sh-hex").textContent="Hexagramm "+r[4];$("sh-line").value=r[0];}
+ var ks=$("sh-kara").children;for(var j=0;j<ks.length;j++)ks[j].className=t>=(r[3][j+1]!==undefined?r[3][j+1]:r[2])?"done":t>=r[3][j]?"on":"";}
+au.addEventListener("timeupdate",syncKara);(function loop(){if(!au.paused)syncKara();requestAnimationFrame(loop);})();
+window.__sh={TUNINGS:TUNINGS,BASS:BASS,LINES:LINES,syncKara:syncKara,buildMidi:buildMidi,get tuning(){return tuning;}};
 if("serviceWorker" in navigator&&location.protocol!=="file:")navigator.serviceWorker.register("../service-worker.js",{scope:"../"}).catch(function(e){console.warn("SW",e);});
 })();
