@@ -10,7 +10,7 @@ body{margin:0;background:#000;color:#fff;font-family:system-ui,sans-serif}
 #sh{padding:14px;max-width:900px;margin:0 auto}
 #sh h1,#sh h2{color:#FFD700;font-family:Rockwell,serif;margin:.5em 0}
 #sh .bar{background:#7B1E2B;padding:10px 14px;border-bottom:3px solid #FFD700}
-#sh .grid{display:grid;grid-template-columns:70px repeat(8,1fr);gap:6px;margin:8px 0}
+#sh .grid{display:grid;grid-template-columns:62px repeat(9,1fr);gap:6px;margin:8px 0}
 #sh .grid div{display:flex;align-items:center;color:#FFD700;font-weight:bold}
 #sh button{background:#FFD700;color:#000;border:none;font-weight:bold;font-size:17px;border-radius:8px;min-height:64px;padding:8px;touch-action:manipulation;cursor:pointer}
 #sh button.bass{background:#7B1E2B;color:#FFD700;border:2px solid #FFD700;min-height:72px;flex:1}
@@ -20,21 +20,36 @@ body{margin:0;background:#000;color:#fff;font-family:system-ui,sans-serif}
 #sh .row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 #sh .motto{color:#FFD700;font-style:italic;min-height:1.4em}
 #sh section{border-top:2px solid #7B1E2B;margin-top:14px;padding-top:6px}
+#sh .karaoke{font-size:26px;font-family:Rockwell,serif;min-height:1.6em;margin:8px 0;line-height:1.5}#sh .karaoke span{color:#777;margin-right:.25em;transition:color .15s}#sh .karaoke span.on{color:#FFD700;text-shadow:0 0 8px #FFD700}#sh .karaoke span.done{color:#c9a86a}
+#sh .flag{background:#000;color:#FFD700;border:2px dashed #FFD700;min-height:48px;font-size:14px}
+#sh .bcol{display:flex;flex-direction:column;gap:4px;flex:1;min-width:150px}
 #sh audio{width:100%;margin-top:6px}
 </style></head><body>
 <div class="bar"><h1 style="margin:0;color:#FFD700;font-family:Rockwell,serif">Sphärenharfe</h1></div>
 <div id="sh">
 <section><h2>Sphärenharfe (Prototyp)</h2>
-<p>3 Melodiesaiten auf D4, Bünde in D-Dur. Bass ohne Bünde.</p>
+<div class="row"><span>Stimmung:</span><button class="ctl on" id="sh-tun-patent">Patent (D E F G A H C D E)</button><button class="ctl" id="sh-tun-ddur">D-Dur (D E Fis G A H Cis D E)</button></div>
+<p>3 Melodiesaiten, leer und 8 Bünde. Darunter 4 Basssaiten ohne Bünde, je mit Flageolett (2., 3. und 4. Teilton).</p>
 <div class="grid" id="sh-grid"></div>
 <div class="row" id="sh-bass"></div></section>
 <section><h2>Baumeister</h2>
-<div class="row"><button class="ctl" id="sh-bau">▶ Baumeister-Leitmotiv</button></div>
+<label style="display:block;margin:6px 0">Textzeile: <select id="sh-line" style="font-size:16px;background:#111;color:#FFD700;border:1px solid #FFD700;padding:6px;max-width:100%"></select></label>
+<div class="row"><button class="ctl" id="sh-bau">▶ Zeile singen lassen</button><button class="ctl" id="sh-fin">✦ Finale Vollendung</button><button class="ctl" id="sh-stopall">■ Stopp</button></div>
+<div class="karaoke" id="sh-kara"></div>
 <div class="motto" id="sh-motto"></div></section>
 <section><h2>Aufnahme</h2>
 <div class="row"><button class="ctl" id="sh-rec">● Aufnahme: aus</button><button class="ctl" id="sh-recplay">▶ Abspielen</button><button class="ctl" id="sh-recmid">.mid speichern</button></div>
 <div id="sh-recinfo">0 Töne aufgenommen</div></section>
 <section><h2>Loop-Player</h2>
+<div class="row"><select id="sh-track" style="font-size:16px;background:#111;color:#FFD700;border:1px solid #FFD700;padding:6px;max-width:100%">
+<option value="">– Begleitspur wählen –</option>
+<option value="audio/lang-a-tanz-der-freundlichen-geister-mit-chor.mp3">Satz A · Tanz der freundlichen Geister (mit Chor)</option>
+<option value="audio/lang-c-i-ging-mit-chor.mp3">Satz C · I Ging (mit Chor)</option>
+<option value="audio/lang-d-begegnung-mit-chor.mp3">Satz D · Begegnung (mit Chor)</option>
+<option value="audio/lang-f-vollendung-mit-chor.mp3">Finale · Vollendung (mit Chor)</option>
+<option value="audio/lang-f-vollendung.mp3">Finale · Vollendung (ohne Chor)</option>
+</select><button class="ctl" id="sh-offline">Für offline speichern</button></div>
+<div id="sh-trackinfo" style="margin:4px 0"></div>
 <div class="row"><input type="file" id="sh-file" accept="audio/*" style="color:#fff;font-size:16px"><button class="ctl" id="sh-loop">Loop: an</button></div>
 <audio id="sh-audio" controls loop></audio></section>
 <section><h2>Music Tree</h2></section>
