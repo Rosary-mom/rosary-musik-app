@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#7B1E2B"><link rel="manifest" href="../manifest.webmanifest"><link rel="icon" href="../icon-192.png"><title>Stimme aufnehmen</title>
+<style>body{margin:0;background:#000;color:#fff;font-family:system-ui,sans-serif}#st{padding:14px;max-width:900px;margin:0 auto}
+#st h1,#st h2{color:#FFD700;font-family:Rockwell,serif;margin:.5em 0}#st a{color:#FFD700}
+#st section{border-top:2px solid #7B1E2B;padding-top:6px;margin-top:12px}
+#st button{background:#FFD700;color:#000;border:none;font-weight:bold;font-size:17px;padding:12px 16px;margin:4px;border-radius:8px;min-height:56px;touch-action:manipulation}
+#st button.rec{background:#7B1E2B;color:#FFD700;border:2px solid #FFD700}#st button.on{background:#0F0;color:#000}#st button:disabled{opacity:.4}
+#st .row{display:flex;flex-wrap:wrap;align-items:center;gap:6px}#st label{display:block;margin:8px 0}#st input[type=range]{width:100%}
+#st .hint{background:#3a0d14;border-left:4px solid #FFD700;padding:10px;margin:8px 0}
+#st .meter{height:22px;background:#222;border:1px solid #FFD700;border-radius:4px;overflow:hidden}#st .meter div{height:100%;width:0;background:linear-gradient(90deg,#0a0,#FFD700 70%,#c00)}
+#st .take{background:#111;border:1px solid #444;border-radius:8px;padding:8px;margin:8px 0}#st .take b{color:#FFD700}
+#st select,#st input[type=number]{font-size:16px;background:#111;color:#FFD700;border:1px solid #FFD700;padding:6px}
+#st #st-status{font-size:20px;color:#FFD700;min-height:1.5em}</style></head><body><div id="st">
+<p><a href="../">← Start</a></p><h1>Stimme aufnehmen</h1>
+<div class="hint">🎧 Bitte Kopfhörer tragen, damit die Begleitung nicht mit aufs Mikrofon kommt. Echo-, Rausch- und Pegelautomatik sind für Gesang ausgeschaltet.</div>
+<section><h2>1 · Begleitspur</h2>
+<label>Begleitung: <select id="st-src"><option value="begleitung/satz-a-tanz-der-freundlichen-geister.mp3">Satz A · Tanz der freundlichen Geister</option><option value="file">Eigene Datei …</option><option value="none">Ohne Begleitung</option></select></label>
+<input type="file" id="st-file" accept="audio/*" style="display:none;color:#fff;font-size:16px">
+<div class="row"><button id="st-load">Begleitung laden</button><span id="st-loadinfo"></span></div>
+<label>Start in der Begleitung (Sekunden): <input type="number" id="st-from" value="0" min="0" step="1" style="width:90px"></label>
+<label>Lautstärke Begleitung: <input type="range" id="st-bvol" min="0" max="100" value="70"></label></section>
+<section><h2>2 · Aufnahme</h2>
+<div class="row"><button id="st-mic">🎤 Mikrofon freigeben</button></div>
+<div class="meter"><div id="st-level"></div></div>
+<label>Einzähler: <select id="st-count"><option value="4">4 Schläge</option><option value="8">8 Schläge</option><option value="0">aus</option></select> · Tempo <input type="number" id="st-bpm" value="60" min="40" max="200" style="width:70px"> BPM</label>
+<label>Latenzausgleich: <span id="st-latv">80</span> ms<input type="range" id="st-lat" min="0" max="400" value="80"></label>
+<div class="row"><button class="rec" id="st-rec" disabled>● Aufnahme starten</button><button id="st-stop" disabled>■ Stopp</button></div>
+<div id="st-status"></div></section>
+<section><h2>3 · Takes</h2><div id="st-takes"></div></section>
+</div><script src="stimme.js"></script>
+<script>if("serviceWorker" in navigator&&location.protocol!=="file:")navigator.serviceWorker.register("../service-worker.js",{scope:"../"});</script></body></html>
