@@ -1,0 +1,17 @@
+.ork-root{font-family:system-ui,sans-serif;color:#eee}
+.ork-root button{background:#FFD700;color:#000;border:0;padding:8px 13px;margin:3px;font-weight:bold;cursor:pointer;border-radius:4px}
+.ork-root input{background:#111;color:#FFD700;border:1px solid #FFD700;padding:6px;width:7em;font-family:monospace}
+.ork-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:9999}
+.ork-overlay.ork-open{display:flex}
+.ork-pop{background:#0b0b1c;border:2px solid #FFD700;border-radius:10px;max-width:640px;width:92%;max-height:88vh;overflow:auto;padding:16px;color:#eee;position:relative}
+.ork-pop h3{color:#FFD700;font-family:Rockwell,serif;margin:4px 0}
+.ork-x{position:absolute;right:8px;top:6px;background:none!important;color:#FFD700!important;font-size:22px}
+.ork-hex{display:flex;flex-direction:column-reverse;gap:7px;width:120px;margin:10px auto}
+.ork-line{height:12px;display:flex;gap:16px;opacity:0;transform:translateY(8px);transition:opacity .5s,transform .5s}
+.ork-line.ork-on{opacity:1;transform:none}
+.ork-line span{flex:1;background:#FFD700;border-radius:2px}
+.ork-line.ork-yin span{background:#9fb3ff}
+.ork-coin{font-size:12px;color:#aaa;text-align:center}
+.ork-text{white-space:pre-line;background:#111;border-left:3px solid #FFD700;padding:8px;margin:6px 0;line-height:1.45}
+.ork-src{font-size:.8em;color:#999}
+.ork-kara{color:#c9a86a;font-family:Rockwell,serif;font-size:1.1em}

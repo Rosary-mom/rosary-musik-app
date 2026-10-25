@@ -1,0 +1,17 @@
+/* Sand-Design-Anpassung (Magnifica Humanitas) für das I-Ging-Münzorakel */
+#orakel-bereich{background:var(--sand);color:var(--ink);font-family:var(--f-text);padding:20px;max-width:660px;margin:0 auto 30px;border-top:4px solid var(--gold)}
+#orakel-bereich h2{font-family:var(--f-head);color:var(--bord);margin:.3em 0}
+#orakel-bereich p{font-size:15px}
+.ork-root{font-family:var(--f-text);color:var(--ink)}
+.ork-root button{background:var(--bord);color:#fff;font-family:var(--f-text)}
+.ork-root button:hover{background:var(--gold);color:var(--ink)}
+.ork-root input{background:#fff;color:var(--bord);border:1px solid var(--gold)}
+.ork-overlay{background:rgba(42,26,18,.55)}
+.ork-pop{background:var(--sand);color:var(--ink);border-color:var(--gold);font-family:var(--f-text)}
+.ork-pop h3,.ork-pop h4{font-family:var(--f-head);color:var(--bord)}
+.ork-x{color:var(--bord)!important}
+.ork-line span{background:var(--bord)}
+.ork-line.ork-yin span{background:var(--gold)}
+.ork-coin,.ork-src{color:#6b5a48}
+.ork-text{background:#fbf7ef;border-left-color:var(--gold);font-family:var(--f-quote)}
+.ork-kara{color:var(--bord)}
