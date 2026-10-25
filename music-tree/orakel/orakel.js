@@ -6,7 +6,7 @@ var ORAKEL_MUENZE={"zahl":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0
 var Orakel=(function(){
 "use strict";
 var MZ=(typeof ORAKEL_MUENZE!=="undefined")?ORAKEL_MUENZE:{zahl:"1",wappen:"0"};
-var TAO_QUELLEN='Der Weg als Tao – ROSARY-Münze (fiktiv): Zahl = 1 = Licht/Yang, Wappen = Rosarium mit Teich = 0/Yin. Nach Uwe A. E. Rosenkranz, <a href="https://buchshop.bod.de/rosenkranz-templeroffenbarung-archbishop-uwe-ae-rosenkranz-9783734713088" target="_blank" rel="noopener">„Rosenkranz-Templeroffenbarung“</a> (E-Book, BoD 2016, ISBN 9783734713088), und Dr. Georg Gati, „Vom Tao der Bibel“ (Lektorat und Mitübersetzung: Uwe Rosenkranz; <span id="ork-gati-link">[Link folgt]</span>).';
+var TAO_QUELLEN='Der Weg als Tao – ROSARY-Münze (fiktiv): Zahl = 1 = Licht/Yang, Wappen = Rosarium mit Teich = 0/Yin. Nach Uwe A. E. Rosenkranz, <a href="https://buchshop.bod.de/rosenkranz-templeroffenbarung-archbishop-uwe-ae-rosenkranz-9783734713088" target="_blank" rel="noopener">„Rosenkranz-Templeroffenbarung“</a> (E-Book, BoD 2016, ISBN 9783734713088), und Dr. Georg Gati, „Vom Tao der Bibel“, <span id="ork-gati-link">Lektorat und Mitübersetzung Uwe Rosenkranz</span>.';
 var KWORD=[7,4,2,1,0,3,5,6],KWT=[[1,34,5,26,11,9,14,43],[25,51,3,27,24,42,21,17],[6,40,29,4,7,59,64,47],[33,62,39,52,15,53,56,31],
  [12,16,8,23,2,20,35,45],[44,32,48,18,46,57,50,28],[13,55,63,22,36,37,30,49],[10,54,60,41,19,61,38,58]];
 var TRI=["Erde ☷","Berg ☶","Wasser ☵","Wind ☴","Donner ☳","Feuer ☲","See ☱","Himmel ☰"];
