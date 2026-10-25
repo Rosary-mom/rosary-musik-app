@@ -15,3 +15,17 @@
 .ork-text{white-space:pre-line;background:#111;border-left:3px solid #FFD700;padding:8px;margin:6px 0;line-height:1.45}
 .ork-src{font-size:.8em;color:#999}
 .ork-kara{color:#c9a86a;font-family:Rockwell,serif;font-size:1.1em}
+
+.ork-muenzen{display:flex;justify-content:center;gap:8px;margin:8px 0 2px;perspective:600px}
+.ork-m{width:48px;height:48px;cursor:help}
+.ork-m3{position:relative;width:100%;height:100%;transform-style:preserve-3d;transform:rotateY(0) rotateX(70deg);opacity:.25}
+.ork-mf{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.ork-mf svg{width:100%;height:100%;display:block;filter:drop-shadow(0 2px 3px rgba(0,0,0,.45))}
+.ork-mw{transform:rotateY(180deg)}
+.ork-m.ork-z .ork-m3{animation:ork-flipz 1.1s cubic-bezier(.2,.7,.3,1) forwards}
+.ork-m.ork-w .ork-m3{animation:ork-flipw 1.1s cubic-bezier(.2,.7,.3,1) forwards}
+@keyframes ork-flipz{0%{transform:translateY(0) rotateX(70deg) rotateY(0);opacity:.3}45%{transform:translateY(-26px) rotateX(20deg) rotateY(900deg);opacity:1}100%{transform:translateY(0) rotateX(0) rotateY(1440deg);opacity:1}}
+@keyframes ork-flipw{0%{transform:translateY(0) rotateX(70deg) rotateY(0);opacity:.3}45%{transform:translateY(-26px) rotateX(20deg) rotateY(900deg);opacity:1}100%{transform:translateY(0) rotateX(0) rotateY(1620deg);opacity:1}}
+@media (prefers-reduced-motion:reduce){.ork-line{transition:none}.ork-m.ork-z .ork-m3{animation:none;transform:none;opacity:1}.ork-m.ork-w .ork-m3{animation:none;transform:rotateY(180deg);opacity:1}}
+.ork-tao{text-align:center;font-style:italic;font-size:13px;color:#c9a86a}
+.ork-taoq{margin-top:8px}.ork-taoq a{color:#c9a86a}
