@@ -79,8 +79,8 @@ function zeige(w,quelle){if(!pruefe(w))throw new Error("Wurf muss 6 Zeichen 0/1 
  var e=eintrag(w),n=kingWen(w),tr=trigramme(w),p=fuxiPos(w),hex=$("hex");hex.innerHTML="";var mz=$("muenzen");mz.innerHTML="";
  w.split("").forEach(function(b,i){var d=document.createElement("div");d.className="ork-line"+(b==="1"?"":" ork-yin");d.innerHTML=b==="1"?"<span></span>":"<span></span><span></span>";hex.appendChild(d);
   var c=document.createElement("div");c.className="ork-m";c.title="Wurf "+(i+1)+": "+(b==="1"?"Zahl · 1 · Yang (Licht)":"Wappen · 0 · Yin (Teich)")+" – Der Weg als Tao";c.setAttribute("data-bit",b);
-  c.innerHTML='<div class="ork-m3"><div class="ork-mf ork-mz">'+MZ.zahl+'</div><div class="ork-mf ork-mw">'+MZ.wappen+'</div></div>';mz.appendChild(c);
-  timers.push(setTimeout(function(){c.classList.add(b==="1"?"ork-z":"ork-w");},50+i*600));
+  c.innerHTML='<div class="ork-m3"><div class="ork-mf ork-mz">'+MZ.zahl+'</div><div class="ork-mf ork-mw">'+MZ.wappen+'</div></div>';mz.appendChild(c);(function(c){var d=function(){c.classList.add('ork-done')};c.firstChild.addEventListener('animationend',d)})(c);
+  timers.push(setTimeout(function(){c.classList.add(b==="1"?"ork-z":"ork-w");setTimeout(function(){c.classList.add("ork-done")},1250);},50+i*600));
   timers.push(setTimeout(function(){d.classList.add("ork-on");$("coin").textContent="Wurf "+(i+1)+": "+(b==="1"?"Zahl → Yang ⚊":"Wappen → Yin ⚋");},350+i*600));});
  $("titel").textContent=n+" · "+(e?e.name:"")+" "+(e?e.zeichen:"");
  $("meta").textContent="Wurf "+w+(quelle?" ("+quelle+")":"")+" · oben "+tr.oben+", unten "+tr.unten+" · Beet-Sektor "+(p+1)+" · Modus "+modus(p);

@@ -1,4 +1,4 @@
-const CACHE="rosary-musik-v8";
+const CACHE="rosary-musik-v9";
 const ASSETS=["./","index.html","manifest.webmanifest","icon-192.png","icon-512.png","sphaerenharfe/","sphaerenharfe/index.html","sphaerenharfe/karaoke.js","sphaerenharfe/app.js","sphaerenharfe/music-tree.js","music-tree/","music-tree/index.html","music-tree/orakel/orakel.css","music-tree/orakel/orakel-sand.css","music-tree/orakel/orakel-daten.js","music-tree/orakel/orakel.js","noten/","noten/index.html","noten/noten.js","assets/theme.css","assets/rosary-logo.png","assets/fonts/Rosario.woff2","assets/fonts/Rosario-Italic.woff2","assets/fonts/RobotoSlab.woff2","assets/fonts/EBGaramond.woff2","assets/fonts/EBGaramond-Italic.woff2","stimme/","stimme/index.html","stimme/stimme.js"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()));});
 self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==CACHE&&x!=="rosary-audio-v1").map(x=>caches.delete(x)))).then(()=>self.clients.claim()));});
