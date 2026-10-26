@@ -1,0 +1,8887 @@
+{
+ "titel": "Missa Baumeister – Taizé-Abend – Karaoke",
+ "widmung": "Frère Roger, † 16. August 2005, Taizé",
+ "tempo_bpm": "je Teil, siehe saetze[].tempo_bpm",
+ "hinweis": "Zeiten in Sekunden ab Beginn der jeweiligen Datei messe-NN-*.mp3 (jeder Teil einzeln abspielbar). app_text im Silbenformat der Sphärenharfen-App. Non-nobis-Sarabande im 3/4-Takt, 56 BPM. Chor in den Aufnahmen = synthetischer Platzhalter.",
+ "saetze": [
+  {
+   "satz": "01 · Eröffnung – Einzug: Non nobis, Domine",
+   "datei": "messe-01-eroeffnung",
+   "tempo_bpm": 60,
+   "zeilen": [
+    {
+     "teil": "01",
+     "strophe": "la",
+     "zeile": "Lux in te ne bris lu cet",
+     "app_text": "Lux-in-te-ne-bris-lu-cet",
+     "text": "Lux in te-ne-bris lu-cet",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 39.2,
+     "ende": 51.2,
+     "silben": [
+      {
+       "s": "Lux",
+       "t": 39.2
+      },
+      {
+       "s": "in",
+       "t": 40.2
+      },
+      {
+       "s": "te",
+       "t": 41.2
+      },
+      {
+       "s": "ne",
+       "t": 42.2
+      },
+      {
+       "s": "bris",
+       "t": 43.7
+      },
+      {
+       "s": "lu",
+       "t": 44.7
+      },
+      {
+       "s": "cet",
+       "t": 45.7
+      }
+     ],
+     "nr": 1
+    },
+    {
+     "teil": "01",
+     "strophe": "la",
+     "zeile": "Lux in te ne bris lu cet",
+     "app_text": "Lux-in-te-ne-bris-lu-cet",
+     "text": "Lux in te-ne-bris lu-cet",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 51.2,
+     "ende": 63.2,
+     "silben": [
+      {
+       "s": "Lux",
+       "t": 51.2
+      },
+      {
+       "s": "in",
+       "t": 52.2
+      },
+      {
+       "s": "te",
+       "t": 53.2
+      },
+      {
+       "s": "ne",
+       "t": 54.2
+      },
+      {
+       "s": "bris",
+       "t": 55.7
+      },
+      {
+       "s": "lu",
+       "t": 56.7
+      },
+      {
+       "s": "cet",
+       "t": 57.7
+      }
+     ],
+     "nr": 2
+    },
+    {
+     "teil": "01",
+     "strophe": "la",
+     "zeile": "Non no bis, Do mi ne, non no bis, sed no mi ni tu o da glo ri am",
+     "app_text": "Non-no-bis,-Do-mi-ne,-non-no-bis,-sed-no-mi-ni-tu-o-da-glo-ri-am",
+     "text": "Non no-bis, Do-mi-ne, non no-bis, sed no-mi-ni tu-o da glo-ri-am",
+     "stimme": "Tutti-Chor (Unisono/Oktaven), 3/4",
+     "start": 63.2,
+     "ende": 92.13,
+     "silben": [
+      {
+       "s": "Non",
+       "t": 63.2
+      },
+      {
+       "s": "no",
+       "t": 64.27
+      },
+      {
+       "s": "bis,",
+       "t": 65.88
+      },
+      {
+       "s": "Do",
+       "t": 66.41
+      },
+      {
+       "s": "mi",
+       "t": 67.49
+      },
+      {
+       "s": "ne,",
+       "t": 69.63
+      },
+      {
+       "s": "non",
+       "t": 70.7
+      },
+      {
+       "s": "no",
+       "t": 72.31
+      },
+      {
+       "s": "bis,",
+       "t": 72.84
+      },
+      {
+       "s": "sed",
+       "t": 73.91
+      },
+      {
+       "s": "no",
+       "t": 76.06
+      },
+      {
+       "s": "mi",
+       "t": 77.13
+      },
+      {
+       "s": "ni",
+       "t": 78.74
+      },
+      {
+       "s": "tu",
+       "t": 79.27
+      },
+      {
+       "s": "o",
+       "t": 80.34
+      },
+      {
+       "s": "da",
+       "t": 82.49
+      },
+      {
+       "s": "glo",
+       "t": 83.56
+      },
+      {
+       "s": "ri",
+       "t": 85.16
+      },
+      {
+       "s": "am",
+       "t": 85.7
+      }
+     ],
+     "nr": 3
+    },
+    {
+     "teil": "01",
+     "strophe": "la-wdh",
+     "zeile": "Non no bis, Do mi ne, non no bis, sed no mi ni tu o da glo ri am",
+     "app_text": "Non-no-bis,-Do-mi-ne,-non-no-bis,-sed-no-mi-ni-tu-o-da-glo-ri-am",
+     "text": "Non no-bis, Do-mi-ne, non no-bis, sed no-mi-ni tu-o da glo-ri-am",
+     "stimme": "Tutti-Chor (Unisono/Oktaven), 3/4",
+     "start": 92.13,
+     "ende": 121.06,
+     "silben": [
+      {
+       "s": "Non",
+       "t": 92.13
+      },
+      {
+       "s": "no",
+       "t": 93.2
+      },
+      {
+       "s": "bis,",
+       "t": 94.81
+      },
+      {
+       "s": "Do",
+       "t": 95.34
+      },
+      {
+       "s": "mi",
+       "t": 96.41
+      },
+      {
+       "s": "ne,",
+       "t": 98.56
+      },
+      {
+       "s": "non",
+       "t": 99.63
+      },
+      {
+       "s": "no",
+       "t": 101.24
+      },
+      {
+       "s": "bis,",
+       "t": 101.77
+      },
+      {
+       "s": "sed",
+       "t": 102.84
+      },
+      {
+       "s": "no",
+       "t": 104.99
+      },
+      {
+       "s": "mi",
+       "t": 106.06
+      },
+      {
+       "s": "ni",
+       "t": 107.66
+      },
+      {
+       "s": "tu",
+       "t": 108.2
+      },
+      {
+       "s": "o",
+       "t": 109.27
+      },
+      {
+       "s": "da",
+       "t": 111.41
+      },
+      {
+       "s": "glo",
+       "t": 112.49
+      },
+      {
+       "s": "ri",
+       "t": 114.09
+      },
+      {
+       "s": "am",
+       "t": 114.63
+      }
+     ],
+     "nr": 4
+    },
+    {
+     "teil": "01",
+     "strophe": "de",
+     "zeile": "Licht scheint in der Fins ter nis",
+     "app_text": "Licht-scheint-in-der-Fins-ter-nis",
+     "text": "Licht scheint in der Fins-ter-nis",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 129.06,
+     "ende": 141.06,
+     "silben": [
+      {
+       "s": "Licht",
+       "t": 129.06
+      },
+      {
+       "s": "scheint",
+       "t": 130.06
+      },
+      {
+       "s": "in",
+       "t": 131.06
+      },
+      {
+       "s": "der",
+       "t": 132.06
+      },
+      {
+       "s": "Fins",
+       "t": 133.56
+      },
+      {
+       "s": "ter",
+       "t": 134.56
+      },
+      {
+       "s": "nis",
+       "t": 135.56
+      }
+     ],
+     "nr": 5
+    },
+    {
+     "teil": "01",
+     "strophe": "de",
+     "zeile": "Licht scheint in der Fins ter nis",
+     "app_text": "Licht-scheint-in-der-Fins-ter-nis",
+     "text": "Licht scheint in der Fins-ter-nis",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 141.06,
+     "ende": 153.06,
+     "silben": [
+      {
+       "s": "Licht",
+       "t": 141.06
+      },
+      {
+       "s": "scheint",
+       "t": 142.06
+      },
+      {
+       "s": "in",
+       "t": 143.06
+      },
+      {
+       "s": "der",
+       "t": 144.06
+      },
+      {
+       "s": "Fins",
+       "t": 145.56
+      },
+      {
+       "s": "ter",
+       "t": 146.56
+      },
+      {
+       "s": "nis",
+       "t": 147.56
+      }
+     ],
+     "nr": 6
+    },
+    {
+     "teil": "01",
+     "strophe": "de",
+     "zeile": "Nicht uns, o Herr, nicht uns, son dern dei nem Na men gib die Eh re",
+     "app_text": "Nicht-uns,-o-Herr,-nicht-uns,-son-dern-dei-nem-Na-men-gib-die-Eh-re",
+     "text": "Nicht uns, o Herr, nicht uns, son-dern dei-nem Na-men gib die Eh-re",
+     "stimme": "Tutti-Chor (Unisono/Oktaven), 3/4",
+     "start": 153.06,
+     "ende": 178.77,
+     "silben": [
+      {
+       "s": "Nicht",
+       "t": 153.06
+      },
+      {
+       "s": "uns,",
+       "t": 154.13
+      },
+      {
+       "s": "o",
+       "t": 155.74
+      },
+      {
+       "s": "Herr,",
+       "t": 156.27
+      },
+      {
+       "s": "nicht",
+       "t": 157.34
+      },
+      {
+       "s": "uns,",
+       "t": 159.49
+      },
+      {
+       "s": "son",
+       "t": 160.56
+      },
+      {
+       "s": "dern",
+       "t": 162.16
+      },
+      {
+       "s": "dei",
+       "t": 162.7
+      },
+      {
+       "s": "nem",
+       "t": 163.77
+      },
+      {
+       "s": "Na",
+       "t": 165.91
+      },
+      {
+       "s": "men",
+       "t": 166.99
+      },
+      {
+       "s": "gib",
+       "t": 168.59
+      },
+      {
+       "s": "die",
+       "t": 169.13
+      },
+      {
+       "s": "Eh",
+       "t": 170.2
+      },
+      {
+       "s": "re",
+       "t": 172.34
+      }
+     ],
+     "nr": 7
+    },
+    {
+     "teil": "01",
+     "strophe": "fr",
+     "zeile": "La lu miè re luit dans la nuit",
+     "app_text": "La-lu-miè-re-luit-dans-la-nuit",
+     "text": "La lu-miè-re luit dans la nuit",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 186.77,
+     "ende": 198.77,
+     "silben": [
+      {
+       "s": "La",
+       "t": 186.77
+      },
+      {
+       "s": "lu",
+       "t": 187.77
+      },
+      {
+       "s": "miè",
+       "t": 188.77
+      },
+      {
+       "s": "re",
+       "t": 189.77
+      },
+      {
+       "s": "luit",
+       "t": 191.27
+      },
+      {
+       "s": "dans",
+       "t": 192.27
+      },
+      {
+       "s": "la",
+       "t": 193.27
+      },
+      {
+       "s": "nuit",
+       "t": 194.27
+      }
+     ],
+     "nr": 8
+    },
+    {
+     "teil": "01",
+     "strophe": "fr",
+     "zeile": "La lu miè re luit dans la nuit",
+     "app_text": "La-lu-miè-re-luit-dans-la-nuit",
+     "text": "La lu-miè-re luit dans la nuit",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 198.77,
+     "ende": 210.77,
+     "silben": [
+      {
+       "s": "La",
+       "t": 198.77
+      },
+      {
+       "s": "lu",
+       "t": 199.77
+      },
+      {
+       "s": "miè",
+       "t": 200.77
+      },
+      {
+       "s": "re",
+       "t": 201.77
+      },
+      {
+       "s": "luit",
+       "t": 203.27
+      },
+      {
+       "s": "dans",
+       "t": 204.27
+      },
+      {
+       "s": "la",
+       "t": 205.27
+      },
+      {
+       "s": "nuit",
+       "t": 206.27
+      }
+     ],
+     "nr": 9
+    },
+    {
+     "teil": "01",
+     "strophe": "la",
+     "zeile": "Lux in te ne bris lu cet",
+     "app_text": "Lux-in-te-ne-bris-lu-cet",
+     "text": "Lux in te-ne-bris lu-cet",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 218.77,
+     "ende": 230.77,
+     "silben": [
+      {
+       "s": "Lux",
+       "t": 218.77
+      },
+      {
+       "s": "in",
+       "t": 219.77
+      },
+      {
+       "s": "te",
+       "t": 220.77
+      },
+      {
+       "s": "ne",
+       "t": 221.77
+      },
+      {
+       "s": "bris",
+       "t": 223.27
+      },
+      {
+       "s": "lu",
+       "t": 224.27
+      },
+      {
+       "s": "cet",
+       "t": 225.27
+      }
+     ],
+     "nr": 10
+    },
+    {
+     "teil": "01",
+     "strophe": "la",
+     "zeile": "Lux in te ne bris lu cet",
+     "app_text": "Lux-in-te-ne-bris-lu-cet",
+     "text": "Lux in te-ne-bris lu-cet",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 230.77,
+     "ende": 242.77,
+     "silben": [
+      {
+       "s": "Lux",
+       "t": 230.77
+      },
+      {
+       "s": "in",
+       "t": 231.77
+      },
+      {
+       "s": "te",
+       "t": 232.77
+      },
+      {
+       "s": "ne",
+       "t": 233.77
+      },
+      {
+       "s": "bris",
+       "t": 235.27
+      },
+      {
+       "s": "lu",
+       "t": 236.27
+      },
+      {
+       "s": "cet",
+       "t": 237.27
+      }
+     ],
+     "nr": 11
+    },
+    {
+     "teil": "01",
+     "strophe": "la",
+     "zeile": "Non no bis, Do mi ne, non no bis, sed no mi ni tu o da glo ri am",
+     "app_text": "Non-no-bis,-Do-mi-ne,-non-no-bis,-sed-no-mi-ni-tu-o-da-glo-ri-am",
+     "text": "Non no-bis, Do-mi-ne, non no-bis, sed no-mi-ni tu-o da glo-ri-am",
+     "stimme": "Tutti-Chor (Unisono/Oktaven), 3/4",
+     "start": 242.77,
+     "ende": 271.7,
+     "silben": [
+      {
+       "s": "Non",
+       "t": 242.77
+      },
+      {
+       "s": "no",
+       "t": 243.84
+      },
+      {
+       "s": "bis,",
+       "t": 245.45
+      },
+      {
+       "s": "Do",
+       "t": 245.99
+      },
+      {
+       "s": "mi",
+       "t": 247.06
+      },
+      {
+       "s": "ne,",
+       "t": 249.2
+      },
+      {
+       "s": "non",
+       "t": 250.27
+      },
+      {
+       "s": "no",
+       "t": 251.88
+      },
+      {
+       "s": "bis,",
+       "t": 252.41
+      },
+      {
+       "s": "sed",
+       "t": 253.49
+      },
+      {
+       "s": "no",
+       "t": 255.63
+      },
+      {
+       "s": "mi",
+       "t": 256.7
+      },
+      {
+       "s": "ni",
+       "t": 258.31
+      },
+      {
+       "s": "tu",
+       "t": 258.84
+      },
+      {
+       "s": "o",
+       "t": 259.91
+      },
+      {
+       "s": "da",
+       "t": 262.06
+      },
+      {
+       "s": "glo",
+       "t": 263.13
+      },
+      {
+       "s": "ri",
+       "t": 264.74
+      },
+      {
+       "s": "am",
+       "t": 265.27
+      }
+     ],
+     "nr": 12
+    },
+    {
+     "teil": "01",
+     "strophe": "la-wdh",
+     "zeile": "Non no bis, Do mi ne, non no bis, sed no mi ni tu o da glo ri am",
+     "app_text": "Non-no-bis,-Do-mi-ne,-non-no-bis,-sed-no-mi-ni-tu-o-da-glo-ri-am",
+     "text": "Non no-bis, Do-mi-ne, non no-bis, sed no-mi-ni tu-o da glo-ri-am",
+     "stimme": "Tutti-Chor (Unisono/Oktaven), 3/4",
+     "start": 271.7,
+     "ende": 300.63,
+     "silben": [
+      {
+       "s": "Non",
+       "t": 271.7
+      },
+      {
+       "s": "no",
+       "t": 272.77
+      },
+      {
+       "s": "bis,",
+       "t": 274.38
+      },
+      {
+       "s": "Do",
+       "t": 274.91
+      },
+      {
+       "s": "mi",
+       "t": 275.99
+      },
+      {
+       "s": "ne,",
+       "t": 278.13
+      },
+      {
+       "s": "non",
+       "t": 279.2
+      },
+      {
+       "s": "no",
+       "t": 280.81
+      },
+      {
+       "s": "bis,",
+       "t": 281.34
+      },
+      {
+       "s": "sed",
+       "t": 282.41
+      },
+      {
+       "s": "no",
+       "t": 284.56
+      },
+      {
+       "s": "mi",
+       "t": 285.63
+      },
+      {
+       "s": "ni",
+       "t": 287.24
+      },
+      {
+       "s": "tu",
+       "t": 287.77
+      },
+      {
+       "s": "o",
+       "t": 288.84
+      },
+      {
+       "s": "da",
+       "t": 290.99
+      },
+      {
+       "s": "glo",
+       "t": 292.06
+      },
+      {
+       "s": "ri",
+       "t": 293.66
+      },
+      {
+       "s": "am",
+       "t": 294.2
+      }
+     ],
+     "nr": 13
+    },
+    {
+     "teil": "01",
+     "strophe": "la",
+     "zeile": "Lux in te ne bris lu cet",
+     "app_text": "Lux-in-te-ne-bris-lu-cet",
+     "text": "Lux in te-ne-bris lu-cet",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 308.63,
+     "ende": 320.63,
+     "silben": [
+      {
+       "s": "Lux",
+       "t": 308.63
+      },
+      {
+       "s": "in",
+       "t": 309.63
+      },
+      {
+       "s": "te",
+       "t": 310.63
+      },
+      {
+       "s": "ne",
+       "t": 311.63
+      },
+      {
+       "s": "bris",
+       "t": 313.13
+      },
+      {
+       "s": "lu",
+       "t": 314.13
+      },
+      {
+       "s": "cet",
+       "t": 315.13
+      }
+     ],
+     "nr": 14
+    },
+    {
+     "teil": "01",
+     "strophe": "la",
+     "zeile": "Lux in te ne bris lu cet",
+     "app_text": "Lux-in-te-ne-bris-lu-cet",
+     "text": "Lux in te-ne-bris lu-cet",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 320.63,
+     "ende": 332.63,
+     "silben": [
+      {
+       "s": "Lux",
+       "t": 320.63
+      },
+      {
+       "s": "in",
+       "t": 321.63
+      },
+      {
+       "s": "te",
+       "t": 322.63
+      },
+      {
+       "s": "ne",
+       "t": 323.63
+      },
+      {
+       "s": "bris",
+       "t": 325.13
+      },
+      {
+       "s": "lu",
+       "t": 326.13
+      },
+      {
+       "s": "cet",
+       "t": 327.13
+      }
+     ],
+     "nr": 15
+    },
+    {
+     "teil": "01",
+     "strophe": "la",
+     "zeile": "Non no bis, Do mi ne, non no bis, sed no mi ni tu o da glo ri am",
+     "app_text": "Non-no-bis,-Do-mi-ne,-non-no-bis,-sed-no-mi-ni-tu-o-da-glo-ri-am",
+     "text": "Non no-bis, Do-mi-ne, non no-bis, sed no-mi-ni tu-o da glo-ri-am",
+     "stimme": "Tutti-Chor (Unisono/Oktaven), 3/4",
+     "start": 332.63,
+     "ende": 361.56,
+     "silben": [
+      {
+       "s": "Non",
+       "t": 332.63
+      },
+      {
+       "s": "no",
+       "t": 333.7
+      },
+      {
+       "s": "bis,",
+       "t": 335.31
+      },
+      {
+       "s": "Do",
+       "t": 335.84
+      },
+      {
+       "s": "mi",
+       "t": 336.91
+      },
+      {
+       "s": "ne,",
+       "t": 339.06
+      },
+      {
+       "s": "non",
+       "t": 340.13
+      },
+      {
+       "s": "no",
+       "t": 341.74
+      },
+      {
+       "s": "bis,",
+       "t": 342.27
+      },
+      {
+       "s": "sed",
+       "t": 343.34
+      },
+      {
+       "s": "no",
+       "t": 345.49
+      },
+      {
+       "s": "mi",
+       "t": 346.56
+      },
+      {
+       "s": "ni",
+       "t": 348.16
+      },
+      {
+       "s": "tu",
+       "t": 348.7
+      },
+      {
+       "s": "o",
+       "t": 349.77
+      },
+      {
+       "s": "da",
+       "t": 351.91
+      },
+      {
+       "s": "glo",
+       "t": 352.99
+      },
+      {
+       "s": "ri",
+       "t": 354.59
+      },
+      {
+       "s": "am",
+       "t": 355.13
+      }
+     ],
+     "nr": 16
+    }
+   ]
+  },
+  {
+   "satz": "02 · Kyrie",
+   "datei": "messe-02-kyrie",
+   "tempo_bpm": 56,
+   "zeilen": [
+    {
+     "teil": 2,
+     "strophe": "la",
+     "zeile": "Ky ri e e lei son, Chri ste e lei son",
+     "app_text": "Ky-ri-e-e-lei-son,-Chri-ste-e-lei-son",
+     "text": "Ky-ri-e e-lei-son, Chri-ste e-lei-son",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 8.57,
+     "ende": 25.71,
+     "silben": [
+      {
+       "s": "Ky",
+       "t": 8.57
+      },
+      {
+       "s": "ri",
+       "t": 9.64
+      },
+      {
+       "s": "e",
+       "t": 11.25
+      },
+      {
+       "s": "e",
+       "t": 12.32
+      },
+      {
+       "s": "lei",
+       "t": 13.93
+      },
+      {
+       "s": "son,",
+       "t": 15.0
+      },
+      {
+       "s": "Chri",
+       "t": 17.14
+      },
+      {
+       "s": "ste",
+       "t": 18.21
+      },
+      {
+       "s": "e",
+       "t": 19.29
+      },
+      {
+       "s": "lei",
+       "t": 20.36
+      },
+      {
+       "s": "son",
+       "t": 21.43
+      }
+     ],
+     "nr": 1
+    },
+    {
+     "teil": 2,
+     "strophe": "la",
+     "zeile": "Ky ri e e lei son, Chri ste e lei son",
+     "app_text": "Ky-ri-e-e-lei-son,-Chri-ste-e-lei-son",
+     "text": "Ky-ri-e e-lei-son, Chri-ste e-lei-son",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 25.71,
+     "ende": 42.86,
+     "silben": [
+      {
+       "s": "Ky",
+       "t": 25.71
+      },
+      {
+       "s": "ri",
+       "t": 26.79
+      },
+      {
+       "s": "e",
+       "t": 28.39
+      },
+      {
+       "s": "e",
+       "t": 29.46
+      },
+      {
+       "s": "lei",
+       "t": 31.07
+      },
+      {
+       "s": "son,",
+       "t": 32.14
+      },
+      {
+       "s": "Chri",
+       "t": 34.29
+      },
+      {
+       "s": "ste",
+       "t": 35.36
+      },
+      {
+       "s": "e",
+       "t": 36.43
+      },
+      {
+       "s": "lei",
+       "t": 37.5
+      },
+      {
+       "s": "son",
+       "t": 38.57
+      }
+     ],
+     "nr": 2
+    },
+    {
+     "teil": 2,
+     "strophe": "de",
+     "zeile": "Herr, er bar me dich, Chris tus, er bar me dich",
+     "app_text": "Herr,-er-bar-me-dich,-Chris-tus,-er-bar-me-dich",
+     "text": "Herr, er-bar-me dich, Chris-tus, er-bar-me dich",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 51.43,
+     "ende": 72.86,
+     "silben": [
+      {
+       "s": "Herr,",
+       "t": 51.43
+      },
+      {
+       "s": "er",
+       "t": 53.57
+      },
+      {
+       "s": "bar",
+       "t": 54.64
+      },
+      {
+       "s": "me",
+       "t": 55.71
+      },
+      {
+       "s": "dich,",
+       "t": 57.32
+      },
+      {
+       "s": "Chris",
+       "t": 59.46
+      },
+      {
+       "s": "tus,",
+       "t": 60.54
+      },
+      {
+       "s": "er",
+       "t": 62.68
+      },
+      {
+       "s": "bar",
+       "t": 63.75
+      },
+      {
+       "s": "me",
+       "t": 64.82
+      },
+      {
+       "s": "dich",
+       "t": 65.89
+      }
+     ],
+     "nr": 3
+    },
+    {
+     "teil": 2,
+     "strophe": "de",
+     "zeile": "Herr, er bar me dich, Chris tus, er bar me dich",
+     "app_text": "Herr,-er-bar-me-dich,-Chris-tus,-er-bar-me-dich",
+     "text": "Herr, er-bar-me dich, Chris-tus, er-bar-me dich",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 72.86,
+     "ende": 94.29,
+     "silben": [
+      {
+       "s": "Herr,",
+       "t": 72.86
+      },
+      {
+       "s": "er",
+       "t": 75.0
+      },
+      {
+       "s": "bar",
+       "t": 76.07
+      },
+      {
+       "s": "me",
+       "t": 77.14
+      },
+      {
+       "s": "dich,",
+       "t": 78.75
+      },
+      {
+       "s": "Chris",
+       "t": 80.89
+      },
+      {
+       "s": "tus,",
+       "t": 81.96
+      },
+      {
+       "s": "er",
+       "t": 84.11
+      },
+      {
+       "s": "bar",
+       "t": 85.18
+      },
+      {
+       "s": "me",
+       "t": 86.25
+      },
+      {
+       "s": "dich",
+       "t": 87.32
+      }
+     ],
+     "nr": 4
+    },
+    {
+     "teil": 2,
+     "strophe": "fr",
+     "zeile": "Sei gneur, prends pi tié, ô Christ, prends pi tié",
+     "app_text": "Sei-gneur,-prends-pi-tié,-ô-Christ,-prends-pi-tié",
+     "text": "Sei-gneur, prends pi-tié, ô Christ, prends pi-tié",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 102.86,
+     "ende": 120.0,
+     "silben": [
+      {
+       "s": "Sei",
+       "t": 102.86
+      },
+      {
+       "s": "gneur,",
+       "t": 103.93
+      },
+      {
+       "s": "prends",
+       "t": 106.07
+      },
+      {
+       "s": "pi",
+       "t": 107.14
+      },
+      {
+       "s": "tié,",
+       "t": 108.75
+      },
+      {
+       "s": "ô",
+       "t": 110.89
+      },
+      {
+       "s": "Christ,",
+       "t": 111.96
+      },
+      {
+       "s": "prends",
+       "t": 114.11
+      },
+      {
+       "s": "pi",
+       "t": 115.18
+      },
+      {
+       "s": "tié",
+       "t": 116.25
+      }
+     ],
+     "nr": 5
+    },
+    {
+     "teil": 2,
+     "strophe": "fr",
+     "zeile": "Sei gneur, prends pi tié, ô Christ, prends pi tié",
+     "app_text": "Sei-gneur,-prends-pi-tié,-ô-Christ,-prends-pi-tié",
+     "text": "Sei-gneur, prends pi-tié, ô Christ, prends pi-tié",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 120.0,
+     "ende": 137.14,
+     "silben": [
+      {
+       "s": "Sei",
+       "t": 120.0
+      },
+      {
+       "s": "gneur,",
+       "t": 121.07
+      },
+      {
+       "s": "prends",
+       "t": 123.21
+      },
+      {
+       "s": "pi",
+       "t": 124.29
+      },
+      {
+       "s": "tié,",
+       "t": 125.89
+      },
+      {
+       "s": "ô",
+       "t": 128.04
+      },
+      {
+       "s": "Christ,",
+       "t": 129.11
+      },
+      {
+       "s": "prends",
+       "t": 131.25
+      },
+      {
+       "s": "pi",
+       "t": 132.32
+      },
+      {
+       "s": "tié",
+       "t": 133.39
+      }
+     ],
+     "nr": 6
+    },
+    {
+     "teil": 2,
+     "strophe": "la",
+     "zeile": "Ky ri e e lei son, Chri ste e lei son",
+     "app_text": "Ky-ri-e-e-lei-son,-Chri-ste-e-lei-son",
+     "text": "Ky-ri-e e-lei-son, Chri-ste e-lei-son",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 145.71,
+     "ende": 162.86,
+     "silben": [
+      {
+       "s": "Ky",
+       "t": 145.71
+      },
+      {
+       "s": "ri",
+       "t": 146.79
+      },
+      {
+       "s": "e",
+       "t": 148.39
+      },
+      {
+       "s": "e",
+       "t": 149.46
+      },
+      {
+       "s": "lei",
+       "t": 151.07
+      },
+      {
+       "s": "son,",
+       "t": 152.14
+      },
+      {
+       "s": "Chri",
+       "t": 154.29
+      },
+      {
+       "s": "ste",
+       "t": 155.36
+      },
+      {
+       "s": "e",
+       "t": 156.43
+      },
+      {
+       "s": "lei",
+       "t": 157.5
+      },
+      {
+       "s": "son",
+       "t": 158.57
+      }
+     ],
+     "nr": 7
+    },
+    {
+     "teil": 2,
+     "strophe": "la",
+     "zeile": "Ky ri e e lei son, Chri ste e lei son",
+     "app_text": "Ky-ri-e-e-lei-son,-Chri-ste-e-lei-son",
+     "text": "Ky-ri-e e-lei-son, Chri-ste e-lei-son",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 162.86,
+     "ende": 180.0,
+     "silben": [
+      {
+       "s": "Ky",
+       "t": 162.86
+      },
+      {
+       "s": "ri",
+       "t": 163.93
+      },
+      {
+       "s": "e",
+       "t": 165.54
+      },
+      {
+       "s": "e",
+       "t": 166.61
+      },
+      {
+       "s": "lei",
+       "t": 168.21
+      },
+      {
+       "s": "son,",
+       "t": 169.29
+      },
+      {
+       "s": "Chri",
+       "t": 171.43
+      },
+      {
+       "s": "ste",
+       "t": 172.5
+      },
+      {
+       "s": "e",
+       "t": 173.57
+      },
+      {
+       "s": "lei",
+       "t": 174.64
+      },
+      {
+       "s": "son",
+       "t": 175.71
+      }
+     ],
+     "nr": 8
+    },
+    {
+     "teil": 2,
+     "strophe": "la",
+     "zeile": "Ky ri e e lei son, Chri ste e lei son",
+     "app_text": "Ky-ri-e-e-lei-son,-Chri-ste-e-lei-son",
+     "text": "Ky-ri-e e-lei-son, Chri-ste e-lei-son",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 188.57,
+     "ende": 205.71,
+     "silben": [
+      {
+       "s": "Ky",
+       "t": 188.57
+      },
+      {
+       "s": "ri",
+       "t": 189.64
+      },
+      {
+       "s": "e",
+       "t": 191.25
+      },
+      {
+       "s": "e",
+       "t": 192.32
+      },
+      {
+       "s": "lei",
+       "t": 193.93
+      },
+      {
+       "s": "son,",
+       "t": 195.0
+      },
+      {
+       "s": "Chri",
+       "t": 197.14
+      },
+      {
+       "s": "ste",
+       "t": 198.21
+      },
+      {
+       "s": "e",
+       "t": 199.29
+      },
+      {
+       "s": "lei",
+       "t": 200.36
+      },
+      {
+       "s": "son",
+       "t": 201.43
+      }
+     ],
+     "nr": 9
+    },
+    {
+     "teil": 2,
+     "strophe": "la",
+     "zeile": "Ky ri e e lei son, Chri ste e lei son",
+     "app_text": "Ky-ri-e-e-lei-son,-Chri-ste-e-lei-son",
+     "text": "Ky-ri-e e-lei-son, Chri-ste e-lei-son",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 205.71,
+     "ende": 222.86,
+     "silben": [
+      {
+       "s": "Ky",
+       "t": 205.71
+      },
+      {
+       "s": "ri",
+       "t": 206.79
+      },
+      {
+       "s": "e",
+       "t": 208.39
+      },
+      {
+       "s": "e",
+       "t": 209.46
+      },
+      {
+       "s": "lei",
+       "t": 211.07
+      },
+      {
+       "s": "son,",
+       "t": 212.14
+      },
+      {
+       "s": "Chri",
+       "t": 214.29
+      },
+      {
+       "s": "ste",
+       "t": 215.36
+      },
+      {
+       "s": "e",
+       "t": 216.43
+      },
+      {
+       "s": "lei",
+       "t": 217.5
+      },
+      {
+       "s": "son",
+       "t": 218.57
+      }
+     ],
+     "nr": 10
+    }
+   ]
+  },
+  {
+   "satz": "03 · Gloria",
+   "datei": "messe-03-gloria",
+   "tempo_bpm": 72,
+   "zeilen": [
+    {
+     "teil": "03",
+     "strophe": "la",
+     "zeile": "Glo ri a in ex cel sis De o, et in ter ra pax",
+     "app_text": "Glo-ri-a-in-ex-cel-sis-De-o,-et-in-ter-ra-pax",
+     "text": "Glo-ri-a in ex-cel-sis De-o, et in ter-ra pax",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 35.2,
+     "ende": 51.87,
+     "silben": [
+      {
+       "s": "Glo",
+       "t": 35.2
+      },
+      {
+       "s": "ri",
+       "t": 36.03
+      },
+      {
+       "s": "a",
+       "t": 36.87
+      },
+      {
+       "s": "in",
+       "t": 37.7
+      },
+      {
+       "s": "ex",
+       "t": 38.53
+      },
+      {
+       "s": "cel",
+       "t": 39.37
+      },
+      {
+       "s": "sis",
+       "t": 40.2
+      },
+      {
+       "s": "De",
+       "t": 41.03
+      },
+      {
+       "s": "o,",
+       "t": 41.87
+      },
+      {
+       "s": "et",
+       "t": 43.53
+      },
+      {
+       "s": "in",
+       "t": 44.37
+      },
+      {
+       "s": "ter",
+       "t": 45.2
+      },
+      {
+       "s": "ra",
+       "t": 46.03
+      },
+      {
+       "s": "pax",
+       "t": 46.87
+      }
+     ],
+     "nr": 1
+    },
+    {
+     "teil": "03",
+     "strophe": "la",
+     "zeile": "Glo ri a in ex cel sis De o, et in ter ra pax",
+     "app_text": "Glo-ri-a-in-ex-cel-sis-De-o,-et-in-ter-ra-pax",
+     "text": "Glo-ri-a in ex-cel-sis De-o, et in ter-ra pax",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 51.87,
+     "ende": 68.53,
+     "silben": [
+      {
+       "s": "Glo",
+       "t": 51.87
+      },
+      {
+       "s": "ri",
+       "t": 52.7
+      },
+      {
+       "s": "a",
+       "t": 53.53
+      },
+      {
+       "s": "in",
+       "t": 54.37
+      },
+      {
+       "s": "ex",
+       "t": 55.2
+      },
+      {
+       "s": "cel",
+       "t": 56.03
+      },
+      {
+       "s": "sis",
+       "t": 56.87
+      },
+      {
+       "s": "De",
+       "t": 57.7
+      },
+      {
+       "s": "o,",
+       "t": 58.53
+      },
+      {
+       "s": "et",
+       "t": 60.2
+      },
+      {
+       "s": "in",
+       "t": 61.03
+      },
+      {
+       "s": "ter",
+       "t": 61.87
+      },
+      {
+       "s": "ra",
+       "t": 62.7
+      },
+      {
+       "s": "pax",
+       "t": 63.53
+      }
+     ],
+     "nr": 2
+    },
+    {
+     "teil": "03",
+     "strophe": "la",
+     "zeile": "Non no bis, Do mi ne, non no bis, sed no mi ni tu o da glo ri am",
+     "app_text": "Non-no-bis,-Do-mi-ne,-non-no-bis,-sed-no-mi-ni-tu-o-da-glo-ri-am",
+     "text": "Non no-bis, Do-mi-ne, non no-bis, sed no-mi-ni tu-o da glo-ri-am",
+     "stimme": "Tutti-Chor (Unisono/Oktaven), 3/4",
+     "start": 68.53,
+     "ende": 97.46,
+     "silben": [
+      {
+       "s": "Non",
+       "t": 68.53
+      },
+      {
+       "s": "no",
+       "t": 69.6
+      },
+      {
+       "s": "bis,",
+       "t": 71.21
+      },
+      {
+       "s": "Do",
+       "t": 71.75
+      },
+      {
+       "s": "mi",
+       "t": 72.82
+      },
+      {
+       "s": "ne,",
+       "t": 74.96
+      },
+      {
+       "s": "non",
+       "t": 76.03
+      },
+      {
+       "s": "no",
+       "t": 77.64
+      },
+      {
+       "s": "bis,",
+       "t": 78.18
+      },
+      {
+       "s": "sed",
+       "t": 79.25
+      },
+      {
+       "s": "no",
+       "t": 81.39
+      },
+      {
+       "s": "mi",
+       "t": 82.46
+      },
+      {
+       "s": "ni",
+       "t": 84.07
+      },
+      {
+       "s": "tu",
+       "t": 84.6
+      },
+      {
+       "s": "o",
+       "t": 85.68
+      },
+      {
+       "s": "da",
+       "t": 87.82
+      },
+      {
+       "s": "glo",
+       "t": 88.89
+      },
+      {
+       "s": "ri",
+       "t": 90.5
+      },
+      {
+       "s": "am",
+       "t": 91.03
+      }
+     ],
+     "nr": 3
+    },
+    {
+     "teil": "03",
+     "strophe": "la-wdh",
+     "zeile": "Non no bis, Do mi ne, non no bis, sed no mi ni tu o da glo ri am",
+     "app_text": "Non-no-bis,-Do-mi-ne,-non-no-bis,-sed-no-mi-ni-tu-o-da-glo-ri-am",
+     "text": "Non no-bis, Do-mi-ne, non no-bis, sed no-mi-ni tu-o da glo-ri-am",
+     "stimme": "Tutti-Chor (Unisono/Oktaven), 3/4",
+     "start": 97.46,
+     "ende": 126.39,
+     "silben": [
+      {
+       "s": "Non",
+       "t": 97.46
+      },
+      {
+       "s": "no",
+       "t": 98.53
+      },
+      {
+       "s": "bis,",
+       "t": 100.14
+      },
+      {
+       "s": "Do",
+       "t": 100.68
+      },
+      {
+       "s": "mi",
+       "t": 101.75
+      },
+      {
+       "s": "ne,",
+       "t": 103.89
+      },
+      {
+       "s": "non",
+       "t": 104.96
+      },
+      {
+       "s": "no",
+       "t": 106.57
+      },
+      {
+       "s": "bis,",
+       "t": 107.1
+      },
+      {
+       "s": "sed",
+       "t": 108.18
+      },
+      {
+       "s": "no",
+       "t": 110.32
+      },
+      {
+       "s": "mi",
+       "t": 111.39
+      },
+      {
+       "s": "ni",
+       "t": 113.0
+      },
+      {
+       "s": "tu",
+       "t": 113.53
+      },
+      {
+       "s": "o",
+       "t": 114.6
+      },
+      {
+       "s": "da",
+       "t": 116.75
+      },
+      {
+       "s": "glo",
+       "t": 117.82
+      },
+      {
+       "s": "ri",
+       "t": 119.43
+      },
+      {
+       "s": "am",
+       "t": 119.96
+      }
+     ],
+     "nr": 4
+    },
+    {
+     "teil": "03",
+     "strophe": "la",
+     "zeile": "Do na no bis pa cem",
+     "app_text": "Do-na-no-bis-pa-cem",
+     "text": "Do-na no-bis pa-cem",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 126.39,
+     "ende": 132.22,
+     "silben": [
+      {
+       "s": "Do",
+       "t": 126.39
+      },
+      {
+       "s": "na",
+       "t": 127.22
+      },
+      {
+       "s": "no",
+       "t": 127.64
+      },
+      {
+       "s": "bis",
+       "t": 128.06
+      },
+      {
+       "s": "pa",
+       "t": 128.89
+      },
+      {
+       "s": "cem",
+       "t": 129.72
+      }
+     ],
+     "nr": 5
+    },
+    {
+     "teil": "03",
+     "strophe": "la",
+     "zeile": "Do na no bis pa cem",
+     "app_text": "Do-na-no-bis-pa-cem",
+     "text": "Do-na no-bis pa-cem",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 132.22,
+     "ende": 138.06,
+     "silben": [
+      {
+       "s": "Do",
+       "t": 132.22
+      },
+      {
+       "s": "na",
+       "t": 133.06
+      },
+      {
+       "s": "no",
+       "t": 133.47
+      },
+      {
+       "s": "bis",
+       "t": 133.89
+      },
+      {
+       "s": "pa",
+       "t": 134.72
+      },
+      {
+       "s": "cem",
+       "t": 135.56
+      }
+     ],
+     "nr": 6
+    },
+    {
+     "teil": "03",
+     "strophe": "de",
+     "zeile": "Eh re sei Gott in der Hö he, Frie de auf Er den",
+     "app_text": "Eh-re-sei-Gott-in-der-Hö-he,-Frie-de-auf-Er-den",
+     "text": "Eh-re sei Gott in der Hö-he, Frie-de auf Er-den",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 144.72,
+     "ende": 158.06,
+     "silben": [
+      {
+       "s": "Eh",
+       "t": 144.72
+      },
+      {
+       "s": "re",
+       "t": 145.56
+      },
+      {
+       "s": "sei",
+       "t": 146.39
+      },
+      {
+       "s": "Gott",
+       "t": 147.22
+      },
+      {
+       "s": "in",
+       "t": 148.06
+      },
+      {
+       "s": "der",
+       "t": 148.89
+      },
+      {
+       "s": "Hö",
+       "t": 149.72
+      },
+      {
+       "s": "he,",
+       "t": 150.56
+      },
+      {
+       "s": "Frie",
+       "t": 152.22
+      },
+      {
+       "s": "de",
+       "t": 153.06
+      },
+      {
+       "s": "auf",
+       "t": 153.89
+      },
+      {
+       "s": "Er",
+       "t": 154.72
+      },
+      {
+       "s": "den",
+       "t": 155.56
+      }
+     ],
+     "nr": 7
+    },
+    {
+     "teil": "03",
+     "strophe": "de",
+     "zeile": "Eh re sei Gott in der Hö he, Frie de auf Er den",
+     "app_text": "Eh-re-sei-Gott-in-der-Hö-he,-Frie-de-auf-Er-den",
+     "text": "Eh-re sei Gott in der Hö-he, Frie-de auf Er-den",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 158.06,
+     "ende": 171.39,
+     "silben": [
+      {
+       "s": "Eh",
+       "t": 158.06
+      },
+      {
+       "s": "re",
+       "t": 158.89
+      },
+      {
+       "s": "sei",
+       "t": 159.72
+      },
+      {
+       "s": "Gott",
+       "t": 160.56
+      },
+      {
+       "s": "in",
+       "t": 161.39
+      },
+      {
+       "s": "der",
+       "t": 162.22
+      },
+      {
+       "s": "Hö",
+       "t": 163.06
+      },
+      {
+       "s": "he,",
+       "t": 163.89
+      },
+      {
+       "s": "Frie",
+       "t": 165.56
+      },
+      {
+       "s": "de",
+       "t": 166.39
+      },
+      {
+       "s": "auf",
+       "t": 167.22
+      },
+      {
+       "s": "Er",
+       "t": 168.06
+      },
+      {
+       "s": "den",
+       "t": 168.89
+      }
+     ],
+     "nr": 8
+    },
+    {
+     "teil": "03",
+     "strophe": "de",
+     "zeile": "Nicht uns, o Herr, nicht uns, son dern dei nem Na men gib die Eh re",
+     "app_text": "Nicht-uns,-o-Herr,-nicht-uns,-son-dern-dei-nem-Na-men-gib-die-Eh-re",
+     "text": "Nicht uns, o Herr, nicht uns, son-dern dei-nem Na-men gib die Eh-re",
+     "stimme": "Tutti-Chor (Unisono/Oktaven), 3/4",
+     "start": 171.39,
+     "ende": 197.1,
+     "silben": [
+      {
+       "s": "Nicht",
+       "t": 171.39
+      },
+      {
+       "s": "uns,",
+       "t": 172.46
+      },
+      {
+       "s": "o",
+       "t": 174.07
+      },
+      {
+       "s": "Herr,",
+       "t": 174.6
+      },
+      {
+       "s": "nicht",
+       "t": 175.68
+      },
+      {
+       "s": "uns,",
+       "t": 177.82
+      },
+      {
+       "s": "son",
+       "t": 178.89
+      },
+      {
+       "s": "dern",
+       "t": 180.5
+      },
+      {
+       "s": "dei",
+       "t": 181.03
+      },
+      {
+       "s": "nem",
+       "t": 182.1
+      },
+      {
+       "s": "Na",
+       "t": 184.25
+      },
+      {
+       "s": "men",
+       "t": 185.32
+      },
+      {
+       "s": "gib",
+       "t": 186.93
+      },
+      {
+       "s": "die",
+       "t": 187.46
+      },
+      {
+       "s": "Eh",
+       "t": 188.53
+      },
+      {
+       "s": "re",
+       "t": 190.68
+      }
+     ],
+     "nr": 9
+    },
+    {
+     "teil": "03",
+     "strophe": "de",
+     "zeile": "Gib uns dei nen Frie den",
+     "app_text": "Gib-uns-dei-nen-Frie-den",
+     "text": "Gib uns dei-nen Frie-den",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 197.1,
+     "ende": 203.77,
+     "silben": [
+      {
+       "s": "Gib",
+       "t": 197.1
+      },
+      {
+       "s": "uns",
+       "t": 197.94
+      },
+      {
+       "s": "dei",
+       "t": 198.77
+      },
+      {
+       "s": "nen",
+       "t": 199.6
+      },
+      {
+       "s": "Frie",
+       "t": 200.44
+      },
+      {
+       "s": "den",
+       "t": 201.27
+      }
+     ],
+     "nr": 10
+    },
+    {
+     "teil": "03",
+     "strophe": "de",
+     "zeile": "Gib uns dei nen Frie den",
+     "app_text": "Gib-uns-dei-nen-Frie-den",
+     "text": "Gib uns dei-nen Frie-den",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 203.77,
+     "ende": 210.44,
+     "silben": [
+      {
+       "s": "Gib",
+       "t": 203.77
+      },
+      {
+       "s": "uns",
+       "t": 204.6
+      },
+      {
+       "s": "dei",
+       "t": 205.44
+      },
+      {
+       "s": "nen",
+       "t": 206.27
+      },
+      {
+       "s": "Frie",
+       "t": 207.1
+      },
+      {
+       "s": "den",
+       "t": 207.94
+      }
+     ],
+     "nr": 11
+    },
+    {
+     "teil": "03",
+     "strophe": "fr",
+     "zeile": "Gloire à Dieu au plus haut des cieux, paix sur la ter re",
+     "app_text": "Gloire-à-Dieu-au-plus-haut-des-cieux,-paix-sur-la-ter-re",
+     "text": "Gloire à Dieu au plus haut des cieux, paix sur la ter-re",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 217.1,
+     "ende": 230.44,
+     "silben": [
+      {
+       "s": "Gloire",
+       "t": 217.1
+      },
+      {
+       "s": "à",
+       "t": 217.94
+      },
+      {
+       "s": "Dieu",
+       "t": 218.77
+      },
+      {
+       "s": "au",
+       "t": 219.6
+      },
+      {
+       "s": "plus",
+       "t": 220.44
+      },
+      {
+       "s": "haut",
+       "t": 221.27
+      },
+      {
+       "s": "des",
+       "t": 222.1
+      },
+      {
+       "s": "cieux,",
+       "t": 222.94
+      },
+      {
+       "s": "paix",
+       "t": 224.6
+      },
+      {
+       "s": "sur",
+       "t": 225.44
+      },
+      {
+       "s": "la",
+       "t": 226.27
+      },
+      {
+       "s": "ter",
+       "t": 227.1
+      },
+      {
+       "s": "re",
+       "t": 227.94
+      }
+     ],
+     "nr": 12
+    },
+    {
+     "teil": "03",
+     "strophe": "fr",
+     "zeile": "Gloire à Dieu au plus haut des cieux, paix sur la ter re",
+     "app_text": "Gloire-à-Dieu-au-plus-haut-des-cieux,-paix-sur-la-ter-re",
+     "text": "Gloire à Dieu au plus haut des cieux, paix sur la ter-re",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 230.44,
+     "ende": 243.77,
+     "silben": [
+      {
+       "s": "Gloire",
+       "t": 230.44
+      },
+      {
+       "s": "à",
+       "t": 231.27
+      },
+      {
+       "s": "Dieu",
+       "t": 232.1
+      },
+      {
+       "s": "au",
+       "t": 232.94
+      },
+      {
+       "s": "plus",
+       "t": 233.77
+      },
+      {
+       "s": "haut",
+       "t": 234.6
+      },
+      {
+       "s": "des",
+       "t": 235.44
+      },
+      {
+       "s": "cieux,",
+       "t": 236.27
+      },
+      {
+       "s": "paix",
+       "t": 237.94
+      },
+      {
+       "s": "sur",
+       "t": 238.77
+      },
+      {
+       "s": "la",
+       "t": 239.6
+      },
+      {
+       "s": "ter",
+       "t": 240.44
+      },
+      {
+       "s": "re",
+       "t": 241.27
+      }
+     ],
+     "nr": 13
+    },
+    {
+     "teil": "03",
+     "strophe": "fr",
+     "zeile": "Don ne nous ta paix",
+     "app_text": "Don-ne-nous-ta-paix",
+     "text": "Don-ne-nous ta paix",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 243.77,
+     "ende": 250.44,
+     "silben": [
+      {
+       "s": "Don",
+       "t": 243.77
+      },
+      {
+       "s": "ne",
+       "t": 244.6
+      },
+      {
+       "s": "nous",
+       "t": 245.44
+      },
+      {
+       "s": "ta",
+       "t": 246.27
+      },
+      {
+       "s": "paix",
+       "t": 247.1
+      }
+     ],
+     "nr": 14
+    },
+    {
+     "teil": "03",
+     "strophe": "fr",
+     "zeile": "Don ne nous ta paix",
+     "app_text": "Don-ne-nous-ta-paix",
+     "text": "Don-ne-nous ta paix",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 250.44,
+     "ende": 257.1,
+     "silben": [
+      {
+       "s": "Don",
+       "t": 250.44
+      },
+      {
+       "s": "ne",
+       "t": 251.27
+      },
+      {
+       "s": "nous",
+       "t": 252.1
+      },
+      {
+       "s": "ta",
+       "t": 252.94
+      },
+      {
+       "s": "paix",
+       "t": 253.77
+      }
+     ],
+     "nr": 15
+    }
+   ]
+  },
+  {
+   "satz": "04 · Lesung – Orgelteppich (Platz für Uwe)",
+   "datei": "messe-04-lesung",
+   "tempo_bpm": 50,
+   "zeilen": []
+  },
+  {
+   "satz": "05 · Halleluja",
+   "datei": "messe-05-halleluja",
+   "tempo_bpm": 66,
+   "zeilen": [
+    {
+     "teil": 5,
+     "strophe": "la",
+     "zeile": "Al le lu ia, al le lu ia",
+     "app_text": "Al-le-lu-ia,-al-le-lu-ia",
+     "text": "Al-le-lu-ia, al-le-lu-ia",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 7.27,
+     "ende": 18.18,
+     "silben": [
+      {
+       "s": "Al",
+       "t": 7.27
+      },
+      {
+       "s": "le",
+       "t": 8.18
+      },
+      {
+       "s": "lu",
+       "t": 9.09
+      },
+      {
+       "s": "ia,",
+       "t": 10.0
+      },
+      {
+       "s": "al",
+       "t": 11.82
+      },
+      {
+       "s": "le",
+       "t": 12.73
+      },
+      {
+       "s": "lu",
+       "t": 13.64
+      },
+      {
+       "s": "ia",
+       "t": 14.55
+      }
+     ],
+     "nr": 1
+    },
+    {
+     "teil": 5,
+     "strophe": "la",
+     "zeile": "Al le lu ia, al le lu ia",
+     "app_text": "Al-le-lu-ia,-al-le-lu-ia",
+     "text": "Al-le-lu-ia, al-le-lu-ia",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 18.18,
+     "ende": 29.09,
+     "silben": [
+      {
+       "s": "Al",
+       "t": 18.18
+      },
+      {
+       "s": "le",
+       "t": 19.09
+      },
+      {
+       "s": "lu",
+       "t": 20.0
+      },
+      {
+       "s": "ia,",
+       "t": 20.91
+      },
+      {
+       "s": "al",
+       "t": 22.73
+      },
+      {
+       "s": "le",
+       "t": 23.64
+      },
+      {
+       "s": "lu",
+       "t": 24.55
+      },
+      {
+       "s": "ia",
+       "t": 25.45
+      }
+     ],
+     "nr": 2
+    },
+    {
+     "teil": 5,
+     "strophe": "de",
+     "zeile": "Hal le lu ja, lobt den Herrn",
+     "app_text": "Hal-le-lu-ja,-lobt-den-Herrn",
+     "text": "Hal-le-lu-ja, lobt den Herrn",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 36.36,
+     "ende": 47.27,
+     "silben": [
+      {
+       "s": "Hal",
+       "t": 36.36
+      },
+      {
+       "s": "le",
+       "t": 37.27
+      },
+      {
+       "s": "lu",
+       "t": 38.18
+      },
+      {
+       "s": "ja,",
+       "t": 39.09
+      },
+      {
+       "s": "lobt",
+       "t": 40.91
+      },
+      {
+       "s": "den",
+       "t": 41.82
+      },
+      {
+       "s": "Herrn",
+       "t": 42.73
+      }
+     ],
+     "nr": 3
+    },
+    {
+     "teil": 5,
+     "strophe": "de",
+     "zeile": "Hal le lu ja, lobt den Herrn",
+     "app_text": "Hal-le-lu-ja,-lobt-den-Herrn",
+     "text": "Hal-le-lu-ja, lobt den Herrn",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 47.27,
+     "ende": 58.18,
+     "silben": [
+      {
+       "s": "Hal",
+       "t": 47.27
+      },
+      {
+       "s": "le",
+       "t": 48.18
+      },
+      {
+       "s": "lu",
+       "t": 49.09
+      },
+      {
+       "s": "ja,",
+       "t": 50.0
+      },
+      {
+       "s": "lobt",
+       "t": 51.82
+      },
+      {
+       "s": "den",
+       "t": 52.73
+      },
+      {
+       "s": "Herrn",
+       "t": 53.64
+      }
+     ],
+     "nr": 4
+    },
+    {
+     "teil": 5,
+     "strophe": "fr",
+     "zeile": "Al lé lu ia, chan tez Dieu",
+     "app_text": "Al-lé-lu-ia,-chan-tez-Dieu",
+     "text": "Al-lé-lu-ia, chan-tez Dieu",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 65.45,
+     "ende": 76.36,
+     "silben": [
+      {
+       "s": "Al",
+       "t": 65.45
+      },
+      {
+       "s": "lé",
+       "t": 66.36
+      },
+      {
+       "s": "lu",
+       "t": 67.27
+      },
+      {
+       "s": "ia,",
+       "t": 68.18
+      },
+      {
+       "s": "chan",
+       "t": 70.0
+      },
+      {
+       "s": "tez",
+       "t": 70.91
+      },
+      {
+       "s": "Dieu",
+       "t": 71.82
+      }
+     ],
+     "nr": 5
+    },
+    {
+     "teil": 5,
+     "strophe": "fr",
+     "zeile": "Al lé lu ia, chan tez Dieu",
+     "app_text": "Al-lé-lu-ia,-chan-tez-Dieu",
+     "text": "Al-lé-lu-ia, chan-tez Dieu",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 76.36,
+     "ende": 87.27,
+     "silben": [
+      {
+       "s": "Al",
+       "t": 76.36
+      },
+      {
+       "s": "lé",
+       "t": 77.27
+      },
+      {
+       "s": "lu",
+       "t": 78.18
+      },
+      {
+       "s": "ia,",
+       "t": 79.09
+      },
+      {
+       "s": "chan",
+       "t": 80.91
+      },
+      {
+       "s": "tez",
+       "t": 81.82
+      },
+      {
+       "s": "Dieu",
+       "t": 82.73
+      }
+     ],
+     "nr": 6
+    },
+    {
+     "teil": 5,
+     "strophe": "la",
+     "zeile": "Al le lu ia, al le lu ia",
+     "app_text": "Al-le-lu-ia,-al-le-lu-ia",
+     "text": "Al-le-lu-ia, al-le-lu-ia",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 94.55,
+     "ende": 105.45,
+     "silben": [
+      {
+       "s": "Al",
+       "t": 94.55
+      },
+      {
+       "s": "le",
+       "t": 95.45
+      },
+      {
+       "s": "lu",
+       "t": 96.36
+      },
+      {
+       "s": "ia,",
+       "t": 97.27
+      },
+      {
+       "s": "al",
+       "t": 99.09
+      },
+      {
+       "s": "le",
+       "t": 100.0
+      },
+      {
+       "s": "lu",
+       "t": 100.91
+      },
+      {
+       "s": "ia",
+       "t": 101.82
+      }
+     ],
+     "nr": 7
+    },
+    {
+     "teil": 5,
+     "strophe": "la",
+     "zeile": "Al le lu ia, al le lu ia",
+     "app_text": "Al-le-lu-ia,-al-le-lu-ia",
+     "text": "Al-le-lu-ia, al-le-lu-ia",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 105.45,
+     "ende": 116.36,
+     "silben": [
+      {
+       "s": "Al",
+       "t": 105.45
+      },
+      {
+       "s": "le",
+       "t": 106.36
+      },
+      {
+       "s": "lu",
+       "t": 107.27
+      },
+      {
+       "s": "ia,",
+       "t": 108.18
+      },
+      {
+       "s": "al",
+       "t": 110.0
+      },
+      {
+       "s": "le",
+       "t": 110.91
+      },
+      {
+       "s": "lu",
+       "t": 111.82
+      },
+      {
+       "s": "ia",
+       "t": 112.73
+      }
+     ],
+     "nr": 8
+    },
+    {
+     "teil": 5,
+     "strophe": "la",
+     "zeile": "Al le lu ia, al le lu ia",
+     "app_text": "Al-le-lu-ia,-al-le-lu-ia",
+     "text": "Al-le-lu-ia, al-le-lu-ia",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 123.64,
+     "ende": 134.55,
+     "silben": [
+      {
+       "s": "Al",
+       "t": 123.64
+      },
+      {
+       "s": "le",
+       "t": 124.55
+      },
+      {
+       "s": "lu",
+       "t": 125.45
+      },
+      {
+       "s": "ia,",
+       "t": 126.36
+      },
+      {
+       "s": "al",
+       "t": 128.18
+      },
+      {
+       "s": "le",
+       "t": 129.09
+      },
+      {
+       "s": "lu",
+       "t": 130.0
+      },
+      {
+       "s": "ia",
+       "t": 130.91
+      }
+     ],
+     "nr": 9
+    },
+    {
+     "teil": 5,
+     "strophe": "la",
+     "zeile": "Al le lu ia, al le lu ia",
+     "app_text": "Al-le-lu-ia,-al-le-lu-ia",
+     "text": "Al-le-lu-ia, al-le-lu-ia",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 134.55,
+     "ende": 145.45,
+     "silben": [
+      {
+       "s": "Al",
+       "t": 134.55
+      },
+      {
+       "s": "le",
+       "t": 135.45
+      },
+      {
+       "s": "lu",
+       "t": 136.36
+      },
+      {
+       "s": "ia,",
+       "t": 137.27
+      },
+      {
+       "s": "al",
+       "t": 139.09
+      },
+      {
+       "s": "le",
+       "t": 140.0
+      },
+      {
+       "s": "lu",
+       "t": 140.91
+      },
+      {
+       "s": "ia",
+       "t": 141.82
+      }
+     ],
+     "nr": 10
+    },
+    {
+     "teil": 5,
+     "strophe": "de",
+     "zeile": "Hal le lu ja, lobt den Herrn",
+     "app_text": "Hal-le-lu-ja,-lobt-den-Herrn",
+     "text": "Hal-le-lu-ja, lobt den Herrn",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 152.73,
+     "ende": 163.64,
+     "silben": [
+      {
+       "s": "Hal",
+       "t": 152.73
+      },
+      {
+       "s": "le",
+       "t": 153.64
+      },
+      {
+       "s": "lu",
+       "t": 154.55
+      },
+      {
+       "s": "ja,",
+       "t": 155.45
+      },
+      {
+       "s": "lobt",
+       "t": 157.27
+      },
+      {
+       "s": "den",
+       "t": 158.18
+      },
+      {
+       "s": "Herrn",
+       "t": 159.09
+      }
+     ],
+     "nr": 11
+    }
+   ]
+  },
+  {
+   "satz": "06 · Stille – Glocke",
+   "datei": "messe-06-stille",
+   "tempo_bpm": 60,
+   "zeilen": []
+  },
+  {
+   "satz": "06b · Das Erbe im Wald – für Winny und Winfried",
+   "datei": "messe-06b-erbe-im-wald",
+   "tempo_bpm": 63,
+   "zeilen": [
+    {
+     "teil": "06b",
+     "strophe": "S1",
+     "zeile": "Bei Car nac, wo die Stei ne stehn,",
+     "app_text": "Bei-Car-nac,-wo-die-Stei-ne-stehn,",
+     "text": "Bei Car-nac, wo die Stei-ne stehn,",
+     "stimme": "Chor",
+     "start": 7.62,
+     "ende": 19.05,
+     "silben": [
+      {
+       "s": "Bei",
+       "t": 7.62
+      },
+      {
+       "s": "Car",
+       "t": 8.57
+      },
+      {
+       "s": "nac,",
+       "t": 9.52
+      },
+      {
+       "s": "wo",
+       "t": 11.43
+      },
+      {
+       "s": "die",
+       "t": 12.38
+      },
+      {
+       "s": "Stei",
+       "t": 13.33
+      },
+      {
+       "s": "ne",
+       "t": 14.29
+      },
+      {
+       "s": "stehn,",
+       "t": 15.24
+      }
+     ],
+     "nr": 1
+    },
+    {
+     "teil": "06b",
+     "strophe": "S1",
+     "zeile": "zog einst ein Al ter in den Wald,",
+     "app_text": "zog-einst-ein-Al-ter-in-den-Wald,",
+     "text": "zog einst ein Al-ter in den Wald,",
+     "stimme": "Chor",
+     "start": 19.05,
+     "ende": 30.48,
+     "silben": [
+      {
+       "s": "zog",
+       "t": 19.05
+      },
+      {
+       "s": "einst",
+       "t": 20.48
+      },
+      {
+       "s": "ein",
+       "t": 21.43
+      },
+      {
+       "s": "Al",
+       "t": 22.38
+      },
+      {
+       "s": "ter",
+       "t": 23.33
+      },
+      {
+       "s": "in",
+       "t": 24.29
+      },
+      {
+       "s": "den",
+       "t": 25.71
+      },
+      {
+       "s": "Wald,",
+       "t": 26.67
+      }
+     ],
+     "nr": 2
+    },
+    {
+     "teil": "06b",
+     "strophe": "S1",
+     "zeile": "er nahm kein Gold und nahm kein Schwert,",
+     "app_text": "er-nahm-kein-Gold-und-nahm-kein-Schwert,",
+     "text": "er nahm kein Gold und nahm kein Schwert,",
+     "stimme": "Chor",
+     "start": 30.48,
+     "ende": 41.9,
+     "silben": [
+      {
+       "s": "er",
+       "t": 30.48
+      },
+      {
+       "s": "nahm",
+       "t": 31.43
+      },
+      {
+       "s": "kein",
+       "t": 32.38
+      },
+      {
+       "s": "Gold",
+       "t": 33.33
+      },
+      {
+       "s": "und",
+       "t": 34.29
+      },
+      {
+       "s": "nahm",
+       "t": 35.24
+      },
+      {
+       "s": "kein",
+       "t": 36.19
+      },
+      {
+       "s": "Schwert,",
+       "t": 37.14
+      }
+     ],
+     "nr": 3
+    },
+    {
+     "teil": "06b",
+     "strophe": "S1",
+     "zeile": "nur Lie der, die er lei se sang.",
+     "app_text": "nur-Lie-der,-die-er-lei-se-sang.",
+     "text": "nur Lie-der, die er lei-se sang.",
+     "stimme": "Chor",
+     "start": 41.9,
+     "ende": 53.33,
+     "silben": [
+      {
+       "s": "nur",
+       "t": 41.9
+      },
+      {
+       "s": "Lie",
+       "t": 43.33
+      },
+      {
+       "s": "der,",
+       "t": 44.29
+      },
+      {
+       "s": "die",
+       "t": 46.19
+      },
+      {
+       "s": "er",
+       "t": 47.14
+      },
+      {
+       "s": "lei",
+       "t": 48.1
+      },
+      {
+       "s": "se",
+       "t": 49.05
+      },
+      {
+       "s": "sang.",
+       "t": 50.48
+      }
+     ],
+     "nr": 4
+    },
+    {
+     "teil": "06b",
+     "strophe": "de",
+     "zeile": "Was der Wald be wahrt, das singt das Lied",
+     "app_text": "Was-der-Wald-be-wahrt,-das-singt-das-Lied",
+     "text": "Was der Wald be-wahrt, das singt das Lied",
+     "stimme": "Chor",
+     "start": 53.33,
+     "ende": 68.57,
+     "silben": [
+      {
+       "s": "Was",
+       "t": 53.33
+      },
+      {
+       "s": "der",
+       "t": 54.76
+      },
+      {
+       "s": "Wald",
+       "t": 55.71
+      },
+      {
+       "s": "be",
+       "t": 57.14
+      },
+      {
+       "s": "wahrt,",
+       "t": 58.1
+      },
+      {
+       "s": "das",
+       "t": 60.0
+      },
+      {
+       "s": "singt",
+       "t": 61.43
+      },
+      {
+       "s": "das",
+       "t": 62.38
+      },
+      {
+       "s": "Lied",
+       "t": 63.33
+      }
+     ],
+     "nr": 5
+    },
+    {
+     "teil": "06b",
+     "strophe": "la",
+     "zeile": "Quod sil va ser vat, can tat car men",
+     "app_text": "Quod-sil-va-ser-vat,-can-tat-car-men",
+     "text": "Quod sil-va ser-vat, can-tat car-men",
+     "stimme": "Chor",
+     "start": 68.57,
+     "ende": 83.81,
+     "silben": [
+      {
+       "s": "Quod",
+       "t": 68.57
+      },
+      {
+       "s": "sil",
+       "t": 70.0
+      },
+      {
+       "s": "va",
+       "t": 70.95
+      },
+      {
+       "s": "ser",
+       "t": 72.38
+      },
+      {
+       "s": "vat,",
+       "t": 73.33
+      },
+      {
+       "s": "can",
+       "t": 75.24
+      },
+      {
+       "s": "tat",
+       "t": 76.67
+      },
+      {
+       "s": "car",
+       "t": 77.62
+      },
+      {
+       "s": "men",
+       "t": 78.57
+      }
+     ],
+     "nr": 6
+    },
+    {
+     "teil": "06b",
+     "strophe": "S2",
+     "zeile": "Er schrieb kein Wort auf Stein und Haut,",
+     "app_text": "Er-schrieb-kein-Wort-auf-Stein-und-Haut,",
+     "text": "Er schrieb kein Wort auf Stein und Haut,",
+     "stimme": "Chor",
+     "start": 91.43,
+     "ende": 102.86,
+     "silben": [
+      {
+       "s": "Er",
+       "t": 91.43
+      },
+      {
+       "s": "schrieb",
+       "t": 92.38
+      },
+      {
+       "s": "kein",
+       "t": 93.33
+      },
+      {
+       "s": "Wort",
+       "t": 94.29
+      },
+      {
+       "s": "auf",
+       "t": 95.24
+      },
+      {
+       "s": "Stein",
+       "t": 96.19
+      },
+      {
+       "s": "und",
+       "t": 97.14
+      },
+      {
+       "s": "Haut,",
+       "t": 98.1
+      }
+     ],
+     "nr": 7
+    },
+    {
+     "teil": "06b",
+     "strophe": "S2",
+     "zeile": "er gab es wei ter Mund zu Mund,",
+     "app_text": "er-gab-es-wei-ter-Mund-zu-Mund,",
+     "text": "er gab es wei-ter Mund zu Mund,",
+     "stimme": "Chor",
+     "start": 102.86,
+     "ende": 114.29,
+     "silben": [
+      {
+       "s": "er",
+       "t": 102.86
+      },
+      {
+       "s": "gab",
+       "t": 104.29
+      },
+      {
+       "s": "es",
+       "t": 105.24
+      },
+      {
+       "s": "wei",
+       "t": 106.19
+      },
+      {
+       "s": "ter",
+       "t": 107.14
+      },
+      {
+       "s": "Mund",
+       "t": 108.1
+      },
+      {
+       "s": "zu",
+       "t": 109.52
+      },
+      {
+       "s": "Mund,",
+       "t": 110.48
+      }
+     ],
+     "nr": 8
+    },
+    {
+     "teil": "06b",
+     "strophe": "S2",
+     "zeile": "in Sa gen, die am Feu er gehn,",
+     "app_text": "in-Sa-gen,-die-am-Feu-er-gehn,",
+     "text": "in Sa-gen, die am Feu-er gehn,",
+     "stimme": "Chor",
+     "start": 114.29,
+     "ende": 125.71,
+     "silben": [
+      {
+       "s": "in",
+       "t": 114.29
+      },
+      {
+       "s": "Sa",
+       "t": 115.24
+      },
+      {
+       "s": "gen,",
+       "t": 116.19
+      },
+      {
+       "s": "die",
+       "t": 118.1
+      },
+      {
+       "s": "am",
+       "t": 119.05
+      },
+      {
+       "s": "Feu",
+       "t": 120.0
+      },
+      {
+       "s": "er",
+       "t": 120.95
+      },
+      {
+       "s": "gehn,",
+       "t": 121.9
+      }
+     ],
+     "nr": 9
+    },
+    {
+     "teil": "06b",
+     "strophe": "S2",
+     "zeile": "in Ver sen für das Kind im Arm.",
+     "app_text": "in-Ver-sen-für-das-Kind-im-Arm.",
+     "text": "in Ver-sen für das Kind im Arm.",
+     "stimme": "Chor",
+     "start": 125.71,
+     "ende": 137.14,
+     "silben": [
+      {
+       "s": "in",
+       "t": 125.71
+      },
+      {
+       "s": "Ver",
+       "t": 127.14
+      },
+      {
+       "s": "sen",
+       "t": 128.1
+      },
+      {
+       "s": "für",
+       "t": 129.05
+      },
+      {
+       "s": "das",
+       "t": 130.0
+      },
+      {
+       "s": "Kind",
+       "t": 130.95
+      },
+      {
+       "s": "im",
+       "t": 132.38
+      },
+      {
+       "s": "Arm.",
+       "t": 133.33
+      }
+     ],
+     "nr": 10
+    },
+    {
+     "teil": "06b",
+     "strophe": "de",
+     "zeile": "Was der Wald be wahrt, das singt das Lied",
+     "app_text": "Was-der-Wald-be-wahrt,-das-singt-das-Lied",
+     "text": "Was der Wald be-wahrt, das singt das Lied",
+     "stimme": "Chor",
+     "start": 137.14,
+     "ende": 152.38,
+     "silben": [
+      {
+       "s": "Was",
+       "t": 137.14
+      },
+      {
+       "s": "der",
+       "t": 138.57
+      },
+      {
+       "s": "Wald",
+       "t": 139.52
+      },
+      {
+       "s": "be",
+       "t": 140.95
+      },
+      {
+       "s": "wahrt,",
+       "t": 141.9
+      },
+      {
+       "s": "das",
+       "t": 143.81
+      },
+      {
+       "s": "singt",
+       "t": 145.24
+      },
+      {
+       "s": "das",
+       "t": 146.19
+      },
+      {
+       "s": "Lied",
+       "t": 147.14
+      }
+     ],
+     "nr": 11
+    },
+    {
+     "teil": "06b",
+     "strophe": "fr",
+     "zeile": "Ce que gar de la fo rêt, le chant le dit",
+     "app_text": "Ce-que-gar-de-la-fo-rêt,-le-chant-le-dit",
+     "text": "Ce que gar-de la fo-rêt, le chant le dit",
+     "stimme": "Chor",
+     "start": 152.38,
+     "ende": 167.62,
+     "silben": [
+      {
+       "s": "Ce",
+       "t": 152.38
+      },
+      {
+       "s": "que",
+       "t": 153.81
+      },
+      {
+       "s": "gar",
+       "t": 154.76
+      },
+      {
+       "s": "de",
+       "t": 156.19
+      },
+      {
+       "s": "la",
+       "t": 157.14
+      },
+      {
+       "s": "fo",
+       "t": 158.1
+      },
+      {
+       "s": "rêt,",
+       "t": 159.05
+      },
+      {
+       "s": "le",
+       "t": 160.95
+      },
+      {
+       "s": "chant",
+       "t": 161.9
+      },
+      {
+       "s": "le",
+       "t": 162.86
+      },
+      {
+       "s": "dit",
+       "t": 163.81
+      }
+     ],
+     "nr": 12
+    },
+    {
+     "teil": "06b",
+     "strophe": "S3",
+     "zeile": "Und wer heut durch die Ei chen geht,",
+     "app_text": "Und-wer-heut-durch-die-Ei-chen-geht,",
+     "text": "Und wer heut durch die Ei-chen geht,",
+     "stimme": "Chor",
+     "start": 175.24,
+     "ende": 186.67,
+     "silben": [
+      {
+       "s": "Und",
+       "t": 175.24
+      },
+      {
+       "s": "wer",
+       "t": 176.19
+      },
+      {
+       "s": "heut",
+       "t": 177.14
+      },
+      {
+       "s": "durch",
+       "t": 178.1
+      },
+      {
+       "s": "die",
+       "t": 179.05
+      },
+      {
+       "s": "Ei",
+       "t": 180.0
+      },
+      {
+       "s": "chen",
+       "t": 180.95
+      },
+      {
+       "s": "geht,",
+       "t": 181.9
+      }
+     ],
+     "nr": 13
+    },
+    {
+     "teil": "06b",
+     "strophe": "S3",
+     "zeile": "hört noch den Klang im Blät ter dach:",
+     "app_text": "hört-noch-den-Klang-im-Blät-ter-dach:",
+     "text": "hört noch den Klang im Blät-ter-dach:",
+     "stimme": "Chor",
+     "start": 186.67,
+     "ende": 198.1,
+     "silben": [
+      {
+       "s": "hört",
+       "t": 186.67
+      },
+      {
+       "s": "noch",
+       "t": 188.1
+      },
+      {
+       "s": "den",
+       "t": 189.05
+      },
+      {
+       "s": "Klang",
+       "t": 190.0
+      },
+      {
+       "s": "im",
+       "t": 190.95
+      },
+      {
+       "s": "Blät",
+       "t": 191.9
+      },
+      {
+       "s": "ter",
+       "t": 193.33
+      },
+      {
+       "s": "dach:",
+       "t": 194.29
+      }
+     ],
+     "nr": 14
+    },
+    {
+     "teil": "06b",
+     "strophe": "S3",
+     "zeile": "Das Er be lebt, so lang man singt,",
+     "app_text": "Das-Er-be-lebt,-so-lang-man-singt,",
+     "text": "Das Er-be lebt, so-lang man singt,",
+     "stimme": "Chor",
+     "start": 198.1,
+     "ende": 209.52,
+     "silben": [
+      {
+       "s": "Das",
+       "t": 198.1
+      },
+      {
+       "s": "Er",
+       "t": 199.05
+      },
+      {
+       "s": "be",
+       "t": 200.0
+      },
+      {
+       "s": "lebt,",
+       "t": 200.95
+      },
+      {
+       "s": "so",
+       "t": 202.86
+      },
+      {
+       "s": "lang",
+       "t": 203.81
+      },
+      {
+       "s": "man",
+       "t": 204.76
+      },
+      {
+       "s": "singt,",
+       "t": 205.71
+      }
+     ],
+     "nr": 15
+    },
+    {
+     "teil": "06b",
+     "strophe": "S3",
+     "zeile": "für Win ny und für Win fried wach.",
+     "app_text": "für-Win-ny-und-für-Win-fried-wach.",
+     "text": "für Win-ny und für Win-fried wach.",
+     "stimme": "Chor",
+     "start": 209.52,
+     "ende": 220.95,
+     "silben": [
+      {
+       "s": "für",
+       "t": 209.52
+      },
+      {
+       "s": "Win",
+       "t": 210.95
+      },
+      {
+       "s": "ny",
+       "t": 211.9
+      },
+      {
+       "s": "und",
+       "t": 212.86
+      },
+      {
+       "s": "für",
+       "t": 213.81
+      },
+      {
+       "s": "Win",
+       "t": 214.76
+      },
+      {
+       "s": "fried",
+       "t": 216.19
+      },
+      {
+       "s": "wach.",
+       "t": 217.14
+      }
+     ],
+     "nr": 16
+    },
+    {
+     "teil": "06b",
+     "strophe": "de",
+     "zeile": "Was der Wald be wahrt, das singt das Lied",
+     "app_text": "Was-der-Wald-be-wahrt,-das-singt-das-Lied",
+     "text": "Was der Wald be-wahrt, das singt das Lied",
+     "stimme": "Chor",
+     "start": 220.95,
+     "ende": 236.19,
+     "silben": [
+      {
+       "s": "Was",
+       "t": 220.95
+      },
+      {
+       "s": "der",
+       "t": 222.38
+      },
+      {
+       "s": "Wald",
+       "t": 223.33
+      },
+      {
+       "s": "be",
+       "t": 224.76
+      },
+      {
+       "s": "wahrt,",
+       "t": 225.71
+      },
+      {
+       "s": "das",
+       "t": 227.62
+      },
+      {
+       "s": "singt",
+       "t": 229.05
+      },
+      {
+       "s": "das",
+       "t": 230.0
+      },
+      {
+       "s": "Lied",
+       "t": 230.95
+      }
+     ],
+     "nr": 17
+    },
+    {
+     "teil": "06b",
+     "strophe": "la",
+     "zeile": "Quod sil va ser vat, can tat car men",
+     "app_text": "Quod-sil-va-ser-vat,-can-tat-car-men",
+     "text": "Quod sil-va ser-vat, can-tat car-men",
+     "stimme": "Chor",
+     "start": 236.19,
+     "ende": 251.43,
+     "silben": [
+      {
+       "s": "Quod",
+       "t": 236.19
+      },
+      {
+       "s": "sil",
+       "t": 237.62
+      },
+      {
+       "s": "va",
+       "t": 238.57
+      },
+      {
+       "s": "ser",
+       "t": 240.0
+      },
+      {
+       "s": "vat,",
+       "t": 240.95
+      },
+      {
+       "s": "can",
+       "t": 242.86
+      },
+      {
+       "s": "tat",
+       "t": 244.29
+      },
+      {
+       "s": "car",
+       "t": 245.24
+      },
+      {
+       "s": "men",
+       "t": 246.19
+      }
+     ],
+     "nr": 18
+    }
+   ]
+  },
+  {
+   "satz": "07 · Credo-Ruf – Ubi caritas",
+   "datei": "messe-07-credo",
+   "tempo_bpm": 60,
+   "zeilen": [
+    {
+     "teil": 7,
+     "strophe": "la",
+     "zeile": "Cre do in u num De um",
+     "app_text": "Cre-do-in-u-num-De-um",
+     "text": "Cre-do in u-num De-um",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 8.0,
+     "ende": 20.0,
+     "silben": [
+      {
+       "s": "Cre",
+       "t": 8.0
+      },
+      {
+       "s": "do",
+       "t": 9.0
+      },
+      {
+       "s": "in",
+       "t": 10.0
+      },
+      {
+       "s": "u",
+       "t": 11.5
+      },
+      {
+       "s": "num",
+       "t": 12.5
+      },
+      {
+       "s": "De",
+       "t": 13.5
+      },
+      {
+       "s": "um",
+       "t": 15.0
+      }
+     ],
+     "nr": 1
+    },
+    {
+     "teil": 7,
+     "strophe": "la",
+     "zeile": "Cre do in u num De um",
+     "app_text": "Cre-do-in-u-num-De-um",
+     "text": "Cre-do in u-num De-um",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 20.0,
+     "ende": 32.0,
+     "silben": [
+      {
+       "s": "Cre",
+       "t": 20.0
+      },
+      {
+       "s": "do",
+       "t": 21.0
+      },
+      {
+       "s": "in",
+       "t": 22.0
+      },
+      {
+       "s": "u",
+       "t": 23.5
+      },
+      {
+       "s": "num",
+       "t": 24.5
+      },
+      {
+       "s": "De",
+       "t": 25.5
+      },
+      {
+       "s": "um",
+       "t": 27.0
+      }
+     ],
+     "nr": 2
+    },
+    {
+     "teil": 7,
+     "strophe": "la",
+     "zeile": "U bi ca ri tas et a mor, De us i bi est",
+     "app_text": "U-bi-ca-ri-tas-et-a-mor,-De-us-i-bi-est",
+     "text": "U-bi ca-ri-tas et a-mor, De-us i-bi est",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 32.0,
+     "ende": 52.0,
+     "silben": [
+      {
+       "s": "U",
+       "t": 32.0
+      },
+      {
+       "s": "bi",
+       "t": 33.0
+      },
+      {
+       "s": "ca",
+       "t": 34.5
+      },
+      {
+       "s": "ri",
+       "t": 35.5
+      },
+      {
+       "s": "tas",
+       "t": 36.5
+      },
+      {
+       "s": "et",
+       "t": 37.5
+      },
+      {
+       "s": "a",
+       "t": 38.5
+      },
+      {
+       "s": "mor,",
+       "t": 39.5
+      },
+      {
+       "s": "De",
+       "t": 41.5
+      },
+      {
+       "s": "us",
+       "t": 43.0
+      },
+      {
+       "s": "i",
+       "t": 44.0
+      },
+      {
+       "s": "bi",
+       "t": 45.0
+      },
+      {
+       "s": "est",
+       "t": 46.0
+      }
+     ],
+     "nr": 3
+    },
+    {
+     "teil": 7,
+     "strophe": "la",
+     "zeile": "U bi ca ri tas et a mor, De us i bi est",
+     "app_text": "U-bi-ca-ri-tas-et-a-mor,-De-us-i-bi-est",
+     "text": "U-bi ca-ri-tas et a-mor, De-us i-bi est",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 52.0,
+     "ende": 72.0,
+     "silben": [
+      {
+       "s": "U",
+       "t": 52.0
+      },
+      {
+       "s": "bi",
+       "t": 53.0
+      },
+      {
+       "s": "ca",
+       "t": 54.5
+      },
+      {
+       "s": "ri",
+       "t": 55.5
+      },
+      {
+       "s": "tas",
+       "t": 56.5
+      },
+      {
+       "s": "et",
+       "t": 57.5
+      },
+      {
+       "s": "a",
+       "t": 58.5
+      },
+      {
+       "s": "mor,",
+       "t": 59.5
+      },
+      {
+       "s": "De",
+       "t": 61.5
+      },
+      {
+       "s": "us",
+       "t": 63.0
+      },
+      {
+       "s": "i",
+       "t": 64.0
+      },
+      {
+       "s": "bi",
+       "t": 65.0
+      },
+      {
+       "s": "est",
+       "t": 66.0
+      }
+     ],
+     "nr": 4
+    },
+    {
+     "teil": 7,
+     "strophe": "de",
+     "zeile": "Ich glau be an den ei nen Gott",
+     "app_text": "Ich-glau-be-an-den-ei-nen-Gott",
+     "text": "Ich glau-be an den ei-nen Gott",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 80.0,
+     "ende": 92.0,
+     "silben": [
+      {
+       "s": "Ich",
+       "t": 80.0
+      },
+      {
+       "s": "glau",
+       "t": 81.0
+      },
+      {
+       "s": "be",
+       "t": 82.0
+      },
+      {
+       "s": "an",
+       "t": 83.5
+      },
+      {
+       "s": "den",
+       "t": 84.5
+      },
+      {
+       "s": "ei",
+       "t": 85.5
+      },
+      {
+       "s": "nen",
+       "t": 87.0
+      },
+      {
+       "s": "Gott",
+       "t": 88.0
+      }
+     ],
+     "nr": 5
+    },
+    {
+     "teil": 7,
+     "strophe": "de",
+     "zeile": "Ich glau be an den ei nen Gott",
+     "app_text": "Ich-glau-be-an-den-ei-nen-Gott",
+     "text": "Ich glau-be an den ei-nen Gott",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 92.0,
+     "ende": 104.0,
+     "silben": [
+      {
+       "s": "Ich",
+       "t": 92.0
+      },
+      {
+       "s": "glau",
+       "t": 93.0
+      },
+      {
+       "s": "be",
+       "t": 94.0
+      },
+      {
+       "s": "an",
+       "t": 95.5
+      },
+      {
+       "s": "den",
+       "t": 96.5
+      },
+      {
+       "s": "ei",
+       "t": 97.5
+      },
+      {
+       "s": "nen",
+       "t": 99.0
+      },
+      {
+       "s": "Gott",
+       "t": 100.0
+      }
+     ],
+     "nr": 6
+    },
+    {
+     "teil": 7,
+     "strophe": "de",
+     "zeile": "Wo Gü te und Lie be sind, da ist Gott",
+     "app_text": "Wo-Gü-te-und-Lie-be-sind,-da-ist-Gott",
+     "text": "Wo Gü-te und Lie-be sind, da ist Gott",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 104.0,
+     "ende": 120.0,
+     "silben": [
+      {
+       "s": "Wo",
+       "t": 104.0
+      },
+      {
+       "s": "Gü",
+       "t": 105.0
+      },
+      {
+       "s": "te",
+       "t": 106.5
+      },
+      {
+       "s": "und",
+       "t": 107.5
+      },
+      {
+       "s": "Lie",
+       "t": 108.5
+      },
+      {
+       "s": "be",
+       "t": 109.5
+      },
+      {
+       "s": "sind,",
+       "t": 110.5
+      },
+      {
+       "s": "da",
+       "t": 112.5
+      },
+      {
+       "s": "ist",
+       "t": 113.5
+      },
+      {
+       "s": "Gott",
+       "t": 115.0
+      }
+     ],
+     "nr": 7
+    },
+    {
+     "teil": 7,
+     "strophe": "de",
+     "zeile": "Wo Gü te und Lie be sind, da ist Gott",
+     "app_text": "Wo-Gü-te-und-Lie-be-sind,-da-ist-Gott",
+     "text": "Wo Gü-te und Lie-be sind, da ist Gott",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 120.0,
+     "ende": 136.0,
+     "silben": [
+      {
+       "s": "Wo",
+       "t": 120.0
+      },
+      {
+       "s": "Gü",
+       "t": 121.0
+      },
+      {
+       "s": "te",
+       "t": 122.5
+      },
+      {
+       "s": "und",
+       "t": 123.5
+      },
+      {
+       "s": "Lie",
+       "t": 124.5
+      },
+      {
+       "s": "be",
+       "t": 125.5
+      },
+      {
+       "s": "sind,",
+       "t": 126.5
+      },
+      {
+       "s": "da",
+       "t": 128.5
+      },
+      {
+       "s": "ist",
+       "t": 129.5
+      },
+      {
+       "s": "Gott",
+       "t": 131.0
+      }
+     ],
+     "nr": 8
+    },
+    {
+     "teil": 7,
+     "strophe": "fr",
+     "zeile": "Je crois en un seul Dieu",
+     "app_text": "Je-crois-en-un-seul-Dieu",
+     "text": "Je crois en un seul Dieu",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 144.0,
+     "ende": 156.0,
+     "silben": [
+      {
+       "s": "Je",
+       "t": 144.0
+      },
+      {
+       "s": "crois",
+       "t": 145.0
+      },
+      {
+       "s": "en",
+       "t": 146.0
+      },
+      {
+       "s": "un",
+       "t": 147.5
+      },
+      {
+       "s": "seul",
+       "t": 148.5
+      },
+      {
+       "s": "Dieu",
+       "t": 149.5
+      }
+     ],
+     "nr": 9
+    },
+    {
+     "teil": 7,
+     "strophe": "fr",
+     "zeile": "Je crois en un seul Dieu",
+     "app_text": "Je-crois-en-un-seul-Dieu",
+     "text": "Je crois en un seul Dieu",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 156.0,
+     "ende": 168.0,
+     "silben": [
+      {
+       "s": "Je",
+       "t": 156.0
+      },
+      {
+       "s": "crois",
+       "t": 157.0
+      },
+      {
+       "s": "en",
+       "t": 158.0
+      },
+      {
+       "s": "un",
+       "t": 159.5
+      },
+      {
+       "s": "seul",
+       "t": 160.5
+      },
+      {
+       "s": "Dieu",
+       "t": 161.5
+      }
+     ],
+     "nr": 10
+    },
+    {
+     "teil": 7,
+     "strophe": "fr",
+     "zeile": "Où sont l'a mour et la cha ri té, Dieu est là",
+     "app_text": "Où-sont-l'a-mour-et-la-cha-ri-té,-Dieu-est-là",
+     "text": "Où sont l'a-mour et la cha-ri-té, Dieu est là",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 168.0,
+     "ende": 184.0,
+     "silben": [
+      {
+       "s": "Où",
+       "t": 168.0
+      },
+      {
+       "s": "sont",
+       "t": 169.0
+      },
+      {
+       "s": "l'a",
+       "t": 170.5
+      },
+      {
+       "s": "mour",
+       "t": 171.5
+      },
+      {
+       "s": "et",
+       "t": 172.5
+      },
+      {
+       "s": "la",
+       "t": 173.5
+      },
+      {
+       "s": "cha",
+       "t": 174.5
+      },
+      {
+       "s": "ri",
+       "t": 175.5
+      },
+      {
+       "s": "té,",
+       "t": 176.5
+      },
+      {
+       "s": "Dieu",
+       "t": 178.5
+      },
+      {
+       "s": "est",
+       "t": 179.5
+      },
+      {
+       "s": "là",
+       "t": 180.5
+      }
+     ],
+     "nr": 11
+    },
+    {
+     "teil": 7,
+     "strophe": "fr",
+     "zeile": "Où sont l'a mour et la cha ri té, Dieu est là",
+     "app_text": "Où-sont-l'a-mour-et-la-cha-ri-té,-Dieu-est-là",
+     "text": "Où sont l'a-mour et la cha-ri-té, Dieu est là",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 184.0,
+     "ende": 200.0,
+     "silben": [
+      {
+       "s": "Où",
+       "t": 184.0
+      },
+      {
+       "s": "sont",
+       "t": 185.0
+      },
+      {
+       "s": "l'a",
+       "t": 186.5
+      },
+      {
+       "s": "mour",
+       "t": 187.5
+      },
+      {
+       "s": "et",
+       "t": 188.5
+      },
+      {
+       "s": "la",
+       "t": 189.5
+      },
+      {
+       "s": "cha",
+       "t": 190.5
+      },
+      {
+       "s": "ri",
+       "t": 191.5
+      },
+      {
+       "s": "té,",
+       "t": 192.5
+      },
+      {
+       "s": "Dieu",
+       "t": 194.5
+      },
+      {
+       "s": "est",
+       "t": 195.5
+      },
+      {
+       "s": "là",
+       "t": 196.5
+      }
+     ],
+     "nr": 12
+    }
+   ]
+  },
+  {
+   "satz": "08 · Sanctus",
+   "datei": "messe-08-sanctus",
+   "tempo_bpm": 66,
+   "zeilen": [
+    {
+     "teil": 8,
+     "strophe": "la",
+     "zeile": "Sanc tus, sanc tus, sanc tus Do mi nus De us",
+     "app_text": "Sanc-tus,-sanc-tus,-sanc-tus-Do-mi-nus-De-us",
+     "text": "Sanc-tus, sanc-tus, sanc-tus Do-mi-nus De-us",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 22.47,
+     "ende": 37.02,
+     "silben": [
+      {
+       "s": "Sanc",
+       "t": 22.47
+      },
+      {
+       "s": "tus,",
+       "t": 23.38
+      },
+      {
+       "s": "sanc",
+       "t": 25.2
+      },
+      {
+       "s": "tus,",
+       "t": 26.11
+      },
+      {
+       "s": "sanc",
+       "t": 27.93
+      },
+      {
+       "s": "tus",
+       "t": 28.84
+      },
+      {
+       "s": "Do",
+       "t": 29.75
+      },
+      {
+       "s": "mi",
+       "t": 30.65
+      },
+      {
+       "s": "nus",
+       "t": 31.56
+      },
+      {
+       "s": "De",
+       "t": 32.47
+      },
+      {
+       "s": "us",
+       "t": 33.38
+      }
+     ],
+     "nr": 1
+    },
+    {
+     "teil": 8,
+     "strophe": "la",
+     "zeile": "Sanc tus, sanc tus, sanc tus Do mi nus De us",
+     "app_text": "Sanc-tus,-sanc-tus,-sanc-tus-Do-mi-nus-De-us",
+     "text": "Sanc-tus, sanc-tus, sanc-tus Do-mi-nus De-us",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 37.02,
+     "ende": 51.56,
+     "silben": [
+      {
+       "s": "Sanc",
+       "t": 37.02
+      },
+      {
+       "s": "tus,",
+       "t": 37.93
+      },
+      {
+       "s": "sanc",
+       "t": 39.75
+      },
+      {
+       "s": "tus,",
+       "t": 40.65
+      },
+      {
+       "s": "sanc",
+       "t": 42.47
+      },
+      {
+       "s": "tus",
+       "t": 43.38
+      },
+      {
+       "s": "Do",
+       "t": 44.29
+      },
+      {
+       "s": "mi",
+       "t": 45.2
+      },
+      {
+       "s": "nus",
+       "t": 46.11
+      },
+      {
+       "s": "De",
+       "t": 47.02
+      },
+      {
+       "s": "us",
+       "t": 47.93
+      }
+     ],
+     "nr": 2
+    },
+    {
+     "teil": 8,
+     "strophe": "la",
+     "zeile": "Ho san na in ex cel sis",
+     "app_text": "Ho-san-na-in-ex-cel-sis",
+     "text": "Ho-san-na in ex-cel-sis",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 51.56,
+     "ende": 62.47,
+     "silben": [
+      {
+       "s": "Ho",
+       "t": 51.56
+      },
+      {
+       "s": "san",
+       "t": 52.93
+      },
+      {
+       "s": "na",
+       "t": 54.29
+      },
+      {
+       "s": "in",
+       "t": 55.2
+      },
+      {
+       "s": "ex",
+       "t": 56.11
+      },
+      {
+       "s": "cel",
+       "t": 57.02
+      },
+      {
+       "s": "sis",
+       "t": 58.38
+      }
+     ],
+     "nr": 3
+    },
+    {
+     "teil": 8,
+     "strophe": "la",
+     "zeile": "Ho san na in ex cel sis",
+     "app_text": "Ho-san-na-in-ex-cel-sis",
+     "text": "Ho-san-na in ex-cel-sis",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 62.47,
+     "ende": 73.38,
+     "silben": [
+      {
+       "s": "Ho",
+       "t": 62.47
+      },
+      {
+       "s": "san",
+       "t": 63.84
+      },
+      {
+       "s": "na",
+       "t": 65.2
+      },
+      {
+       "s": "in",
+       "t": 66.11
+      },
+      {
+       "s": "ex",
+       "t": 67.02
+      },
+      {
+       "s": "cel",
+       "t": 67.93
+      },
+      {
+       "s": "sis",
+       "t": 69.29
+      }
+     ],
+     "nr": 4
+    },
+    {
+     "teil": 8,
+     "strophe": "de",
+     "zeile": "Hei lig, hei lig, hei lig ist Gott, der Herr",
+     "app_text": "Hei-lig,-hei-lig,-hei-lig-ist-Gott,-der-Herr",
+     "text": "Hei-lig, hei-lig, hei-lig ist Gott, der Herr",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 80.65,
+     "ende": 95.2,
+     "silben": [
+      {
+       "s": "Hei",
+       "t": 80.65
+      },
+      {
+       "s": "lig,",
+       "t": 81.56
+      },
+      {
+       "s": "hei",
+       "t": 83.38
+      },
+      {
+       "s": "lig,",
+       "t": 84.29
+      },
+      {
+       "s": "hei",
+       "t": 86.11
+      },
+      {
+       "s": "lig",
+       "t": 87.02
+      },
+      {
+       "s": "ist",
+       "t": 87.93
+      },
+      {
+       "s": "Gott,",
+       "t": 88.84
+      },
+      {
+       "s": "der",
+       "t": 90.65
+      },
+      {
+       "s": "Herr",
+       "t": 91.56
+      }
+     ],
+     "nr": 5
+    },
+    {
+     "teil": 8,
+     "strophe": "de",
+     "zeile": "Hei lig, hei lig, hei lig ist Gott, der Herr",
+     "app_text": "Hei-lig,-hei-lig,-hei-lig-ist-Gott,-der-Herr",
+     "text": "Hei-lig, hei-lig, hei-lig ist Gott, der Herr",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 95.2,
+     "ende": 109.75,
+     "silben": [
+      {
+       "s": "Hei",
+       "t": 95.2
+      },
+      {
+       "s": "lig,",
+       "t": 96.11
+      },
+      {
+       "s": "hei",
+       "t": 97.93
+      },
+      {
+       "s": "lig,",
+       "t": 98.84
+      },
+      {
+       "s": "hei",
+       "t": 100.65
+      },
+      {
+       "s": "lig",
+       "t": 101.56
+      },
+      {
+       "s": "ist",
+       "t": 102.47
+      },
+      {
+       "s": "Gott,",
+       "t": 103.38
+      },
+      {
+       "s": "der",
+       "t": 105.2
+      },
+      {
+       "s": "Herr",
+       "t": 106.11
+      }
+     ],
+     "nr": 6
+    },
+    {
+     "teil": 8,
+     "strophe": "de",
+     "zeile": "Ho san na in der Hö he",
+     "app_text": "Ho-san-na-in-der-Hö-he",
+     "text": "Ho-san-na in der Hö-he",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 109.75,
+     "ende": 120.65,
+     "silben": [
+      {
+       "s": "Ho",
+       "t": 109.75
+      },
+      {
+       "s": "san",
+       "t": 111.11
+      },
+      {
+       "s": "na",
+       "t": 112.47
+      },
+      {
+       "s": "in",
+       "t": 113.38
+      },
+      {
+       "s": "der",
+       "t": 114.29
+      },
+      {
+       "s": "Hö",
+       "t": 115.2
+      },
+      {
+       "s": "he",
+       "t": 116.56
+      }
+     ],
+     "nr": 7
+    },
+    {
+     "teil": 8,
+     "strophe": "de",
+     "zeile": "Ho san na in der Hö he",
+     "app_text": "Ho-san-na-in-der-Hö-he",
+     "text": "Ho-san-na in der Hö-he",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 120.65,
+     "ende": 131.56,
+     "silben": [
+      {
+       "s": "Ho",
+       "t": 120.65
+      },
+      {
+       "s": "san",
+       "t": 122.02
+      },
+      {
+       "s": "na",
+       "t": 123.38
+      },
+      {
+       "s": "in",
+       "t": 124.29
+      },
+      {
+       "s": "der",
+       "t": 125.2
+      },
+      {
+       "s": "Hö",
+       "t": 126.11
+      },
+      {
+       "s": "he",
+       "t": 127.47
+      }
+     ],
+     "nr": 8
+    },
+    {
+     "teil": 8,
+     "strophe": "fr",
+     "zeile": "Saint, saint, saint le Sei gneur, Dieu de l'u ni vers",
+     "app_text": "Saint,-saint,-saint-le-Sei-gneur,-Dieu-de-l'u-ni-vers",
+     "text": "Saint, saint, saint le Sei-gneur, Dieu de l'u-ni-vers",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 138.84,
+     "ende": 153.38,
+     "silben": [
+      {
+       "s": "Saint,",
+       "t": 138.84
+      },
+      {
+       "s": "saint,",
+       "t": 140.65
+      },
+      {
+       "s": "saint",
+       "t": 142.47
+      },
+      {
+       "s": "le",
+       "t": 143.38
+      },
+      {
+       "s": "Sei",
+       "t": 144.29
+      },
+      {
+       "s": "gneur,",
+       "t": 145.2
+      },
+      {
+       "s": "Dieu",
+       "t": 147.02
+      },
+      {
+       "s": "de",
+       "t": 147.93
+      },
+      {
+       "s": "l'u",
+       "t": 148.84
+      },
+      {
+       "s": "ni",
+       "t": 149.75
+      },
+      {
+       "s": "vers",
+       "t": 150.65
+      }
+     ],
+     "nr": 9
+    },
+    {
+     "teil": 8,
+     "strophe": "fr",
+     "zeile": "Saint, saint, saint le Sei gneur, Dieu de l'u ni vers",
+     "app_text": "Saint,-saint,-saint-le-Sei-gneur,-Dieu-de-l'u-ni-vers",
+     "text": "Saint, saint, saint le Sei-gneur, Dieu de l'u-ni-vers",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 153.38,
+     "ende": 167.93,
+     "silben": [
+      {
+       "s": "Saint,",
+       "t": 153.38
+      },
+      {
+       "s": "saint,",
+       "t": 155.2
+      },
+      {
+       "s": "saint",
+       "t": 157.02
+      },
+      {
+       "s": "le",
+       "t": 157.93
+      },
+      {
+       "s": "Sei",
+       "t": 158.84
+      },
+      {
+       "s": "gneur,",
+       "t": 159.75
+      },
+      {
+       "s": "Dieu",
+       "t": 161.56
+      },
+      {
+       "s": "de",
+       "t": 162.47
+      },
+      {
+       "s": "l'u",
+       "t": 163.38
+      },
+      {
+       "s": "ni",
+       "t": 164.29
+      },
+      {
+       "s": "vers",
+       "t": 165.2
+      }
+     ],
+     "nr": 10
+    },
+    {
+     "teil": 8,
+     "strophe": "fr",
+     "zeile": "Ho san na au plus haut des cieux",
+     "app_text": "Ho-san-na-au-plus-haut-des-cieux",
+     "text": "Ho-san-na au plus haut des cieux",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 167.93,
+     "ende": 178.84,
+     "silben": [
+      {
+       "s": "Ho",
+       "t": 167.93
+      },
+      {
+       "s": "san",
+       "t": 169.29
+      },
+      {
+       "s": "na",
+       "t": 170.65
+      },
+      {
+       "s": "au",
+       "t": 171.56
+      },
+      {
+       "s": "plus",
+       "t": 172.47
+      },
+      {
+       "s": "haut",
+       "t": 173.38
+      },
+      {
+       "s": "des",
+       "t": 174.75
+      },
+      {
+       "s": "cieux",
+       "t": 175.65
+      }
+     ],
+     "nr": 11
+    },
+    {
+     "teil": 8,
+     "strophe": "fr",
+     "zeile": "Ho san na au plus haut des cieux",
+     "app_text": "Ho-san-na-au-plus-haut-des-cieux",
+     "text": "Ho-san-na au plus haut des cieux",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 178.84,
+     "ende": 189.75,
+     "silben": [
+      {
+       "s": "Ho",
+       "t": 178.84
+      },
+      {
+       "s": "san",
+       "t": 180.2
+      },
+      {
+       "s": "na",
+       "t": 181.56
+      },
+      {
+       "s": "au",
+       "t": 182.47
+      },
+      {
+       "s": "plus",
+       "t": 183.38
+      },
+      {
+       "s": "haut",
+       "t": 184.29
+      },
+      {
+       "s": "des",
+       "t": 185.65
+      },
+      {
+       "s": "cieux",
+       "t": 186.56
+      }
+     ],
+     "nr": 12
+    },
+    {
+     "teil": 8,
+     "strophe": "la",
+     "zeile": "Sanc tus, sanc tus, sanc tus Do mi nus De us",
+     "app_text": "Sanc-tus,-sanc-tus,-sanc-tus-Do-mi-nus-De-us",
+     "text": "Sanc-tus, sanc-tus, sanc-tus Do-mi-nus De-us",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 197.02,
+     "ende": 211.56,
+     "silben": [
+      {
+       "s": "Sanc",
+       "t": 197.02
+      },
+      {
+       "s": "tus,",
+       "t": 197.93
+      },
+      {
+       "s": "sanc",
+       "t": 199.75
+      },
+      {
+       "s": "tus,",
+       "t": 200.65
+      },
+      {
+       "s": "sanc",
+       "t": 202.47
+      },
+      {
+       "s": "tus",
+       "t": 203.38
+      },
+      {
+       "s": "Do",
+       "t": 204.29
+      },
+      {
+       "s": "mi",
+       "t": 205.2
+      },
+      {
+       "s": "nus",
+       "t": 206.11
+      },
+      {
+       "s": "De",
+       "t": 207.02
+      },
+      {
+       "s": "us",
+       "t": 207.93
+      }
+     ],
+     "nr": 13
+    },
+    {
+     "teil": 8,
+     "strophe": "la",
+     "zeile": "Sanc tus, sanc tus, sanc tus Do mi nus De us",
+     "app_text": "Sanc-tus,-sanc-tus,-sanc-tus-Do-mi-nus-De-us",
+     "text": "Sanc-tus, sanc-tus, sanc-tus Do-mi-nus De-us",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 211.56,
+     "ende": 226.11,
+     "silben": [
+      {
+       "s": "Sanc",
+       "t": 211.56
+      },
+      {
+       "s": "tus,",
+       "t": 212.47
+      },
+      {
+       "s": "sanc",
+       "t": 214.29
+      },
+      {
+       "s": "tus,",
+       "t": 215.2
+      },
+      {
+       "s": "sanc",
+       "t": 217.02
+      },
+      {
+       "s": "tus",
+       "t": 217.93
+      },
+      {
+       "s": "Do",
+       "t": 218.84
+      },
+      {
+       "s": "mi",
+       "t": 219.75
+      },
+      {
+       "s": "nus",
+       "t": 220.65
+      },
+      {
+       "s": "De",
+       "t": 221.56
+      },
+      {
+       "s": "us",
+       "t": 222.47
+      }
+     ],
+     "nr": 14
+    }
+   ]
+  },
+  {
+   "satz": "09 · Agnus Dei – Dona nobis pacem",
+   "datei": "messe-09-agnus",
+   "tempo_bpm": 54,
+   "zeilen": [
+    {
+     "teil": 9,
+     "strophe": "la",
+     "zeile": "Ag nus De i, mi se re re no bis",
+     "app_text": "Ag-nus-De-i,-mi-se-re-re-no-bis",
+     "text": "Ag-nus De-i, mi-se-re-re no-bis",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 8.89,
+     "ende": 26.67,
+     "silben": [
+      {
+       "s": "Ag",
+       "t": 8.89
+      },
+      {
+       "s": "nus",
+       "t": 10.0
+      },
+      {
+       "s": "De",
+       "t": 11.11
+      },
+      {
+       "s": "i,",
+       "t": 12.22
+      },
+      {
+       "s": "mi",
+       "t": 14.44
+      },
+      {
+       "s": "se",
+       "t": 15.56
+      },
+      {
+       "s": "re",
+       "t": 16.67
+      },
+      {
+       "s": "re",
+       "t": 17.78
+      },
+      {
+       "s": "no",
+       "t": 18.89
+      },
+      {
+       "s": "bis",
+       "t": 20.0
+      }
+     ],
+     "nr": 1
+    },
+    {
+     "teil": 9,
+     "strophe": "la",
+     "zeile": "Ag nus De i, mi se re re no bis",
+     "app_text": "Ag-nus-De-i,-mi-se-re-re-no-bis",
+     "text": "Ag-nus De-i, mi-se-re-re no-bis",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 26.67,
+     "ende": 44.44,
+     "silben": [
+      {
+       "s": "Ag",
+       "t": 26.67
+      },
+      {
+       "s": "nus",
+       "t": 27.78
+      },
+      {
+       "s": "De",
+       "t": 28.89
+      },
+      {
+       "s": "i,",
+       "t": 30.0
+      },
+      {
+       "s": "mi",
+       "t": 32.22
+      },
+      {
+       "s": "se",
+       "t": 33.33
+      },
+      {
+       "s": "re",
+       "t": 34.44
+      },
+      {
+       "s": "re",
+       "t": 35.56
+      },
+      {
+       "s": "no",
+       "t": 36.67
+      },
+      {
+       "s": "bis",
+       "t": 37.78
+      }
+     ],
+     "nr": 2
+    },
+    {
+     "teil": 9,
+     "strophe": "la",
+     "zeile": "Do na no bis pa cem",
+     "app_text": "Do-na-no-bis-pa-cem",
+     "text": "Do-na no-bis pa-cem",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 44.44,
+     "ende": 52.22,
+     "silben": [
+      {
+       "s": "Do",
+       "t": 44.44
+      },
+      {
+       "s": "na",
+       "t": 45.56
+      },
+      {
+       "s": "no",
+       "t": 46.11
+      },
+      {
+       "s": "bis",
+       "t": 46.67
+      },
+      {
+       "s": "pa",
+       "t": 47.78
+      },
+      {
+       "s": "cem",
+       "t": 48.89
+      }
+     ],
+     "nr": 3
+    },
+    {
+     "teil": 9,
+     "strophe": "la",
+     "zeile": "Do na no bis pa cem",
+     "app_text": "Do-na-no-bis-pa-cem",
+     "text": "Do-na no-bis pa-cem",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 52.22,
+     "ende": 60.0,
+     "silben": [
+      {
+       "s": "Do",
+       "t": 52.22
+      },
+      {
+       "s": "na",
+       "t": 53.33
+      },
+      {
+       "s": "no",
+       "t": 53.89
+      },
+      {
+       "s": "bis",
+       "t": 54.44
+      },
+      {
+       "s": "pa",
+       "t": 55.56
+      },
+      {
+       "s": "cem",
+       "t": 56.67
+      }
+     ],
+     "nr": 4
+    },
+    {
+     "teil": 9,
+     "strophe": "de",
+     "zeile": "Lamm Got tes, er bar me dich un ser",
+     "app_text": "Lamm-Got-tes,-er-bar-me-dich-un-ser",
+     "text": "Lamm Got-tes, er-bar-me dich un-ser",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 68.89,
+     "ende": 82.22,
+     "silben": [
+      {
+       "s": "Lamm",
+       "t": 68.89
+      },
+      {
+       "s": "Got",
+       "t": 70.0
+      },
+      {
+       "s": "tes,",
+       "t": 71.11
+      },
+      {
+       "s": "er",
+       "t": 73.33
+      },
+      {
+       "s": "bar",
+       "t": 74.44
+      },
+      {
+       "s": "me",
+       "t": 75.56
+      },
+      {
+       "s": "dich",
+       "t": 76.67
+      },
+      {
+       "s": "un",
+       "t": 77.78
+      },
+      {
+       "s": "ser",
+       "t": 78.89
+      }
+     ],
+     "nr": 5
+    },
+    {
+     "teil": 9,
+     "strophe": "de",
+     "zeile": "Lamm Got tes, er bar me dich un ser",
+     "app_text": "Lamm-Got-tes,-er-bar-me-dich-un-ser",
+     "text": "Lamm Got-tes, er-bar-me dich un-ser",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 82.22,
+     "ende": 95.56,
+     "silben": [
+      {
+       "s": "Lamm",
+       "t": 82.22
+      },
+      {
+       "s": "Got",
+       "t": 83.33
+      },
+      {
+       "s": "tes,",
+       "t": 84.44
+      },
+      {
+       "s": "er",
+       "t": 86.67
+      },
+      {
+       "s": "bar",
+       "t": 87.78
+      },
+      {
+       "s": "me",
+       "t": 88.89
+      },
+      {
+       "s": "dich",
+       "t": 90.0
+      },
+      {
+       "s": "un",
+       "t": 91.11
+      },
+      {
+       "s": "ser",
+       "t": 92.22
+      }
+     ],
+     "nr": 6
+    },
+    {
+     "teil": 9,
+     "strophe": "de",
+     "zeile": "Gib uns dei nen Frie den",
+     "app_text": "Gib-uns-dei-nen-Frie-den",
+     "text": "Gib uns dei-nen Frie-den",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 95.56,
+     "ende": 108.89,
+     "silben": [
+      {
+       "s": "Gib",
+       "t": 95.56
+      },
+      {
+       "s": "uns",
+       "t": 96.67
+      },
+      {
+       "s": "dei",
+       "t": 97.78
+      },
+      {
+       "s": "nen",
+       "t": 98.89
+      },
+      {
+       "s": "Frie",
+       "t": 100.56
+      },
+      {
+       "s": "den",
+       "t": 101.67
+      }
+     ],
+     "nr": 7
+    },
+    {
+     "teil": 9,
+     "strophe": "de",
+     "zeile": "Gib uns dei nen Frie den",
+     "app_text": "Gib-uns-dei-nen-Frie-den",
+     "text": "Gib uns dei-nen Frie-den",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 108.89,
+     "ende": 122.22,
+     "silben": [
+      {
+       "s": "Gib",
+       "t": 108.89
+      },
+      {
+       "s": "uns",
+       "t": 110.0
+      },
+      {
+       "s": "dei",
+       "t": 111.11
+      },
+      {
+       "s": "nen",
+       "t": 112.22
+      },
+      {
+       "s": "Frie",
+       "t": 113.89
+      },
+      {
+       "s": "den",
+       "t": 115.0
+      }
+     ],
+     "nr": 8
+    },
+    {
+     "teil": 9,
+     "strophe": "fr",
+     "zeile": "A gneau de Dieu, prends pi tié de nous",
+     "app_text": "A-gneau-de-Dieu,-prends-pi-tié-de-nous",
+     "text": "A-gneau de Dieu, prends pi-tié de nous",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 131.11,
+     "ende": 144.44,
+     "silben": [
+      {
+       "s": "A",
+       "t": 131.11
+      },
+      {
+       "s": "gneau",
+       "t": 132.22
+      },
+      {
+       "s": "de",
+       "t": 133.33
+      },
+      {
+       "s": "Dieu,",
+       "t": 134.44
+      },
+      {
+       "s": "prends",
+       "t": 136.67
+      },
+      {
+       "s": "pi",
+       "t": 137.78
+      },
+      {
+       "s": "tié",
+       "t": 138.89
+      },
+      {
+       "s": "de",
+       "t": 140.0
+      },
+      {
+       "s": "nous",
+       "t": 141.11
+      }
+     ],
+     "nr": 9
+    },
+    {
+     "teil": 9,
+     "strophe": "fr",
+     "zeile": "A gneau de Dieu, prends pi tié de nous",
+     "app_text": "A-gneau-de-Dieu,-prends-pi-tié-de-nous",
+     "text": "A-gneau de Dieu, prends pi-tié de nous",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 144.44,
+     "ende": 157.78,
+     "silben": [
+      {
+       "s": "A",
+       "t": 144.44
+      },
+      {
+       "s": "gneau",
+       "t": 145.56
+      },
+      {
+       "s": "de",
+       "t": 146.67
+      },
+      {
+       "s": "Dieu,",
+       "t": 147.78
+      },
+      {
+       "s": "prends",
+       "t": 150.0
+      },
+      {
+       "s": "pi",
+       "t": 151.11
+      },
+      {
+       "s": "tié",
+       "t": 152.22
+      },
+      {
+       "s": "de",
+       "t": 153.33
+      },
+      {
+       "s": "nous",
+       "t": 154.44
+      }
+     ],
+     "nr": 10
+    },
+    {
+     "teil": 9,
+     "strophe": "fr",
+     "zeile": "Don ne nous ta paix",
+     "app_text": "Don-ne-nous-ta-paix",
+     "text": "Don-ne-nous ta paix",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 157.78,
+     "ende": 166.67,
+     "silben": [
+      {
+       "s": "Don",
+       "t": 157.78
+      },
+      {
+       "s": "ne",
+       "t": 158.89
+      },
+      {
+       "s": "nous",
+       "t": 160.0
+      },
+      {
+       "s": "ta",
+       "t": 161.11
+      },
+      {
+       "s": "paix",
+       "t": 162.78
+      }
+     ],
+     "nr": 11
+    },
+    {
+     "teil": 9,
+     "strophe": "fr",
+     "zeile": "Don ne nous ta paix",
+     "app_text": "Don-ne-nous-ta-paix",
+     "text": "Don-ne-nous ta paix",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 166.67,
+     "ende": 175.56,
+     "silben": [
+      {
+       "s": "Don",
+       "t": 166.67
+      },
+      {
+       "s": "ne",
+       "t": 167.78
+      },
+      {
+       "s": "nous",
+       "t": 168.89
+      },
+      {
+       "s": "ta",
+       "t": 170.0
+      },
+      {
+       "s": "paix",
+       "t": 171.67
+      }
+     ],
+     "nr": 12
+    },
+    {
+     "teil": 9,
+     "strophe": "la",
+     "zeile": "Ag nus De i, mi se re re no bis",
+     "app_text": "Ag-nus-De-i,-mi-se-re-re-no-bis",
+     "text": "Ag-nus De-i, mi-se-re-re no-bis",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 184.44,
+     "ende": 202.22,
+     "silben": [
+      {
+       "s": "Ag",
+       "t": 184.44
+      },
+      {
+       "s": "nus",
+       "t": 185.56
+      },
+      {
+       "s": "De",
+       "t": 186.67
+      },
+      {
+       "s": "i,",
+       "t": 187.78
+      },
+      {
+       "s": "mi",
+       "t": 190.0
+      },
+      {
+       "s": "se",
+       "t": 191.11
+      },
+      {
+       "s": "re",
+       "t": 192.22
+      },
+      {
+       "s": "re",
+       "t": 193.33
+      },
+      {
+       "s": "no",
+       "t": 194.44
+      },
+      {
+       "s": "bis",
+       "t": 195.56
+      }
+     ],
+     "nr": 13
+    },
+    {
+     "teil": 9,
+     "strophe": "la",
+     "zeile": "Ag nus De i, mi se re re no bis",
+     "app_text": "Ag-nus-De-i,-mi-se-re-re-no-bis",
+     "text": "Ag-nus De-i, mi-se-re-re no-bis",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 202.22,
+     "ende": 220.0,
+     "silben": [
+      {
+       "s": "Ag",
+       "t": 202.22
+      },
+      {
+       "s": "nus",
+       "t": 203.33
+      },
+      {
+       "s": "De",
+       "t": 204.44
+      },
+      {
+       "s": "i,",
+       "t": 205.56
+      },
+      {
+       "s": "mi",
+       "t": 207.78
+      },
+      {
+       "s": "se",
+       "t": 208.89
+      },
+      {
+       "s": "re",
+       "t": 210.0
+      },
+      {
+       "s": "re",
+       "t": 211.11
+      },
+      {
+       "s": "no",
+       "t": 212.22
+      },
+      {
+       "s": "bis",
+       "t": 213.33
+      }
+     ],
+     "nr": 14
+    },
+    {
+     "teil": 9,
+     "strophe": "la",
+     "zeile": "Do na no bis pa cem",
+     "app_text": "Do-na-no-bis-pa-cem",
+     "text": "Do-na no-bis pa-cem",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 220.0,
+     "ende": 227.78,
+     "silben": [
+      {
+       "s": "Do",
+       "t": 220.0
+      },
+      {
+       "s": "na",
+       "t": 221.11
+      },
+      {
+       "s": "no",
+       "t": 221.67
+      },
+      {
+       "s": "bis",
+       "t": 222.22
+      },
+      {
+       "s": "pa",
+       "t": 223.33
+      },
+      {
+       "s": "cem",
+       "t": 224.44
+      }
+     ],
+     "nr": 15
+    },
+    {
+     "teil": 9,
+     "strophe": "la",
+     "zeile": "Do na no bis pa cem",
+     "app_text": "Do-na-no-bis-pa-cem",
+     "text": "Do-na no-bis pa-cem",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 227.78,
+     "ende": 235.56,
+     "silben": [
+      {
+       "s": "Do",
+       "t": 227.78
+      },
+      {
+       "s": "na",
+       "t": 228.89
+      },
+      {
+       "s": "no",
+       "t": 229.44
+      },
+      {
+       "s": "bis",
+       "t": 230.0
+      },
+      {
+       "s": "pa",
+       "t": 231.11
+      },
+      {
+       "s": "cem",
+       "t": 232.22
+      }
+     ],
+     "nr": 16
+    },
+    {
+     "teil": 9,
+     "strophe": "la",
+     "zeile": "Ag nus De i, mi se re re no bis",
+     "app_text": "Ag-nus-De-i,-mi-se-re-re-no-bis",
+     "text": "Ag-nus De-i, mi-se-re-re no-bis",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 244.44,
+     "ende": 262.22,
+     "silben": [
+      {
+       "s": "Ag",
+       "t": 244.44
+      },
+      {
+       "s": "nus",
+       "t": 245.56
+      },
+      {
+       "s": "De",
+       "t": 246.67
+      },
+      {
+       "s": "i,",
+       "t": 247.78
+      },
+      {
+       "s": "mi",
+       "t": 250.0
+      },
+      {
+       "s": "se",
+       "t": 251.11
+      },
+      {
+       "s": "re",
+       "t": 252.22
+      },
+      {
+       "s": "re",
+       "t": 253.33
+      },
+      {
+       "s": "no",
+       "t": 254.44
+      },
+      {
+       "s": "bis",
+       "t": 255.56
+      }
+     ],
+     "nr": 17
+    },
+    {
+     "teil": 9,
+     "strophe": "la",
+     "zeile": "Ag nus De i, mi se re re no bis",
+     "app_text": "Ag-nus-De-i,-mi-se-re-re-no-bis",
+     "text": "Ag-nus De-i, mi-se-re-re no-bis",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 262.22,
+     "ende": 280.0,
+     "silben": [
+      {
+       "s": "Ag",
+       "t": 262.22
+      },
+      {
+       "s": "nus",
+       "t": 263.33
+      },
+      {
+       "s": "De",
+       "t": 264.44
+      },
+      {
+       "s": "i,",
+       "t": 265.56
+      },
+      {
+       "s": "mi",
+       "t": 267.78
+      },
+      {
+       "s": "se",
+       "t": 268.89
+      },
+      {
+       "s": "re",
+       "t": 270.0
+      },
+      {
+       "s": "re",
+       "t": 271.11
+      },
+      {
+       "s": "no",
+       "t": 272.22
+      },
+      {
+       "s": "bis",
+       "t": 273.33
+      }
+     ],
+     "nr": 18
+    },
+    {
+     "teil": 9,
+     "strophe": "la",
+     "zeile": "Do na no bis pa cem",
+     "app_text": "Do-na-no-bis-pa-cem",
+     "text": "Do-na no-bis pa-cem",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 280.0,
+     "ende": 287.78,
+     "silben": [
+      {
+       "s": "Do",
+       "t": 280.0
+      },
+      {
+       "s": "na",
+       "t": 281.11
+      },
+      {
+       "s": "no",
+       "t": 281.67
+      },
+      {
+       "s": "bis",
+       "t": 282.22
+      },
+      {
+       "s": "pa",
+       "t": 283.33
+      },
+      {
+       "s": "cem",
+       "t": 284.44
+      }
+     ],
+     "nr": 19
+    }
+   ]
+  },
+  {
+   "satz": "10 · Vaterunser-Ruf",
+   "datei": "messe-10-vaterunser",
+   "tempo_bpm": 60,
+   "zeilen": [
+    {
+     "teil": 10,
+     "strophe": "la",
+     "zeile": "Pa ter nos ter, ad ve ni at reg num tu um",
+     "app_text": "Pa-ter-nos-ter,-ad-ve-ni-at-reg-num-tu-um",
+     "text": "Pa-ter nos-ter, ad-ve-ni-at reg-num tu-um",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 8.0,
+     "ende": 24.0,
+     "silben": [
+      {
+       "s": "Pa",
+       "t": 8.0
+      },
+      {
+       "s": "ter",
+       "t": 9.0
+      },
+      {
+       "s": "nos",
+       "t": 10.0
+      },
+      {
+       "s": "ter,",
+       "t": 11.0
+      },
+      {
+       "s": "ad",
+       "t": 13.0
+      },
+      {
+       "s": "ve",
+       "t": 14.0
+      },
+      {
+       "s": "ni",
+       "t": 15.0
+      },
+      {
+       "s": "at",
+       "t": 16.0
+      },
+      {
+       "s": "reg",
+       "t": 17.0
+      },
+      {
+       "s": "num",
+       "t": 18.0
+      },
+      {
+       "s": "tu",
+       "t": 19.0
+      },
+      {
+       "s": "um",
+       "t": 20.0
+      }
+     ],
+     "nr": 1
+    },
+    {
+     "teil": 10,
+     "strophe": "la",
+     "zeile": "Pa ter nos ter, ad ve ni at reg num tu um",
+     "app_text": "Pa-ter-nos-ter,-ad-ve-ni-at-reg-num-tu-um",
+     "text": "Pa-ter nos-ter, ad-ve-ni-at reg-num tu-um",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 24.0,
+     "ende": 40.0,
+     "silben": [
+      {
+       "s": "Pa",
+       "t": 24.0
+      },
+      {
+       "s": "ter",
+       "t": 25.0
+      },
+      {
+       "s": "nos",
+       "t": 26.0
+      },
+      {
+       "s": "ter,",
+       "t": 27.0
+      },
+      {
+       "s": "ad",
+       "t": 29.0
+      },
+      {
+       "s": "ve",
+       "t": 30.0
+      },
+      {
+       "s": "ni",
+       "t": 31.0
+      },
+      {
+       "s": "at",
+       "t": 32.0
+      },
+      {
+       "s": "reg",
+       "t": 33.0
+      },
+      {
+       "s": "num",
+       "t": 34.0
+      },
+      {
+       "s": "tu",
+       "t": 35.0
+      },
+      {
+       "s": "um",
+       "t": 36.0
+      }
+     ],
+     "nr": 2
+    },
+    {
+     "teil": 10,
+     "strophe": "la",
+     "zeile": "A men, a men",
+     "app_text": "A-men,-a-men",
+     "text": "A-men, a-men",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 40.0,
+     "ende": 48.0,
+     "silben": [
+      {
+       "s": "A",
+       "t": 40.0
+      },
+      {
+       "s": "men,",
+       "t": 41.0
+      },
+      {
+       "s": "a",
+       "t": 43.0
+      },
+      {
+       "s": "men",
+       "t": 44.5
+      }
+     ],
+     "nr": 3
+    },
+    {
+     "teil": 10,
+     "strophe": "la",
+     "zeile": "A men, a men",
+     "app_text": "A-men,-a-men",
+     "text": "A-men, a-men",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 48.0,
+     "ende": 56.0,
+     "silben": [
+      {
+       "s": "A",
+       "t": 48.0
+      },
+      {
+       "s": "men,",
+       "t": 49.0
+      },
+      {
+       "s": "a",
+       "t": 51.0
+      },
+      {
+       "s": "men",
+       "t": 52.5
+      }
+     ],
+     "nr": 4
+    },
+    {
+     "teil": 10,
+     "strophe": "de",
+     "zeile": "Va ter un ser, dein Reich kom me",
+     "app_text": "Va-ter-un-ser,-dein-Reich-kom-me",
+     "text": "Va-ter un-ser, dein Reich kom-me",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 64.0,
+     "ende": 76.0,
+     "silben": [
+      {
+       "s": "Va",
+       "t": 64.0
+      },
+      {
+       "s": "ter",
+       "t": 65.0
+      },
+      {
+       "s": "un",
+       "t": 66.0
+      },
+      {
+       "s": "ser,",
+       "t": 67.0
+      },
+      {
+       "s": "dein",
+       "t": 69.0
+      },
+      {
+       "s": "Reich",
+       "t": 70.0
+      },
+      {
+       "s": "kom",
+       "t": 71.0
+      },
+      {
+       "s": "me",
+       "t": 72.0
+      }
+     ],
+     "nr": 5
+    },
+    {
+     "teil": 10,
+     "strophe": "de",
+     "zeile": "Va ter un ser, dein Reich kom me",
+     "app_text": "Va-ter-un-ser,-dein-Reich-kom-me",
+     "text": "Va-ter un-ser, dein Reich kom-me",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 76.0,
+     "ende": 88.0,
+     "silben": [
+      {
+       "s": "Va",
+       "t": 76.0
+      },
+      {
+       "s": "ter",
+       "t": 77.0
+      },
+      {
+       "s": "un",
+       "t": 78.0
+      },
+      {
+       "s": "ser,",
+       "t": 79.0
+      },
+      {
+       "s": "dein",
+       "t": 81.0
+      },
+      {
+       "s": "Reich",
+       "t": 82.0
+      },
+      {
+       "s": "kom",
+       "t": 83.0
+      },
+      {
+       "s": "me",
+       "t": 84.0
+      }
+     ],
+     "nr": 6
+    },
+    {
+     "teil": 10,
+     "strophe": "de",
+     "zeile": "A men, a men",
+     "app_text": "A-men,-a-men",
+     "text": "A-men, a-men",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 88.0,
+     "ende": 96.0,
+     "silben": [
+      {
+       "s": "A",
+       "t": 88.0
+      },
+      {
+       "s": "men,",
+       "t": 89.0
+      },
+      {
+       "s": "a",
+       "t": 91.0
+      },
+      {
+       "s": "men",
+       "t": 92.5
+      }
+     ],
+     "nr": 7
+    },
+    {
+     "teil": 10,
+     "strophe": "de",
+     "zeile": "A men, a men",
+     "app_text": "A-men,-a-men",
+     "text": "A-men, a-men",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 96.0,
+     "ende": 104.0,
+     "silben": [
+      {
+       "s": "A",
+       "t": 96.0
+      },
+      {
+       "s": "men,",
+       "t": 97.0
+      },
+      {
+       "s": "a",
+       "t": 99.0
+      },
+      {
+       "s": "men",
+       "t": 100.5
+      }
+     ],
+     "nr": 8
+    },
+    {
+     "teil": 10,
+     "strophe": "fr",
+     "zeile": "No tre Pè re, que ton rè gne vien ne",
+     "app_text": "No-tre-Pè-re,-que-ton-rè-gne-vien-ne",
+     "text": "No-tre Pè-re, que ton rè-gne vien-ne",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 112.0,
+     "ende": 128.0,
+     "silben": [
+      {
+       "s": "No",
+       "t": 112.0
+      },
+      {
+       "s": "tre",
+       "t": 113.0
+      },
+      {
+       "s": "Pè",
+       "t": 114.0
+      },
+      {
+       "s": "re,",
+       "t": 115.0
+      },
+      {
+       "s": "que",
+       "t": 117.0
+      },
+      {
+       "s": "ton",
+       "t": 118.0
+      },
+      {
+       "s": "rè",
+       "t": 119.0
+      },
+      {
+       "s": "gne",
+       "t": 120.0
+      },
+      {
+       "s": "vien",
+       "t": 121.0
+      },
+      {
+       "s": "ne",
+       "t": 122.0
+      }
+     ],
+     "nr": 9
+    },
+    {
+     "teil": 10,
+     "strophe": "fr",
+     "zeile": "No tre Pè re, que ton rè gne vien ne",
+     "app_text": "No-tre-Pè-re,-que-ton-rè-gne-vien-ne",
+     "text": "No-tre Pè-re, que ton rè-gne vien-ne",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 128.0,
+     "ende": 144.0,
+     "silben": [
+      {
+       "s": "No",
+       "t": 128.0
+      },
+      {
+       "s": "tre",
+       "t": 129.0
+      },
+      {
+       "s": "Pè",
+       "t": 130.0
+      },
+      {
+       "s": "re,",
+       "t": 131.0
+      },
+      {
+       "s": "que",
+       "t": 133.0
+      },
+      {
+       "s": "ton",
+       "t": 134.0
+      },
+      {
+       "s": "rè",
+       "t": 135.0
+      },
+      {
+       "s": "gne",
+       "t": 136.0
+      },
+      {
+       "s": "vien",
+       "t": 137.0
+      },
+      {
+       "s": "ne",
+       "t": 138.0
+      }
+     ],
+     "nr": 10
+    },
+    {
+     "teil": 10,
+     "strophe": "fr",
+     "zeile": "A men, a men",
+     "app_text": "A-men,-a-men",
+     "text": "A-men, a-men",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 144.0,
+     "ende": 152.0,
+     "silben": [
+      {
+       "s": "A",
+       "t": 144.0
+      },
+      {
+       "s": "men,",
+       "t": 145.0
+      },
+      {
+       "s": "a",
+       "t": 147.0
+      },
+      {
+       "s": "men",
+       "t": 148.5
+      }
+     ],
+     "nr": 11
+    },
+    {
+     "teil": 10,
+     "strophe": "fr",
+     "zeile": "A men, a men",
+     "app_text": "A-men,-a-men",
+     "text": "A-men, a-men",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 152.0,
+     "ende": 160.0,
+     "silben": [
+      {
+       "s": "A",
+       "t": 152.0
+      },
+      {
+       "s": "men,",
+       "t": 153.0
+      },
+      {
+       "s": "a",
+       "t": 155.0
+      },
+      {
+       "s": "men",
+       "t": 156.5
+      }
+     ],
+     "nr": 12
+    }
+   ]
+  },
+  {
+   "satz": "11 · Epitaph für Frère Roger",
+   "datei": "messe-11-epitaph",
+   "tempo_bpm": 54,
+   "zeilen": [
+    {
+     "teil": 11,
+     "strophe": "la",
+     "zeile": "Pax ti bi, fra ter, in lu ce Do mi ni",
+     "app_text": "Pax-ti-bi,-fra-ter,-in-lu-ce-Do-mi-ni",
+     "text": "Pax ti-bi, fra-ter, in lu-ce Do-mi-ni",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 11.09,
+     "ende": 28.87,
+     "silben": [
+      {
+       "s": "Pax",
+       "t": 11.09
+      },
+      {
+       "s": "ti",
+       "t": 12.2
+      },
+      {
+       "s": "bi,",
+       "t": 13.31
+      },
+      {
+       "s": "fra",
+       "t": 15.53
+      },
+      {
+       "s": "ter,",
+       "t": 16.64
+      },
+      {
+       "s": "in",
+       "t": 18.87
+      },
+      {
+       "s": "lu",
+       "t": 19.98
+      },
+      {
+       "s": "ce",
+       "t": 21.64
+      },
+      {
+       "s": "Do",
+       "t": 22.76
+      },
+      {
+       "s": "mi",
+       "t": 23.87
+      },
+      {
+       "s": "ni",
+       "t": 24.98
+      }
+     ],
+     "nr": 1
+    },
+    {
+     "teil": 11,
+     "strophe": "la",
+     "zeile": "Pax ti bi, fra ter, in lu ce Do mi ni",
+     "app_text": "Pax-ti-bi,-fra-ter,-in-lu-ce-Do-mi-ni",
+     "text": "Pax ti-bi, fra-ter, in lu-ce Do-mi-ni",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 28.87,
+     "ende": 46.64,
+     "silben": [
+      {
+       "s": "Pax",
+       "t": 28.87
+      },
+      {
+       "s": "ti",
+       "t": 29.98
+      },
+      {
+       "s": "bi,",
+       "t": 31.09
+      },
+      {
+       "s": "fra",
+       "t": 33.31
+      },
+      {
+       "s": "ter,",
+       "t": 34.42
+      },
+      {
+       "s": "in",
+       "t": 36.64
+      },
+      {
+       "s": "lu",
+       "t": 37.76
+      },
+      {
+       "s": "ce",
+       "t": 39.42
+      },
+      {
+       "s": "Do",
+       "t": 40.53
+      },
+      {
+       "s": "mi",
+       "t": 41.64
+      },
+      {
+       "s": "ni",
+       "t": 42.76
+      }
+     ],
+     "nr": 2
+    },
+    {
+     "teil": 11,
+     "strophe": "de",
+     "zeile": "Bru der Ro ger, ruh in Frie den",
+     "app_text": "Bru-der-Ro-ger,-ruh-in-Frie-den",
+     "text": "Bru-der Ro-ger, ruh in Frie-den",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 55.53,
+     "ende": 68.87,
+     "silben": [
+      {
+       "s": "Bru",
+       "t": 55.53
+      },
+      {
+       "s": "der",
+       "t": 56.64
+      },
+      {
+       "s": "Ro",
+       "t": 57.76
+      },
+      {
+       "s": "ger,",
+       "t": 58.87
+      },
+      {
+       "s": "ruh",
+       "t": 61.09
+      },
+      {
+       "s": "in",
+       "t": 62.2
+      },
+      {
+       "s": "Frie",
+       "t": 63.31
+      },
+      {
+       "s": "den",
+       "t": 64.42
+      }
+     ],
+     "nr": 3
+    },
+    {
+     "teil": 11,
+     "strophe": "de",
+     "zeile": "Bru der Ro ger, ruh in Frie den",
+     "app_text": "Bru-der-Ro-ger,-ruh-in-Frie-den",
+     "text": "Bru-der Ro-ger, ruh in Frie-den",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 68.87,
+     "ende": 82.2,
+     "silben": [
+      {
+       "s": "Bru",
+       "t": 68.87
+      },
+      {
+       "s": "der",
+       "t": 69.98
+      },
+      {
+       "s": "Ro",
+       "t": 71.09
+      },
+      {
+       "s": "ger,",
+       "t": 72.2
+      },
+      {
+       "s": "ruh",
+       "t": 74.42
+      },
+      {
+       "s": "in",
+       "t": 75.53
+      },
+      {
+       "s": "Frie",
+       "t": 76.64
+      },
+      {
+       "s": "den",
+       "t": 77.76
+      }
+     ],
+     "nr": 4
+    },
+    {
+     "teil": 11,
+     "strophe": "fr",
+     "zeile": "Frè re Ro ger, re po se en paix",
+     "app_text": "Frè-re-Ro-ger,-re-po-se-en-paix",
+     "text": "Frè-re Ro-ger, re-po-se en paix",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 91.09,
+     "ende": 104.42,
+     "silben": [
+      {
+       "s": "Frè",
+       "t": 91.09
+      },
+      {
+       "s": "re",
+       "t": 92.2
+      },
+      {
+       "s": "Ro",
+       "t": 93.31
+      },
+      {
+       "s": "ger,",
+       "t": 94.42
+      },
+      {
+       "s": "re",
+       "t": 96.64
+      },
+      {
+       "s": "po",
+       "t": 97.76
+      },
+      {
+       "s": "se",
+       "t": 98.87
+      },
+      {
+       "s": "en",
+       "t": 99.98
+      },
+      {
+       "s": "paix",
+       "t": 101.09
+      }
+     ],
+     "nr": 5
+    },
+    {
+     "teil": 11,
+     "strophe": "fr",
+     "zeile": "Frè re Ro ger, re po se en paix",
+     "app_text": "Frè-re-Ro-ger,-re-po-se-en-paix",
+     "text": "Frè-re Ro-ger, re-po-se en paix",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 104.42,
+     "ende": 117.76,
+     "silben": [
+      {
+       "s": "Frè",
+       "t": 104.42
+      },
+      {
+       "s": "re",
+       "t": 105.53
+      },
+      {
+       "s": "Ro",
+       "t": 106.64
+      },
+      {
+       "s": "ger,",
+       "t": 107.76
+      },
+      {
+       "s": "re",
+       "t": 109.98
+      },
+      {
+       "s": "po",
+       "t": 111.09
+      },
+      {
+       "s": "se",
+       "t": 112.2
+      },
+      {
+       "s": "en",
+       "t": 113.31
+      },
+      {
+       "s": "paix",
+       "t": 114.42
+      }
+     ],
+     "nr": 6
+    },
+    {
+     "teil": 11,
+     "strophe": "la",
+     "zeile": "Pax ti bi, fra ter, in lu ce Do mi ni",
+     "app_text": "Pax-ti-bi,-fra-ter,-in-lu-ce-Do-mi-ni",
+     "text": "Pax ti-bi, fra-ter, in lu-ce Do-mi-ni",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 126.64,
+     "ende": 144.42,
+     "silben": [
+      {
+       "s": "Pax",
+       "t": 126.64
+      },
+      {
+       "s": "ti",
+       "t": 127.76
+      },
+      {
+       "s": "bi,",
+       "t": 128.87
+      },
+      {
+       "s": "fra",
+       "t": 131.09
+      },
+      {
+       "s": "ter,",
+       "t": 132.2
+      },
+      {
+       "s": "in",
+       "t": 134.42
+      },
+      {
+       "s": "lu",
+       "t": 135.53
+      },
+      {
+       "s": "ce",
+       "t": 137.2
+      },
+      {
+       "s": "Do",
+       "t": 138.31
+      },
+      {
+       "s": "mi",
+       "t": 139.42
+      },
+      {
+       "s": "ni",
+       "t": 140.53
+      }
+     ],
+     "nr": 7
+    },
+    {
+     "teil": 11,
+     "strophe": "la",
+     "zeile": "Pax ti bi, fra ter, in lu ce Do mi ni",
+     "app_text": "Pax-ti-bi,-fra-ter,-in-lu-ce-Do-mi-ni",
+     "text": "Pax ti-bi, fra-ter, in lu-ce Do-mi-ni",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 144.42,
+     "ende": 162.2,
+     "silben": [
+      {
+       "s": "Pax",
+       "t": 144.42
+      },
+      {
+       "s": "ti",
+       "t": 145.53
+      },
+      {
+       "s": "bi,",
+       "t": 146.64
+      },
+      {
+       "s": "fra",
+       "t": 148.87
+      },
+      {
+       "s": "ter,",
+       "t": 149.98
+      },
+      {
+       "s": "in",
+       "t": 152.2
+      },
+      {
+       "s": "lu",
+       "t": 153.31
+      },
+      {
+       "s": "ce",
+       "t": 154.98
+      },
+      {
+       "s": "Do",
+       "t": 156.09
+      },
+      {
+       "s": "mi",
+       "t": 157.2
+      },
+      {
+       "s": "ni",
+       "t": 158.31
+      }
+     ],
+     "nr": 8
+    },
+    {
+     "teil": 11,
+     "strophe": "la",
+     "zeile": "Pax ti bi, fra ter, in lu ce Do mi ni",
+     "app_text": "Pax-ti-bi,-fra-ter,-in-lu-ce-Do-mi-ni",
+     "text": "Pax ti-bi, fra-ter, in lu-ce Do-mi-ni",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 171.09,
+     "ende": 188.87,
+     "silben": [
+      {
+       "s": "Pax",
+       "t": 171.09
+      },
+      {
+       "s": "ti",
+       "t": 172.2
+      },
+      {
+       "s": "bi,",
+       "t": 173.31
+      },
+      {
+       "s": "fra",
+       "t": 175.53
+      },
+      {
+       "s": "ter,",
+       "t": 176.64
+      },
+      {
+       "s": "in",
+       "t": 178.87
+      },
+      {
+       "s": "lu",
+       "t": 179.98
+      },
+      {
+       "s": "ce",
+       "t": 181.64
+      },
+      {
+       "s": "Do",
+       "t": 182.76
+      },
+      {
+       "s": "mi",
+       "t": 183.87
+      },
+      {
+       "s": "ni",
+       "t": 184.98
+      }
+     ],
+     "nr": 9
+    },
+    {
+     "teil": 11,
+     "strophe": "la",
+     "zeile": "Pax ti bi, fra ter, in lu ce Do mi ni",
+     "app_text": "Pax-ti-bi,-fra-ter,-in-lu-ce-Do-mi-ni",
+     "text": "Pax ti-bi, fra-ter, in lu-ce Do-mi-ni",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 188.87,
+     "ende": 206.64,
+     "silben": [
+      {
+       "s": "Pax",
+       "t": 188.87
+      },
+      {
+       "s": "ti",
+       "t": 189.98
+      },
+      {
+       "s": "bi,",
+       "t": 191.09
+      },
+      {
+       "s": "fra",
+       "t": 193.31
+      },
+      {
+       "s": "ter,",
+       "t": 194.42
+      },
+      {
+       "s": "in",
+       "t": 196.64
+      },
+      {
+       "s": "lu",
+       "t": 197.76
+      },
+      {
+       "s": "ce",
+       "t": 199.42
+      },
+      {
+       "s": "Do",
+       "t": 200.53
+      },
+      {
+       "s": "mi",
+       "t": 201.64
+      },
+      {
+       "s": "ni",
+       "t": 202.76
+      }
+     ],
+     "nr": 10
+    },
+    {
+     "teil": 11,
+     "strophe": "de",
+     "zeile": "Bru der Ro ger, ruh in Frie den",
+     "app_text": "Bru-der-Ro-ger,-ruh-in-Frie-den",
+     "text": "Bru-der Ro-ger, ruh in Frie-den",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 215.53,
+     "ende": 228.87,
+     "silben": [
+      {
+       "s": "Bru",
+       "t": 215.53
+      },
+      {
+       "s": "der",
+       "t": 216.64
+      },
+      {
+       "s": "Ro",
+       "t": 217.76
+      },
+      {
+       "s": "ger,",
+       "t": 218.87
+      },
+      {
+       "s": "ruh",
+       "t": 221.09
+      },
+      {
+       "s": "in",
+       "t": 222.2
+      },
+      {
+       "s": "Frie",
+       "t": 223.31
+      },
+      {
+       "s": "den",
+       "t": 224.42
+      }
+     ],
+     "nr": 11
+    }
+   ]
+  },
+  {
+   "satz": "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "datei": "messe-12-segen",
+   "tempo_bpm": 66,
+   "zeilen": [
+    {
+     "teil": "12",
+     "strophe": "la",
+     "zeile": "Pax vo bis cum, i te in pa ce",
+     "app_text": "Pax-vo-bis-cum,-i-te-in-pa-ce",
+     "text": "Pax vo-bis-cum, i-te in pa-ce",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 37.02,
+     "ende": 51.56,
+     "silben": [
+      {
+       "s": "Pax",
+       "t": 37.02
+      },
+      {
+       "s": "vo",
+       "t": 37.93
+      },
+      {
+       "s": "bis",
+       "t": 38.84
+      },
+      {
+       "s": "cum,",
+       "t": 39.75
+      },
+      {
+       "s": "i",
+       "t": 41.56
+      },
+      {
+       "s": "te",
+       "t": 42.47
+      },
+      {
+       "s": "in",
+       "t": 43.38
+      },
+      {
+       "s": "pa",
+       "t": 44.29
+      },
+      {
+       "s": "ce",
+       "t": 45.65
+      }
+     ],
+     "nr": 1
+    },
+    {
+     "teil": "12",
+     "strophe": "la",
+     "zeile": "Pax vo bis cum, i te in pa ce",
+     "app_text": "Pax-vo-bis-cum,-i-te-in-pa-ce",
+     "text": "Pax vo-bis-cum, i-te in pa-ce",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 51.56,
+     "ende": 66.11,
+     "silben": [
+      {
+       "s": "Pax",
+       "t": 51.56
+      },
+      {
+       "s": "vo",
+       "t": 52.47
+      },
+      {
+       "s": "bis",
+       "t": 53.38
+      },
+      {
+       "s": "cum,",
+       "t": 54.29
+      },
+      {
+       "s": "i",
+       "t": 56.11
+      },
+      {
+       "s": "te",
+       "t": 57.02
+      },
+      {
+       "s": "in",
+       "t": 57.93
+      },
+      {
+       "s": "pa",
+       "t": 58.84
+      },
+      {
+       "s": "ce",
+       "t": 60.2
+      }
+     ],
+     "nr": 2
+    },
+    {
+     "teil": "12",
+     "strophe": "la",
+     "zeile": "Non no bis, Do mi ne, non no bis, sed no mi ni tu o da glo ri am",
+     "app_text": "Non-no-bis,-Do-mi-ne,-non-no-bis,-sed-no-mi-ni-tu-o-da-glo-ri-am",
+     "text": "Non no-bis, Do-mi-ne, non no-bis, sed no-mi-ni tu-o da glo-ri-am",
+     "stimme": "Tutti-Chor (Unisono/Oktaven), 3/4",
+     "start": 66.11,
+     "ende": 95.04,
+     "silben": [
+      {
+       "s": "Non",
+       "t": 66.11
+      },
+      {
+       "s": "no",
+       "t": 67.18
+      },
+      {
+       "s": "bis,",
+       "t": 68.79
+      },
+      {
+       "s": "Do",
+       "t": 69.32
+      },
+      {
+       "s": "mi",
+       "t": 70.39
+      },
+      {
+       "s": "ne,",
+       "t": 72.54
+      },
+      {
+       "s": "non",
+       "t": 73.61
+      },
+      {
+       "s": "no",
+       "t": 75.22
+      },
+      {
+       "s": "bis,",
+       "t": 75.75
+      },
+      {
+       "s": "sed",
+       "t": 76.82
+      },
+      {
+       "s": "no",
+       "t": 78.97
+      },
+      {
+       "s": "mi",
+       "t": 80.04
+      },
+      {
+       "s": "ni",
+       "t": 81.64
+      },
+      {
+       "s": "tu",
+       "t": 82.18
+      },
+      {
+       "s": "o",
+       "t": 83.25
+      },
+      {
+       "s": "da",
+       "t": 85.39
+      },
+      {
+       "s": "glo",
+       "t": 86.47
+      },
+      {
+       "s": "ri",
+       "t": 88.07
+      },
+      {
+       "s": "am",
+       "t": 88.61
+      }
+     ],
+     "nr": 3
+    },
+    {
+     "teil": "12",
+     "strophe": "la-wdh",
+     "zeile": "Non no bis, Do mi ne, non no bis, sed no mi ni tu o da glo ri am",
+     "app_text": "Non-no-bis,-Do-mi-ne,-non-no-bis,-sed-no-mi-ni-tu-o-da-glo-ri-am",
+     "text": "Non no-bis, Do-mi-ne, non no-bis, sed no-mi-ni tu-o da glo-ri-am",
+     "stimme": "Tutti-Chor (Unisono/Oktaven), 3/4",
+     "start": 95.04,
+     "ende": 123.97,
+     "silben": [
+      {
+       "s": "Non",
+       "t": 95.04
+      },
+      {
+       "s": "no",
+       "t": 96.11
+      },
+      {
+       "s": "bis,",
+       "t": 97.72
+      },
+      {
+       "s": "Do",
+       "t": 98.25
+      },
+      {
+       "s": "mi",
+       "t": 99.32
+      },
+      {
+       "s": "ne,",
+       "t": 101.47
+      },
+      {
+       "s": "non",
+       "t": 102.54
+      },
+      {
+       "s": "no",
+       "t": 104.14
+      },
+      {
+       "s": "bis,",
+       "t": 104.68
+      },
+      {
+       "s": "sed",
+       "t": 105.75
+      },
+      {
+       "s": "no",
+       "t": 107.89
+      },
+      {
+       "s": "mi",
+       "t": 108.97
+      },
+      {
+       "s": "ni",
+       "t": 110.57
+      },
+      {
+       "s": "tu",
+       "t": 111.11
+      },
+      {
+       "s": "o",
+       "t": 112.18
+      },
+      {
+       "s": "da",
+       "t": 114.32
+      },
+      {
+       "s": "glo",
+       "t": 115.39
+      },
+      {
+       "s": "ri",
+       "t": 117.0
+      },
+      {
+       "s": "am",
+       "t": 117.54
+      }
+     ],
+     "nr": 4
+    },
+    {
+     "teil": "12",
+     "strophe": "la",
+     "zeile": "Be ne di cat vos om ni po tens De us",
+     "app_text": "Be-ne-di-cat-vos-om-ni-po-tens-De-us",
+     "text": "Be-ne-di-cat vos om-ni-po-tens De-us",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 123.97,
+     "ende": 138.51,
+     "silben": [
+      {
+       "s": "Be",
+       "t": 123.97
+      },
+      {
+       "s": "ne",
+       "t": 124.88
+      },
+      {
+       "s": "di",
+       "t": 125.78
+      },
+      {
+       "s": "cat",
+       "t": 126.69
+      },
+      {
+       "s": "vos",
+       "t": 128.06
+      },
+      {
+       "s": "om",
+       "t": 128.97
+      },
+      {
+       "s": "ni",
+       "t": 129.88
+      },
+      {
+       "s": "po",
+       "t": 130.78
+      },
+      {
+       "s": "tens",
+       "t": 131.69
+      },
+      {
+       "s": "De",
+       "t": 133.06
+      },
+      {
+       "s": "us",
+       "t": 133.97
+      }
+     ],
+     "nr": 5
+    },
+    {
+     "teil": "12",
+     "strophe": "la",
+     "zeile": "Be ne di cat vos om ni po tens De us",
+     "app_text": "Be-ne-di-cat-vos-om-ni-po-tens-De-us",
+     "text": "Be-ne-di-cat vos om-ni-po-tens De-us",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 138.51,
+     "ende": 153.06,
+     "silben": [
+      {
+       "s": "Be",
+       "t": 138.51
+      },
+      {
+       "s": "ne",
+       "t": 139.42
+      },
+      {
+       "s": "di",
+       "t": 140.33
+      },
+      {
+       "s": "cat",
+       "t": 141.24
+      },
+      {
+       "s": "vos",
+       "t": 142.6
+      },
+      {
+       "s": "om",
+       "t": 143.51
+      },
+      {
+       "s": "ni",
+       "t": 144.42
+      },
+      {
+       "s": "po",
+       "t": 145.33
+      },
+      {
+       "s": "tens",
+       "t": 146.24
+      },
+      {
+       "s": "De",
+       "t": 147.6
+      },
+      {
+       "s": "us",
+       "t": 148.51
+      }
+     ],
+     "nr": 6
+    },
+    {
+     "teil": "12",
+     "strophe": "la",
+     "zeile": "Do na no bis pa cem",
+     "app_text": "Do-na-no-bis-pa-cem",
+     "text": "Do-na no-bis pa-cem",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 153.06,
+     "ende": 159.42,
+     "silben": [
+      {
+       "s": "Do",
+       "t": 153.06
+      },
+      {
+       "s": "na",
+       "t": 153.97
+      },
+      {
+       "s": "no",
+       "t": 154.42
+      },
+      {
+       "s": "bis",
+       "t": 154.88
+      },
+      {
+       "s": "pa",
+       "t": 155.78
+      },
+      {
+       "s": "cem",
+       "t": 156.69
+      }
+     ],
+     "nr": 7
+    },
+    {
+     "teil": "12",
+     "strophe": "la",
+     "zeile": "Do na no bis pa cem",
+     "app_text": "Do-na-no-bis-pa-cem",
+     "text": "Do-na no-bis pa-cem",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 159.42,
+     "ende": 165.78,
+     "silben": [
+      {
+       "s": "Do",
+       "t": 159.42
+      },
+      {
+       "s": "na",
+       "t": 160.33
+      },
+      {
+       "s": "no",
+       "t": 160.78
+      },
+      {
+       "s": "bis",
+       "t": 161.24
+      },
+      {
+       "s": "pa",
+       "t": 162.15
+      },
+      {
+       "s": "cem",
+       "t": 163.06
+      }
+     ],
+     "nr": 8
+    },
+    {
+     "teil": "12",
+     "strophe": "de",
+     "zeile": "Frie de sei mit euch, geht in Frie den",
+     "app_text": "Frie-de-sei-mit-euch,-geht-in-Frie-den",
+     "text": "Frie-de sei mit euch, geht in Frie-den",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 173.06,
+     "ende": 187.6,
+     "silben": [
+      {
+       "s": "Frie",
+       "t": 173.06
+      },
+      {
+       "s": "de",
+       "t": 173.97
+      },
+      {
+       "s": "sei",
+       "t": 174.88
+      },
+      {
+       "s": "mit",
+       "t": 175.78
+      },
+      {
+       "s": "euch,",
+       "t": 176.69
+      },
+      {
+       "s": "geht",
+       "t": 178.51
+      },
+      {
+       "s": "in",
+       "t": 179.42
+      },
+      {
+       "s": "Frie",
+       "t": 180.33
+      },
+      {
+       "s": "den",
+       "t": 181.69
+      }
+     ],
+     "nr": 9
+    },
+    {
+     "teil": "12",
+     "strophe": "de",
+     "zeile": "Frie de sei mit euch, geht in Frie den",
+     "app_text": "Frie-de-sei-mit-euch,-geht-in-Frie-den",
+     "text": "Frie-de sei mit euch, geht in Frie-den",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 187.6,
+     "ende": 202.15,
+     "silben": [
+      {
+       "s": "Frie",
+       "t": 187.6
+      },
+      {
+       "s": "de",
+       "t": 188.51
+      },
+      {
+       "s": "sei",
+       "t": 189.42
+      },
+      {
+       "s": "mit",
+       "t": 190.33
+      },
+      {
+       "s": "euch,",
+       "t": 191.24
+      },
+      {
+       "s": "geht",
+       "t": 193.06
+      },
+      {
+       "s": "in",
+       "t": 193.97
+      },
+      {
+       "s": "Frie",
+       "t": 194.88
+      },
+      {
+       "s": "den",
+       "t": 196.24
+      }
+     ],
+     "nr": 10
+    },
+    {
+     "teil": "12",
+     "strophe": "de",
+     "zeile": "Nicht uns, o Herr, nicht uns, son dern dei nem Na men gib die Eh re",
+     "app_text": "Nicht-uns,-o-Herr,-nicht-uns,-son-dern-dei-nem-Na-men-gib-die-Eh-re",
+     "text": "Nicht uns, o Herr, nicht uns, son-dern dei-nem Na-men gib die Eh-re",
+     "stimme": "Tutti-Chor (Unisono/Oktaven), 3/4",
+     "start": 202.15,
+     "ende": 227.86,
+     "silben": [
+      {
+       "s": "Nicht",
+       "t": 202.15
+      },
+      {
+       "s": "uns,",
+       "t": 203.22
+      },
+      {
+       "s": "o",
+       "t": 204.83
+      },
+      {
+       "s": "Herr,",
+       "t": 205.36
+      },
+      {
+       "s": "nicht",
+       "t": 206.43
+      },
+      {
+       "s": "uns,",
+       "t": 208.58
+      },
+      {
+       "s": "son",
+       "t": 209.65
+      },
+      {
+       "s": "dern",
+       "t": 211.26
+      },
+      {
+       "s": "dei",
+       "t": 211.79
+      },
+      {
+       "s": "nem",
+       "t": 212.86
+      },
+      {
+       "s": "Na",
+       "t": 215.01
+      },
+      {
+       "s": "men",
+       "t": 216.08
+      },
+      {
+       "s": "gib",
+       "t": 217.68
+      },
+      {
+       "s": "die",
+       "t": 218.22
+      },
+      {
+       "s": "Eh",
+       "t": 219.29
+      },
+      {
+       "s": "re",
+       "t": 221.43
+      }
+     ],
+     "nr": 11
+    },
+    {
+     "teil": "12",
+     "strophe": "de",
+     "zeile": "Es seg ne euch der all mäch ti ge Gott",
+     "app_text": "Es-seg-ne-euch-der-all-mäch-ti-ge-Gott",
+     "text": "Es seg-ne euch der all-mäch-ti-ge Gott",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 227.86,
+     "ende": 242.41,
+     "silben": [
+      {
+       "s": "Es",
+       "t": 227.86
+      },
+      {
+       "s": "seg",
+       "t": 228.77
+      },
+      {
+       "s": "ne",
+       "t": 229.68
+      },
+      {
+       "s": "euch",
+       "t": 230.59
+      },
+      {
+       "s": "der",
+       "t": 231.95
+      },
+      {
+       "s": "all",
+       "t": 232.86
+      },
+      {
+       "s": "mäch",
+       "t": 233.77
+      },
+      {
+       "s": "ti",
+       "t": 234.68
+      },
+      {
+       "s": "ge",
+       "t": 235.59
+      },
+      {
+       "s": "Gott",
+       "t": 236.95
+      }
+     ],
+     "nr": 12
+    },
+    {
+     "teil": "12",
+     "strophe": "de",
+     "zeile": "Es seg ne euch der all mäch ti ge Gott",
+     "app_text": "Es-seg-ne-euch-der-all-mäch-ti-ge-Gott",
+     "text": "Es seg-ne euch der all-mäch-ti-ge Gott",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 242.41,
+     "ende": 256.95,
+     "silben": [
+      {
+       "s": "Es",
+       "t": 242.41
+      },
+      {
+       "s": "seg",
+       "t": 243.32
+      },
+      {
+       "s": "ne",
+       "t": 244.23
+      },
+      {
+       "s": "euch",
+       "t": 245.14
+      },
+      {
+       "s": "der",
+       "t": 246.5
+      },
+      {
+       "s": "all",
+       "t": 247.41
+      },
+      {
+       "s": "mäch",
+       "t": 248.32
+      },
+      {
+       "s": "ti",
+       "t": 249.23
+      },
+      {
+       "s": "ge",
+       "t": 250.14
+      },
+      {
+       "s": "Gott",
+       "t": 251.5
+      }
+     ],
+     "nr": 13
+    },
+    {
+     "teil": "12",
+     "strophe": "de",
+     "zeile": "Gib uns dei nen Frie den",
+     "app_text": "Gib-uns-dei-nen-Frie-den",
+     "text": "Gib uns dei-nen Frie-den",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 256.95,
+     "ende": 264.23,
+     "silben": [
+      {
+       "s": "Gib",
+       "t": 256.95
+      },
+      {
+       "s": "uns",
+       "t": 257.86
+      },
+      {
+       "s": "dei",
+       "t": 258.77
+      },
+      {
+       "s": "nen",
+       "t": 259.68
+      },
+      {
+       "s": "Frie",
+       "t": 260.59
+      },
+      {
+       "s": "den",
+       "t": 261.5
+      }
+     ],
+     "nr": 14
+    },
+    {
+     "teil": "12",
+     "strophe": "de",
+     "zeile": "Gib uns dei nen Frie den",
+     "app_text": "Gib-uns-dei-nen-Frie-den",
+     "text": "Gib uns dei-nen Frie-den",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 264.23,
+     "ende": 271.5,
+     "silben": [
+      {
+       "s": "Gib",
+       "t": 264.23
+      },
+      {
+       "s": "uns",
+       "t": 265.14
+      },
+      {
+       "s": "dei",
+       "t": 266.04
+      },
+      {
+       "s": "nen",
+       "t": 266.95
+      },
+      {
+       "s": "Frie",
+       "t": 267.86
+      },
+      {
+       "s": "den",
+       "t": 268.77
+      }
+     ],
+     "nr": 15
+    },
+    {
+     "teil": "12",
+     "strophe": "fr",
+     "zeile": "La paix soit a vec vous, al lez en paix",
+     "app_text": "La-paix-soit-a-vec-vous,-al-lez-en-paix",
+     "text": "La paix soit a-vec vous, al-lez en paix",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 278.77,
+     "ende": 293.32,
+     "silben": [
+      {
+       "s": "La",
+       "t": 278.77
+      },
+      {
+       "s": "paix",
+       "t": 279.68
+      },
+      {
+       "s": "soit",
+       "t": 280.59
+      },
+      {
+       "s": "a",
+       "t": 281.5
+      },
+      {
+       "s": "vec",
+       "t": 282.41
+      },
+      {
+       "s": "vous,",
+       "t": 283.32
+      },
+      {
+       "s": "al",
+       "t": 285.14
+      },
+      {
+       "s": "lez",
+       "t": 286.04
+      },
+      {
+       "s": "en",
+       "t": 287.41
+      },
+      {
+       "s": "paix",
+       "t": 288.32
+      }
+     ],
+     "nr": 16
+    },
+    {
+     "teil": "12",
+     "strophe": "fr",
+     "zeile": "La paix soit a vec vous, al lez en paix",
+     "app_text": "La-paix-soit-a-vec-vous,-al-lez-en-paix",
+     "text": "La paix soit a-vec vous, al-lez en paix",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 293.32,
+     "ende": 307.86,
+     "silben": [
+      {
+       "s": "La",
+       "t": 293.32
+      },
+      {
+       "s": "paix",
+       "t": 294.23
+      },
+      {
+       "s": "soit",
+       "t": 295.14
+      },
+      {
+       "s": "a",
+       "t": 296.04
+      },
+      {
+       "s": "vec",
+       "t": 296.95
+      },
+      {
+       "s": "vous,",
+       "t": 297.86
+      },
+      {
+       "s": "al",
+       "t": 299.68
+      },
+      {
+       "s": "lez",
+       "t": 300.59
+      },
+      {
+       "s": "en",
+       "t": 301.95
+      },
+      {
+       "s": "paix",
+       "t": 302.86
+      }
+     ],
+     "nr": 17
+    },
+    {
+     "teil": "12",
+     "strophe": "fr",
+     "zeile": "Que Dieu tout puis sant vous bé nis se",
+     "app_text": "Que-Dieu-tout-puis-sant-vous-bé-nis-se",
+     "text": "Que Dieu tout-puis-sant vous bé-nis-se",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 307.86,
+     "ende": 318.77,
+     "silben": [
+      {
+       "s": "Que",
+       "t": 307.86
+      },
+      {
+       "s": "Dieu",
+       "t": 308.77
+      },
+      {
+       "s": "tout",
+       "t": 309.68
+      },
+      {
+       "s": "puis",
+       "t": 310.59
+      },
+      {
+       "s": "sant",
+       "t": 311.95
+      },
+      {
+       "s": "vous",
+       "t": 312.86
+      },
+      {
+       "s": "bé",
+       "t": 313.77
+      },
+      {
+       "s": "nis",
+       "t": 314.68
+      },
+      {
+       "s": "se",
+       "t": 315.59
+      }
+     ],
+     "nr": 18
+    },
+    {
+     "teil": "12",
+     "strophe": "fr",
+     "zeile": "Que Dieu tout puis sant vous bé nis se",
+     "app_text": "Que-Dieu-tout-puis-sant-vous-bé-nis-se",
+     "text": "Que Dieu tout-puis-sant vous bé-nis-se",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 318.77,
+     "ende": 329.68,
+     "silben": [
+      {
+       "s": "Que",
+       "t": 318.77
+      },
+      {
+       "s": "Dieu",
+       "t": 319.68
+      },
+      {
+       "s": "tout",
+       "t": 320.59
+      },
+      {
+       "s": "puis",
+       "t": 321.5
+      },
+      {
+       "s": "sant",
+       "t": 322.86
+      },
+      {
+       "s": "vous",
+       "t": 323.77
+      },
+      {
+       "s": "bé",
+       "t": 324.68
+      },
+      {
+       "s": "nis",
+       "t": 325.59
+      },
+      {
+       "s": "se",
+       "t": 326.5
+      }
+     ],
+     "nr": 19
+    },
+    {
+     "teil": "12",
+     "strophe": "fr",
+     "zeile": "Don ne nous ta paix",
+     "app_text": "Don-ne-nous-ta-paix",
+     "text": "Don-ne-nous ta paix",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 329.68,
+     "ende": 336.95,
+     "silben": [
+      {
+       "s": "Don",
+       "t": 329.68
+      },
+      {
+       "s": "ne",
+       "t": 330.59
+      },
+      {
+       "s": "nous",
+       "t": 331.5
+      },
+      {
+       "s": "ta",
+       "t": 332.41
+      },
+      {
+       "s": "paix",
+       "t": 333.32
+      }
+     ],
+     "nr": 20
+    },
+    {
+     "teil": "12",
+     "strophe": "fr",
+     "zeile": "Don ne nous ta paix",
+     "app_text": "Don-ne-nous-ta-paix",
+     "text": "Don-ne-nous ta paix",
+     "stimme": "Chor (Frauen + Männer)",
+     "start": 336.95,
+     "ende": 344.23,
+     "silben": [
+      {
+       "s": "Don",
+       "t": 336.95
+      },
+      {
+       "s": "ne",
+       "t": 337.86
+      },
+      {
+       "s": "nous",
+       "t": 338.77
+      },
+      {
+       "s": "ta",
+       "t": 339.68
+      },
+      {
+       "s": "paix",
+       "t": 340.59
+      }
+     ],
+     "nr": 21
+    }
+   ]
+  },
+  {
+   "satz": "13 · Nachspiel – Vollendung des Baumeisters",
+   "datei": "messe-13-nachspiel",
+   "tempo_bpm": 72,
+   "zeilen": []
+  }
+ ],
+ "app_lines": [
+  [
+   "01 · Eröffnung – Einzug: Non nobis, Domine",
+   "Lux-in-te-ne-bris-lu-cet",
+   "la"
+  ],
+  [
+   "01 · Eröffnung – Einzug: Non nobis, Domine",
+   "Lux-in-te-ne-bris-lu-cet",
+   "la"
+  ],
+  [
+   "01 · Eröffnung – Einzug: Non nobis, Domine",
+   "Non-no-bis,-Do-mi-ne,-non-no-bis,-sed-no-mi-ni-tu-o-da-glo-ri-am",
+   "la"
+  ],
+  [
+   "01 · Eröffnung – Einzug: Non nobis, Domine",
+   "Non-no-bis,-Do-mi-ne,-non-no-bis,-sed-no-mi-ni-tu-o-da-glo-ri-am",
+   "la-wdh"
+  ],
+  [
+   "01 · Eröffnung – Einzug: Non nobis, Domine",
+   "Licht-scheint-in-der-Fins-ter-nis",
+   "de"
+  ],
+  [
+   "01 · Eröffnung – Einzug: Non nobis, Domine",
+   "Licht-scheint-in-der-Fins-ter-nis",
+   "de"
+  ],
+  [
+   "01 · Eröffnung – Einzug: Non nobis, Domine",
+   "Nicht-uns,-o-Herr,-nicht-uns,-son-dern-dei-nem-Na-men-gib-die-Eh-re",
+   "de"
+  ],
+  [
+   "01 · Eröffnung – Einzug: Non nobis, Domine",
+   "La-lu-miè-re-luit-dans-la-nuit",
+   "fr"
+  ],
+  [
+   "01 · Eröffnung – Einzug: Non nobis, Domine",
+   "La-lu-miè-re-luit-dans-la-nuit",
+   "fr"
+  ],
+  [
+   "01 · Eröffnung – Einzug: Non nobis, Domine",
+   "Lux-in-te-ne-bris-lu-cet",
+   "la"
+  ],
+  [
+   "01 · Eröffnung – Einzug: Non nobis, Domine",
+   "Lux-in-te-ne-bris-lu-cet",
+   "la"
+  ],
+  [
+   "01 · Eröffnung – Einzug: Non nobis, Domine",
+   "Non-no-bis,-Do-mi-ne,-non-no-bis,-sed-no-mi-ni-tu-o-da-glo-ri-am",
+   "la"
+  ],
+  [
+   "01 · Eröffnung – Einzug: Non nobis, Domine",
+   "Non-no-bis,-Do-mi-ne,-non-no-bis,-sed-no-mi-ni-tu-o-da-glo-ri-am",
+   "la-wdh"
+  ],
+  [
+   "01 · Eröffnung – Einzug: Non nobis, Domine",
+   "Lux-in-te-ne-bris-lu-cet",
+   "la"
+  ],
+  [
+   "01 · Eröffnung – Einzug: Non nobis, Domine",
+   "Lux-in-te-ne-bris-lu-cet",
+   "la"
+  ],
+  [
+   "01 · Eröffnung – Einzug: Non nobis, Domine",
+   "Non-no-bis,-Do-mi-ne,-non-no-bis,-sed-no-mi-ni-tu-o-da-glo-ri-am",
+   "la"
+  ],
+  [
+   "02 · Kyrie",
+   "Ky-ri-e-e-lei-son,-Chri-ste-e-lei-son",
+   "la"
+  ],
+  [
+   "02 · Kyrie",
+   "Ky-ri-e-e-lei-son,-Chri-ste-e-lei-son",
+   "la"
+  ],
+  [
+   "02 · Kyrie",
+   "Herr,-er-bar-me-dich,-Chris-tus,-er-bar-me-dich",
+   "de"
+  ],
+  [
+   "02 · Kyrie",
+   "Herr,-er-bar-me-dich,-Chris-tus,-er-bar-me-dich",
+   "de"
+  ],
+  [
+   "02 · Kyrie",
+   "Sei-gneur,-prends-pi-tié,-ô-Christ,-prends-pi-tié",
+   "fr"
+  ],
+  [
+   "02 · Kyrie",
+   "Sei-gneur,-prends-pi-tié,-ô-Christ,-prends-pi-tié",
+   "fr"
+  ],
+  [
+   "02 · Kyrie",
+   "Ky-ri-e-e-lei-son,-Chri-ste-e-lei-son",
+   "la"
+  ],
+  [
+   "02 · Kyrie",
+   "Ky-ri-e-e-lei-son,-Chri-ste-e-lei-son",
+   "la"
+  ],
+  [
+   "02 · Kyrie",
+   "Ky-ri-e-e-lei-son,-Chri-ste-e-lei-son",
+   "la"
+  ],
+  [
+   "02 · Kyrie",
+   "Ky-ri-e-e-lei-son,-Chri-ste-e-lei-son",
+   "la"
+  ],
+  [
+   "03 · Gloria",
+   "Glo-ri-a-in-ex-cel-sis-De-o,-et-in-ter-ra-pax",
+   "la"
+  ],
+  [
+   "03 · Gloria",
+   "Glo-ri-a-in-ex-cel-sis-De-o,-et-in-ter-ra-pax",
+   "la"
+  ],
+  [
+   "03 · Gloria",
+   "Non-no-bis,-Do-mi-ne,-non-no-bis,-sed-no-mi-ni-tu-o-da-glo-ri-am",
+   "la"
+  ],
+  [
+   "03 · Gloria",
+   "Non-no-bis,-Do-mi-ne,-non-no-bis,-sed-no-mi-ni-tu-o-da-glo-ri-am",
+   "la-wdh"
+  ],
+  [
+   "03 · Gloria",
+   "Do-na-no-bis-pa-cem",
+   "la"
+  ],
+  [
+   "03 · Gloria",
+   "Do-na-no-bis-pa-cem",
+   "la"
+  ],
+  [
+   "03 · Gloria",
+   "Eh-re-sei-Gott-in-der-Hö-he,-Frie-de-auf-Er-den",
+   "de"
+  ],
+  [
+   "03 · Gloria",
+   "Eh-re-sei-Gott-in-der-Hö-he,-Frie-de-auf-Er-den",
+   "de"
+  ],
+  [
+   "03 · Gloria",
+   "Nicht-uns,-o-Herr,-nicht-uns,-son-dern-dei-nem-Na-men-gib-die-Eh-re",
+   "de"
+  ],
+  [
+   "03 · Gloria",
+   "Gib-uns-dei-nen-Frie-den",
+   "de"
+  ],
+  [
+   "03 · Gloria",
+   "Gib-uns-dei-nen-Frie-den",
+   "de"
+  ],
+  [
+   "03 · Gloria",
+   "Gloire-à-Dieu-au-plus-haut-des-cieux,-paix-sur-la-ter-re",
+   "fr"
+  ],
+  [
+   "03 · Gloria",
+   "Gloire-à-Dieu-au-plus-haut-des-cieux,-paix-sur-la-ter-re",
+   "fr"
+  ],
+  [
+   "03 · Gloria",
+   "Don-ne-nous-ta-paix",
+   "fr"
+  ],
+  [
+   "03 · Gloria",
+   "Don-ne-nous-ta-paix",
+   "fr"
+  ],
+  [
+   "05 · Halleluja",
+   "Al-le-lu-ia,-al-le-lu-ia",
+   "la"
+  ],
+  [
+   "05 · Halleluja",
+   "Al-le-lu-ia,-al-le-lu-ia",
+   "la"
+  ],
+  [
+   "05 · Halleluja",
+   "Hal-le-lu-ja,-lobt-den-Herrn",
+   "de"
+  ],
+  [
+   "05 · Halleluja",
+   "Hal-le-lu-ja,-lobt-den-Herrn",
+   "de"
+  ],
+  [
+   "05 · Halleluja",
+   "Al-lé-lu-ia,-chan-tez-Dieu",
+   "fr"
+  ],
+  [
+   "05 · Halleluja",
+   "Al-lé-lu-ia,-chan-tez-Dieu",
+   "fr"
+  ],
+  [
+   "05 · Halleluja",
+   "Al-le-lu-ia,-al-le-lu-ia",
+   "la"
+  ],
+  [
+   "05 · Halleluja",
+   "Al-le-lu-ia,-al-le-lu-ia",
+   "la"
+  ],
+  [
+   "05 · Halleluja",
+   "Al-le-lu-ia,-al-le-lu-ia",
+   "la"
+  ],
+  [
+   "05 · Halleluja",
+   "Al-le-lu-ia,-al-le-lu-ia",
+   "la"
+  ],
+  [
+   "05 · Halleluja",
+   "Hal-le-lu-ja,-lobt-den-Herrn",
+   "de"
+  ],
+  [
+   "06b · Das Erbe im Wald – für Winny und Winfried",
+   "Bei-Car-nac,-wo-die-Stei-ne-stehn,",
+   "S1"
+  ],
+  [
+   "06b · Das Erbe im Wald – für Winny und Winfried",
+   "zog-einst-ein-Al-ter-in-den-Wald,",
+   "S1"
+  ],
+  [
+   "06b · Das Erbe im Wald – für Winny und Winfried",
+   "er-nahm-kein-Gold-und-nahm-kein-Schwert,",
+   "S1"
+  ],
+  [
+   "06b · Das Erbe im Wald – für Winny und Winfried",
+   "nur-Lie-der,-die-er-lei-se-sang.",
+   "S1"
+  ],
+  [
+   "06b · Das Erbe im Wald – für Winny und Winfried",
+   "Was-der-Wald-be-wahrt,-das-singt-das-Lied",
+   "de"
+  ],
+  [
+   "06b · Das Erbe im Wald – für Winny und Winfried",
+   "Quod-sil-va-ser-vat,-can-tat-car-men",
+   "la"
+  ],
+  [
+   "06b · Das Erbe im Wald – für Winny und Winfried",
+   "Er-schrieb-kein-Wort-auf-Stein-und-Haut,",
+   "S2"
+  ],
+  [
+   "06b · Das Erbe im Wald – für Winny und Winfried",
+   "er-gab-es-wei-ter-Mund-zu-Mund,",
+   "S2"
+  ],
+  [
+   "06b · Das Erbe im Wald – für Winny und Winfried",
+   "in-Sa-gen,-die-am-Feu-er-gehn,",
+   "S2"
+  ],
+  [
+   "06b · Das Erbe im Wald – für Winny und Winfried",
+   "in-Ver-sen-für-das-Kind-im-Arm.",
+   "S2"
+  ],
+  [
+   "06b · Das Erbe im Wald – für Winny und Winfried",
+   "Was-der-Wald-be-wahrt,-das-singt-das-Lied",
+   "de"
+  ],
+  [
+   "06b · Das Erbe im Wald – für Winny und Winfried",
+   "Ce-que-gar-de-la-fo-rêt,-le-chant-le-dit",
+   "fr"
+  ],
+  [
+   "06b · Das Erbe im Wald – für Winny und Winfried",
+   "Und-wer-heut-durch-die-Ei-chen-geht,",
+   "S3"
+  ],
+  [
+   "06b · Das Erbe im Wald – für Winny und Winfried",
+   "hört-noch-den-Klang-im-Blät-ter-dach:",
+   "S3"
+  ],
+  [
+   "06b · Das Erbe im Wald – für Winny und Winfried",
+   "Das-Er-be-lebt,-so-lang-man-singt,",
+   "S3"
+  ],
+  [
+   "06b · Das Erbe im Wald – für Winny und Winfried",
+   "für-Win-ny-und-für-Win-fried-wach.",
+   "S3"
+  ],
+  [
+   "06b · Das Erbe im Wald – für Winny und Winfried",
+   "Was-der-Wald-be-wahrt,-das-singt-das-Lied",
+   "de"
+  ],
+  [
+   "06b · Das Erbe im Wald – für Winny und Winfried",
+   "Quod-sil-va-ser-vat,-can-tat-car-men",
+   "la"
+  ],
+  [
+   "07 · Credo-Ruf – Ubi caritas",
+   "Cre-do-in-u-num-De-um",
+   "la"
+  ],
+  [
+   "07 · Credo-Ruf – Ubi caritas",
+   "Cre-do-in-u-num-De-um",
+   "la"
+  ],
+  [
+   "07 · Credo-Ruf – Ubi caritas",
+   "U-bi-ca-ri-tas-et-a-mor,-De-us-i-bi-est",
+   "la"
+  ],
+  [
+   "07 · Credo-Ruf – Ubi caritas",
+   "U-bi-ca-ri-tas-et-a-mor,-De-us-i-bi-est",
+   "la"
+  ],
+  [
+   "07 · Credo-Ruf – Ubi caritas",
+   "Ich-glau-be-an-den-ei-nen-Gott",
+   "de"
+  ],
+  [
+   "07 · Credo-Ruf – Ubi caritas",
+   "Ich-glau-be-an-den-ei-nen-Gott",
+   "de"
+  ],
+  [
+   "07 · Credo-Ruf – Ubi caritas",
+   "Wo-Gü-te-und-Lie-be-sind,-da-ist-Gott",
+   "de"
+  ],
+  [
+   "07 · Credo-Ruf – Ubi caritas",
+   "Wo-Gü-te-und-Lie-be-sind,-da-ist-Gott",
+   "de"
+  ],
+  [
+   "07 · Credo-Ruf – Ubi caritas",
+   "Je-crois-en-un-seul-Dieu",
+   "fr"
+  ],
+  [
+   "07 · Credo-Ruf – Ubi caritas",
+   "Je-crois-en-un-seul-Dieu",
+   "fr"
+  ],
+  [
+   "07 · Credo-Ruf – Ubi caritas",
+   "Où-sont-l'a-mour-et-la-cha-ri-té,-Dieu-est-là",
+   "fr"
+  ],
+  [
+   "07 · Credo-Ruf – Ubi caritas",
+   "Où-sont-l'a-mour-et-la-cha-ri-té,-Dieu-est-là",
+   "fr"
+  ],
+  [
+   "08 · Sanctus",
+   "Sanc-tus,-sanc-tus,-sanc-tus-Do-mi-nus-De-us",
+   "la"
+  ],
+  [
+   "08 · Sanctus",
+   "Sanc-tus,-sanc-tus,-sanc-tus-Do-mi-nus-De-us",
+   "la"
+  ],
+  [
+   "08 · Sanctus",
+   "Ho-san-na-in-ex-cel-sis",
+   "la"
+  ],
+  [
+   "08 · Sanctus",
+   "Ho-san-na-in-ex-cel-sis",
+   "la"
+  ],
+  [
+   "08 · Sanctus",
+   "Hei-lig,-hei-lig,-hei-lig-ist-Gott,-der-Herr",
+   "de"
+  ],
+  [
+   "08 · Sanctus",
+   "Hei-lig,-hei-lig,-hei-lig-ist-Gott,-der-Herr",
+   "de"
+  ],
+  [
+   "08 · Sanctus",
+   "Ho-san-na-in-der-Hö-he",
+   "de"
+  ],
+  [
+   "08 · Sanctus",
+   "Ho-san-na-in-der-Hö-he",
+   "de"
+  ],
+  [
+   "08 · Sanctus",
+   "Saint,-saint,-saint-le-Sei-gneur,-Dieu-de-l'u-ni-vers",
+   "fr"
+  ],
+  [
+   "08 · Sanctus",
+   "Saint,-saint,-saint-le-Sei-gneur,-Dieu-de-l'u-ni-vers",
+   "fr"
+  ],
+  [
+   "08 · Sanctus",
+   "Ho-san-na-au-plus-haut-des-cieux",
+   "fr"
+  ],
+  [
+   "08 · Sanctus",
+   "Ho-san-na-au-plus-haut-des-cieux",
+   "fr"
+  ],
+  [
+   "08 · Sanctus",
+   "Sanc-tus,-sanc-tus,-sanc-tus-Do-mi-nus-De-us",
+   "la"
+  ],
+  [
+   "08 · Sanctus",
+   "Sanc-tus,-sanc-tus,-sanc-tus-Do-mi-nus-De-us",
+   "la"
+  ],
+  [
+   "09 · Agnus Dei – Dona nobis pacem",
+   "Ag-nus-De-i,-mi-se-re-re-no-bis",
+   "la"
+  ],
+  [
+   "09 · Agnus Dei – Dona nobis pacem",
+   "Ag-nus-De-i,-mi-se-re-re-no-bis",
+   "la"
+  ],
+  [
+   "09 · Agnus Dei – Dona nobis pacem",
+   "Do-na-no-bis-pa-cem",
+   "la"
+  ],
+  [
+   "09 · Agnus Dei – Dona nobis pacem",
+   "Do-na-no-bis-pa-cem",
+   "la"
+  ],
+  [
+   "09 · Agnus Dei – Dona nobis pacem",
+   "Lamm-Got-tes,-er-bar-me-dich-un-ser",
+   "de"
+  ],
+  [
+   "09 · Agnus Dei – Dona nobis pacem",
+   "Lamm-Got-tes,-er-bar-me-dich-un-ser",
+   "de"
+  ],
+  [
+   "09 · Agnus Dei – Dona nobis pacem",
+   "Gib-uns-dei-nen-Frie-den",
+   "de"
+  ],
+  [
+   "09 · Agnus Dei – Dona nobis pacem",
+   "Gib-uns-dei-nen-Frie-den",
+   "de"
+  ],
+  [
+   "09 · Agnus Dei – Dona nobis pacem",
+   "A-gneau-de-Dieu,-prends-pi-tié-de-nous",
+   "fr"
+  ],
+  [
+   "09 · Agnus Dei – Dona nobis pacem",
+   "A-gneau-de-Dieu,-prends-pi-tié-de-nous",
+   "fr"
+  ],
+  [
+   "09 · Agnus Dei – Dona nobis pacem",
+   "Don-ne-nous-ta-paix",
+   "fr"
+  ],
+  [
+   "09 · Agnus Dei – Dona nobis pacem",
+   "Don-ne-nous-ta-paix",
+   "fr"
+  ],
+  [
+   "09 · Agnus Dei – Dona nobis pacem",
+   "Ag-nus-De-i,-mi-se-re-re-no-bis",
+   "la"
+  ],
+  [
+   "09 · Agnus Dei – Dona nobis pacem",
+   "Ag-nus-De-i,-mi-se-re-re-no-bis",
+   "la"
+  ],
+  [
+   "09 · Agnus Dei – Dona nobis pacem",
+   "Do-na-no-bis-pa-cem",
+   "la"
+  ],
+  [
+   "09 · Agnus Dei – Dona nobis pacem",
+   "Do-na-no-bis-pa-cem",
+   "la"
+  ],
+  [
+   "09 · Agnus Dei – Dona nobis pacem",
+   "Ag-nus-De-i,-mi-se-re-re-no-bis",
+   "la"
+  ],
+  [
+   "09 · Agnus Dei – Dona nobis pacem",
+   "Ag-nus-De-i,-mi-se-re-re-no-bis",
+   "la"
+  ],
+  [
+   "09 · Agnus Dei – Dona nobis pacem",
+   "Do-na-no-bis-pa-cem",
+   "la"
+  ],
+  [
+   "10 · Vaterunser-Ruf",
+   "Pa-ter-nos-ter,-ad-ve-ni-at-reg-num-tu-um",
+   "la"
+  ],
+  [
+   "10 · Vaterunser-Ruf",
+   "Pa-ter-nos-ter,-ad-ve-ni-at-reg-num-tu-um",
+   "la"
+  ],
+  [
+   "10 · Vaterunser-Ruf",
+   "A-men,-a-men",
+   "la"
+  ],
+  [
+   "10 · Vaterunser-Ruf",
+   "A-men,-a-men",
+   "la"
+  ],
+  [
+   "10 · Vaterunser-Ruf",
+   "Va-ter-un-ser,-dein-Reich-kom-me",
+   "de"
+  ],
+  [
+   "10 · Vaterunser-Ruf",
+   "Va-ter-un-ser,-dein-Reich-kom-me",
+   "de"
+  ],
+  [
+   "10 · Vaterunser-Ruf",
+   "A-men,-a-men",
+   "de"
+  ],
+  [
+   "10 · Vaterunser-Ruf",
+   "A-men,-a-men",
+   "de"
+  ],
+  [
+   "10 · Vaterunser-Ruf",
+   "No-tre-Pè-re,-que-ton-rè-gne-vien-ne",
+   "fr"
+  ],
+  [
+   "10 · Vaterunser-Ruf",
+   "No-tre-Pè-re,-que-ton-rè-gne-vien-ne",
+   "fr"
+  ],
+  [
+   "10 · Vaterunser-Ruf",
+   "A-men,-a-men",
+   "fr"
+  ],
+  [
+   "10 · Vaterunser-Ruf",
+   "A-men,-a-men",
+   "fr"
+  ],
+  [
+   "11 · Epitaph für Frère Roger",
+   "Pax-ti-bi,-fra-ter,-in-lu-ce-Do-mi-ni",
+   "la"
+  ],
+  [
+   "11 · Epitaph für Frère Roger",
+   "Pax-ti-bi,-fra-ter,-in-lu-ce-Do-mi-ni",
+   "la"
+  ],
+  [
+   "11 · Epitaph für Frère Roger",
+   "Bru-der-Ro-ger,-ruh-in-Frie-den",
+   "de"
+  ],
+  [
+   "11 · Epitaph für Frère Roger",
+   "Bru-der-Ro-ger,-ruh-in-Frie-den",
+   "de"
+  ],
+  [
+   "11 · Epitaph für Frère Roger",
+   "Frè-re-Ro-ger,-re-po-se-en-paix",
+   "fr"
+  ],
+  [
+   "11 · Epitaph für Frère Roger",
+   "Frè-re-Ro-ger,-re-po-se-en-paix",
+   "fr"
+  ],
+  [
+   "11 · Epitaph für Frère Roger",
+   "Pax-ti-bi,-fra-ter,-in-lu-ce-Do-mi-ni",
+   "la"
+  ],
+  [
+   "11 · Epitaph für Frère Roger",
+   "Pax-ti-bi,-fra-ter,-in-lu-ce-Do-mi-ni",
+   "la"
+  ],
+  [
+   "11 · Epitaph für Frère Roger",
+   "Pax-ti-bi,-fra-ter,-in-lu-ce-Do-mi-ni",
+   "la"
+  ],
+  [
+   "11 · Epitaph für Frère Roger",
+   "Pax-ti-bi,-fra-ter,-in-lu-ce-Do-mi-ni",
+   "la"
+  ],
+  [
+   "11 · Epitaph für Frère Roger",
+   "Bru-der-Ro-ger,-ruh-in-Frie-den",
+   "de"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "Pax-vo-bis-cum,-i-te-in-pa-ce",
+   "la"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "Pax-vo-bis-cum,-i-te-in-pa-ce",
+   "la"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "Non-no-bis,-Do-mi-ne,-non-no-bis,-sed-no-mi-ni-tu-o-da-glo-ri-am",
+   "la"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "Non-no-bis,-Do-mi-ne,-non-no-bis,-sed-no-mi-ni-tu-o-da-glo-ri-am",
+   "la-wdh"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "Be-ne-di-cat-vos-om-ni-po-tens-De-us",
+   "la"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "Be-ne-di-cat-vos-om-ni-po-tens-De-us",
+   "la"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "Do-na-no-bis-pa-cem",
+   "la"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "Do-na-no-bis-pa-cem",
+   "la"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "Frie-de-sei-mit-euch,-geht-in-Frie-den",
+   "de"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "Frie-de-sei-mit-euch,-geht-in-Frie-den",
+   "de"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "Nicht-uns,-o-Herr,-nicht-uns,-son-dern-dei-nem-Na-men-gib-die-Eh-re",
+   "de"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "Es-seg-ne-euch-der-all-mäch-ti-ge-Gott",
+   "de"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "Es-seg-ne-euch-der-all-mäch-ti-ge-Gott",
+   "de"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "Gib-uns-dei-nen-Frie-den",
+   "de"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "Gib-uns-dei-nen-Frie-den",
+   "de"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "La-paix-soit-a-vec-vous,-al-lez-en-paix",
+   "fr"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "La-paix-soit-a-vec-vous,-al-lez-en-paix",
+   "fr"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "Que-Dieu-tout-puis-sant-vous-bé-nis-se",
+   "fr"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "Que-Dieu-tout-puis-sant-vous-bé-nis-se",
+   "fr"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "Don-ne-nous-ta-paix",
+   "fr"
+  ],
+  [
+   "12 · Sendung und Segen – Auszug: Pax vobiscum · Non nobis",
+   "Don-ne-nous-ta-paix",
+   "fr"
+  ]
+ ]
+}

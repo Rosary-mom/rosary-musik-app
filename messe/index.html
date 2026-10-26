@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#6b1028">
+<link rel="manifest" href="../manifest.webmanifest"><link rel="icon" href="../icon-192.png"><title>Missa Baumeister · Rosary Musik</title>
+<link rel="stylesheet" href="../assets/theme.css">
+<style>body{margin:0;background:#000;color:#fff;font-family:Rosario,system-ui,sans-serif}main{max-width:900px;margin:0 auto;padding:16px}
+h1,h2{color:#FFD700;font-family:Rockwell,serif}a{color:#FFD700}.t{background:#111;border:2px solid #FFD700;border-radius:12px;padding:12px;margin:10px 0;cursor:pointer}
+.t.on{background:#2a0a12}#kara{font-size:26px;text-align:center;min-height:2.4em;color:#fff}#kara span.on{color:#FFD700}#kara span.done{color:#c9a86a}
+audio{width:100%}.h{color:#c9a86a;font-style:italic}</style></head><body>
+<div class="rm-top"><img src="../assets/rosary-logo.png" alt="Rosary"><span class="rm-title">Missa Baumeister</span></div>
+<main><p><a href="../">← Übersicht</a> · <a href="messe-liedblatt.pdf">Liedblatt (PDF)</a> · <a href="audio/messe-gesamt-48k.mp3">Gesamtaufnahme (61 min)</a></p>
+<p id="wid" class="h"></p>
+<audio id="au" controls></audio><div id="kara"></div><div id="lineinfo" class="h"></div>
+<h2>Teile</h2><div id="list"></div>
+<p class="h">Eigene Komposition, alle Klänge synthetisch. Chor = synthetischer Platzhalter. Lateinische Texte gemeinfrei (Ordinarium, Vulgata).</p></main>
+<script>
+var $=function(i){return document.getElementById(i)},au=$("au"),D=null,cur=null;
+fetch("messe-karaoke.json").then(function(r){return r.json()}).then(function(d){D=d;$("wid").textContent=d.widmung||"";
+ d.saetze.forEach(function(s,i){var e=document.createElement("div");e.className="t";e.textContent=s.satz;e.onclick=function(){play(i,e)};$("list").appendChild(e);});});
+function play(i,e){cur=D.saetze[i];[].forEach.call(document.querySelectorAll(".t"),function(x){x.classList.remove("on")});e.classList.add("on");
+ au.src="audio/"+cur.datei+".mp3";au.play().catch(function(){});$("kara").innerHTML="";}
+var last=null;function sync(){if(!cur||!cur.zeilen)return;var t=au.currentTime,z=null;
+ for(var i=0;i<cur.zeilen.length;i++){var r=cur.zeilen[i];if(t>=r.start&&t<r.ende){z=r;break;}}
+ if(!z){if(last){last=null;$("kara").innerHTML="";$("lineinfo").textContent="";}return;}
+ if(last!==z){last=z;$("kara").innerHTML=(z.silben||[]).map(function(s){return"<span>"+s.s+"</span> "}).join("");$("lineinfo").textContent=z.stimme||"";}
+ var k=$("kara").children,sb=z.silben||[];for(var j=0;j<k.length;j++){var n=sb[j+1]?sb[j+1].t:z.ende;k[j].className=t>=n?"done":t>=sb[j].t?"on":"";}}
+au.addEventListener("timeupdate",sync);(function L(){if(!au.paused)sync();requestAnimationFrame(L)})();
+if("serviceWorker" in navigator&&location.protocol!=="file:")navigator.serviceWorker.register("../service-worker.js");
+</script></body></html>
