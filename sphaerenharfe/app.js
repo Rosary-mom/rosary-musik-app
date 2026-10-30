@@ -53,12 +53,25 @@ function showKara(text){var k=$("sh-kara");k.innerHTML="";syl(text).forEach(func
 function karaAt(i,ms){timers.push(setTimeout(function(){var ks=$("sh-kara").children;for(var j=0;j<ks.length;j++)ks[j].className=j<i?"done":j===i?"on":"";},ms));}
 // Melodie mit Karaoke ab Zeitpunkt t (s, AudioContext); durs in s je Ton. Gibt Endzeit zurück.
 function singLine(l,t,durs){var a=ctx(),mel=melodyFor(l),s=syl(l[1]),tt=t;showKara(l[1]);
- var spokenText=l[1].replace(/[-_]+/g," ");
+ var fullText=l[1].replace(/[-_]+/g," ");
+ // Sings synchronized melody notes with singing formant voice
  if($("sh-voice-on")&&$("sh-voice-on").checked&&window.UnisonChoir){
   var delayMs=Math.max(0,(t-a.currentTime)*1000);
-  timers.push(setTimeout(function(){UnisonChoir.speak(spokenText,"de");},delayMs));
+  timers.push(setTimeout(function(){
+   UnisonChoir.singLineMelody(s,mel,durs,t,"de");
+  },delayMs));
  }
- mel.forEach(function(m,i){pluck(m,tt,Math.max(1.2,durs[i]*1.5),false,0.38);karaAt(i,(tt-a.currentTime)*1000);tt+=durs[i];});
+ mel.forEach(function(m,i){
+  var sylName=s[i]||"";
+  var vowel=(window.UnisonChoir)?UnisonChoir.detectVowel(sylName):"a";
+  if(window.UnisonAudio&&(!($("sh-voice-on"))||$("sh-voice-on").checked)){
+   var sn=UnisonAudio.singNote(tt,m,Math.max(0.8,durs[i]*1.1),vowel,0.32,0.0);
+   live.push.apply(live,sn);
+  }
+  pluck(m,tt,Math.max(1.2,durs[i]*1.5),false,0.35);
+  karaAt(i,(tt-a.currentTime)*1000);
+  tt+=durs[i];
+ });
  timers.push(setTimeout(function(){var ks=$("sh-kara").children;for(var j=0;j<ks.length;j++)ks[j].className="done";},(tt-a.currentTime)*1000));return tt;}
 $("sh-bau").onclick=function(){stopAll();var a=ctx(),t=a.currentTime+0.1,l=LINES[+$("sh-line").value],spb=60/60;
  pluck(50,t,8,true,0.35);singLine(l,t,RHY.map(function(r){return r*spb;}));$("sh-motto").textContent=l[2]==="M"?"Leitmotiv C H A H A D A C":"Antwort A H A G "+(l[2]==="F"?"F":"Fis")+" E "+(l[2]==="F"?"F":"Fis")+" D";};
@@ -157,23 +170,26 @@ if($("sh-antiphon-play"))$("sh-antiphon-play").onclick=function(){
  var item=list[+$("sh-antiphon").value];
  if(!item)return;
  $("sh-choir-display").textContent=item.text;
- // Lush Unison D-Dur / Sacred chord accompaniment
+ var words=item.text.split(/\s+/);
+ var notes=item.notes||[62,66,69,71,69];
+ var durs=notes.map(function(){return 0.85;});
+ // Background Unison D-Dur / Sacred chord accompaniment
  if(window.UnisonAudio){
   UnisonAudio.init(a);
-  var pad=UnisonAudio.playChord(a.currentTime+0.05,[38,54,62,64,69],6.5,0.09,"unison_pad");
-  var choirFormant=UnisonAudio.playChord(a.currentTime+0.1,[62,66,69],6.0,0.06,"chor");
-  antiphonPadNodes=pad.concat(choirFormant);
-  // Harp chime
-  if(item.notes&&item.notes.length){
-   item.notes.forEach(function(m,i){
-    var hn=UnisonAudio.playVoice(a.currentTime+0.1+i*0.4,m,2.0,0.18,"unison_harfe",0.2);
-    antiphonPadNodes.push.apply(antiphonPadNodes,hn);
-   });
-  }
+  var pad=UnisonAudio.playChord(a.currentTime+0.05,[38,54,62,64,69],Math.max(6.0,notes.length*0.9+2),0.09,"unison_pad");
+  var choirPad=UnisonAudio.playChord(a.currentTime+0.1,[62,66,69],Math.max(5.5,notes.length*0.9+1.5),0.07,"chor");
+  antiphonPadNodes=pad.concat(choirPad);
+  // Harp resonance
+  notes.forEach(function(m,i){
+   var hn=UnisonAudio.playVoice(a.currentTime+0.1+i*0.85,m,2.2,0.15,"unison_harfe",0.2);
+   antiphonPadNodes.push.apply(antiphonPadNodes,hn);
+  });
  }
- UnisonChoir.speak(item.text,choirLang,null,function(){
+ // Sing the antiphon with melodic pitch & vowel formants
+ var sNodes=UnisonChoir.singLineMelody(words,notes,durs,a.currentTime+0.1,choirLang,null,function(){
   flag(50,4,a.currentTime+0.2,0.22);
  });
+ antiphonPadNodes.push.apply(antiphonPadNodes,sNodes);
 };
 
 window.__sh={TUNINGS:TUNINGS,BASS:BASS,LINES:LINES,syncKara:syncKara,buildMidi:buildMidi,get tuning(){return tuning;}};

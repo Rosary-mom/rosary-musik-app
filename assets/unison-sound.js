@@ -11,6 +11,15 @@
   var NN = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
 
   // Just Intonation intervals from A (Naturton)
+  
+  var VOWELS = {
+    'a': { f1: 800, q1: 5.0, g1: 0.95, f2: 1250, q2: 6.0, g2: 0.60, f3: 2600, q3: 7.0, g3: 0.35 },
+    'e': { f1: 450, q1: 5.0, g1: 0.88, f2: 1850, q2: 6.0, g2: 0.70, f3: 2700, q3: 7.0, g3: 0.40 },
+    'i': { f1: 300, q1: 5.0, g1: 0.82, f2: 2300, q2: 6.0, g2: 0.65, f3: 3000, q3: 7.0, g3: 0.45 },
+    'o': { f1: 500, q1: 5.0, g1: 0.92, f2: 900,  q2: 6.0, g2: 0.55, f3: 2400, q3: 7.0, g3: 0.30 },
+    'u': { f1: 350, q1: 5.0, g1: 0.90, f2: 800,  q2: 6.0, g2: 0.50, f3: 2200, q3: 7.0, g3: 0.25 }
+  };
+
   var JUST_FROM_A = [
     1 / 1,      // A
     16 / 15,    // Bb
@@ -453,6 +462,108 @@
     /**
      * Play a full Unison chord with micro-strum and stereo spatial spread
      */
+    
+    /**
+     * Sings a single musical note with true vocal tract formants, vibrato, and singer's resonance
+     */
+    singNote: function(t, midi, dur, vowel, vol, pan) {
+      var ac = this.init();
+      t = t || ac.currentTime;
+      dur = dur || 1.2;
+      vol = (vol !== undefined) ? vol : 0.28;
+      vowel = (vowel || 'a').toLowerCase();
+      if (!VOWELS[vowel]) vowel = 'a';
+
+      var f = this.midiToHz(midi);
+      var liveNodes = [];
+
+      var panner = null;
+      if (typeof ac.createStereoPanner === 'function') {
+        panner = ac.createStereoPanner();
+        panner.pan.setValueAtTime(Math.max(-1, Math.min(1, pan || 0)), t);
+      }
+
+      var voiceGain = ac.createGain();
+      if (panner) {
+        voiceGain.connect(panner);
+        panner.connect(this.bus);
+      } else {
+        voiceGain.connect(this.bus);
+      }
+
+      // Vocal cords excitation (Liljencrants-Fant glottal model approximation)
+      var o1 = ac.createOscillator();
+      var o2 = ac.createOscillator();
+      var glottalFilter = ac.createBiquadFilter();
+      glottalFilter.type = 'lowpass';
+      glottalFilter.frequency.setValueAtTime(3200, t);
+
+      o1.type = 'sawtooth';
+      o2.type = 'triangle';
+      o1.frequency.setValueAtTime(f, t);
+      o2.frequency.setValueAtTime(f, t);
+      o1.detune.setValueAtTime(-3, t);
+      o2.detune.setValueAtTime(3, t);
+
+      // Delayed singing vibrato (5.3 Hz LFO, onset after 160ms)
+      var vib = ac.createOscillator();
+      var vibGain = ac.createGain();
+      vib.type = 'sine';
+      vib.frequency.setValueAtTime(5.3, t);
+      vibGain.gain.setValueAtTime(0.0001, t);
+      var vibStart = t + Math.min(0.2, dur * 0.25);
+      vibGain.gain.setValueAtTime(0.0001, vibStart);
+      vibGain.gain.linearRampToValueAtTime(f * 0.015, vibStart + 0.22);
+
+      vib.connect(vibGain);
+      vibGain.connect(o1.frequency);
+      vibGain.connect(o2.frequency);
+
+      // Formants
+      var vData = VOWELS[vowel];
+      var f1 = ac.createBiquadFilter();
+      var f2 = ac.createBiquadFilter();
+      var f3 = ac.createBiquadFilter();
+      var fSinger = ac.createBiquadFilter(); // Singer's Formant (2900 Hz classical ring)
+
+      f1.type = 'bandpass'; f1.frequency.value = vData.f1; f1.Q.value = vData.q1;
+      f2.type = 'bandpass'; f2.frequency.value = vData.f2; f2.Q.value = vData.q2;
+      f3.type = 'bandpass'; f3.frequency.value = vData.f3; f3.Q.value = vData.q3;
+      fSinger.type = 'bandpass'; fSinger.frequency.value = 2900; fSinger.Q.value = 4.2;
+
+      var g1 = ac.createGain(); g1.gain.value = vData.g1;
+      var g2 = ac.createGain(); g2.gain.value = vData.g2;
+      var g3 = ac.createGain(); g3.gain.value = vData.g3;
+      var gSinger = ac.createGain(); gSinger.gain.value = 0.25;
+
+      var oscMix = ac.createGain();
+      o1.connect(glottalFilter);
+      o2.connect(glottalFilter);
+      glottalFilter.connect(oscMix);
+
+      var vowelMix = ac.createGain();
+      oscMix.connect(f1); f1.connect(g1); g1.connect(vowelMix);
+      oscMix.connect(f2); f2.connect(g2); g2.connect(vowelMix);
+      oscMix.connect(f3); f3.connect(g3); g3.connect(vowelMix);
+      oscMix.connect(fSinger); fSinger.connect(gSinger); gSinger.connect(vowelMix);
+
+      vowelMix.connect(voiceGain);
+
+      // Singing envelope
+      var atk = 0.05;
+      voiceGain.gain.setValueAtTime(0.0001, t);
+      voiceGain.gain.linearRampToValueAtTime(vol, t + atk);
+      voiceGain.gain.setValueAtTime(vol * 0.92, t + dur * 0.8);
+      voiceGain.gain.exponentialRampToValueAtTime(0.0001, t + dur + 0.16);
+
+      o1.start(t); o2.start(t); vib.start(t);
+      var stopT = t + dur + 0.22;
+      o1.stop(stopT); o2.stop(stopT); vib.stop(stopT);
+
+      liveNodes.push(o1, o2, vib);
+      return liveNodes;
+    },
+
     playChord: function(t, notes, dur, vol, instr) {
       var that = this;
       var nodes = [];
@@ -553,6 +664,90 @@
       if (typeof window !== 'undefined' && window.speechSynthesis) {
         window.speechSynthesis.cancel();
       }
+    },
+
+    
+    detectVowel: function(syl) {
+      var s = (syl || '').toLowerCase();
+      for (var i = 0; i < s.length; i++) {
+        var c = s[i];
+        if (c === 'a' || c === 'ä') return 'a';
+        if (c === 'e') return 'e';
+        if (c === 'i') return 'i';
+        if (c === 'o' || c === 'ö') return 'o';
+        if (c === 'u' || c === 'ü' || c === 'y') return 'u';
+      }
+      return 'a';
+    },
+
+    /**
+     * Sings an entire line/phrase with accurate musical pitch per syllable
+     */
+    singLineMelody: function(syllables, notes, durs, startTime, lang, onSyllable, onEnd) {
+      var that = this;
+      var liveNodes = [];
+      if (!syllables || !notes || !syllables.length) return liveNodes;
+      var ac = UnisonAudio.init();
+      startTime = startTime || (ac.currentTime + 0.05);
+
+      var tt = startTime;
+      var totalText = syllables.join(' ').replace(/[-_]+/g, ' ');
+
+      // Calculate average pitch to intone the natural speaking/singing voice harmonically
+      var avgMidi = 0;
+      for (var k = 0; k < notes.length; k++) avgMidi += notes[k];
+      avgMidi = avgMidi / notes.length;
+
+      // 1. Web Audio Formant Singing Voice on exact melodic pitch & vowel
+      for (var i = 0; i < syllables.length; i++) {
+        var m = notes[i % notes.length];
+        var d = durs[i % durs.length] || 1.0;
+        var syl = syllables[i];
+        var vowel = that.detectVowel(syl);
+
+        var sNodes = UnisonAudio.singNote(tt, m, d * 1.15, vowel, 0.35, 0.0);
+        liveNodes.push.apply(liveNodes, sNodes);
+
+        if (typeof onSyllable === 'function') {
+          (function(idx, timeOffset) {
+            setTimeout(function() { onSyllable(idx, syllables[idx]); }, Math.max(0, (timeOffset - ac.currentTime) * 1000));
+          })(i, tt);
+        }
+
+        tt += d;
+      }
+
+      // 2. Synchronized Vocal Articulation (intoned at musical singing pitch)
+      if (typeof window !== 'undefined' && window.speechSynthesis) {
+        var utter = new SpeechSynthesisUtterance(totalText);
+        lang = lang || that.lang;
+        utter.rate = 0.82; // Cantus firmus singing rate
+        // Intone SpeechSynthesis around melody center pitch
+        utter.pitch = Math.max(0.6, Math.min(1.8, Math.pow(2, (avgMidi - 64) / 20)));
+        utter.volume = that.volume;
+
+        var candidates = that.getVoicesForLang(lang);
+        if (that.selectedVoice) {
+          utter.voice = that.selectedVoice;
+        } else if (candidates.length) {
+          utter.voice = candidates[0];
+        }
+
+        if (lang === 'la') {
+          utter.lang = (utter.voice && utter.voice.lang) ? utter.voice.lang : 'it-IT';
+        } else {
+          utter.lang = (utter.voice && utter.voice.lang) ? utter.voice.lang : (lang === 'de' ? 'de-DE' : 'en-US');
+        }
+
+        window.speechSynthesis.speak(utter);
+      }
+
+      var totalDurationMs = Math.max(0, (tt - ac.currentTime) * 1000);
+      if (typeof onEnd === 'function') {
+        setTimeout(onEnd, totalDurationMs);
+      }
+
+      return liveNodes;
     },
 
     antiphons: {
