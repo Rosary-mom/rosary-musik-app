@@ -1,6 +1,6 @@
-<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#6b1028"><link rel="manifest" href="../manifest.webmanifest"><link rel="icon" href="../icon-192.png"><title>Music Tree v3</title><link rel="stylesheet" href="../assets/theme.css"><link rel="stylesheet" href="orakel/orakel.css"><link rel="stylesheet" href="orakel/orakel-sand.css"></head><body style="margin:0;background:#000"><div class="rm-top"><img src="../assets/rosary-logo.png" alt="Rosary · Care 4 Life, Protect &amp; Heal"><span class="rm-title">Rosary Musik</span><a href="../">← Start</a></div>
+<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#6b1028"><link rel="manifest" href="../manifest.webmanifest"><link rel="icon" href="../icon-192.png"><title>Music Tree v3</title><link rel="stylesheet" href="../assets/theme.css"><link rel="stylesheet" href="orakel/orakel.css"><link rel="stylesheet" href="orakel/orakel-sand.css"><script src="../assets/unison-sound.js"></script></head><body style="margin:0;background:#000"><div class="rm-top"><img src="../assets/rosary-logo.png" alt="Rosary · Care 4 Life, Protect &amp; Heal"><span class="rm-title">Rosary Musik</span><a href="../">← Start</a></div>
 <!-- Music Tree v3 · für WordPress-Block "Individuelles HTML" · alles unter #mt3 gescoped -->
-<div id="mt3"><style>#mt3{background:#000;color:#fff;font-family:Rosario,system-ui,sans-serif;margin:0;padding:20px}#mt3 h1,#mt3 h2,#mt3 h3{font-family:"Rockwell Extra Bold",Rockwell,serif;color:#FFD700}#mt3 #mt3-stage{position:relative;max-width:620px;margin:0 auto;background:#000}#mt3 #mt3-stage:fullscreen{max-width:none;display:flex;flex-direction:column;justify-content:center}#mt3 #mt3-stage:fullscreen .tree{max-width:90vh}#mt3 #mt3-lyric{text-align:center;font-family:"Rockwell Extra Bold",Rockwell,serif;color:#FFD700;font-size:1.4em;min-height:1.6em;opacity:0;transition:opacity 1.5s}#mt3 .tree{display:block;width:100%;max-width:620px;margin:20px auto;border:4px solid #FFD700;border-radius:50%;background:#111;cursor:pointer}#mt3 .controls{max-width:620px;margin:20px auto}#mt3 label{display:block;margin:8px 0 4px;font-weight:bold}#mt3 input[type=range]{width:100%}#mt3 select{background:#111;color:#FFD700;border:1px solid #FFD700;padding:4px}#mt3 .score{font-size:2.2em;color:#0F0;font-family:monospace}#mt3 pre{background:#111;padding:12px;overflow:auto;border:2px solid #444}#mt3 button{background:#FFD700;color:#000;border:none;padding:10px 18px;font-weight:bold;cursor:pointer;margin:4px}#mt3 button.on{background:#0F0}#mt3 table{border-collapse:collapse;width:100%;font-family:monospace}#mt3 td,#mt3 th{border:1px solid #444;padding:3px 6px;text-align:center}#mt3 th{color:#FFD700}#mt3{display:block;box-sizing:border-box;max-width:100%;text-align:left;line-height:1.4}#mt3 *{box-sizing:border-box}#mt3 p,#mt3 label{color:#fff}#mt3 canvas{height:auto;aspect-ratio:1/1}#mt3 button{font-size:15px;border-radius:0;text-transform:none;line-height:1.2;width:auto}#mt3 select{width:auto;max-width:100%;font-size:15px}#mt3 table td,#mt3 table th{color:#fff;background:#000}#mt3 h1,#mt3 h2,#mt3 h3{margin:.6em 0}#mt3 h1{font-size:2em}#mt3 h2{font-size:1.5em}#mt3 h3{font-size:1.17em}#mt3 table{border:0}#mt3 p{margin:.5em 0;font-size:16px}</style><h1>Music Theory Tree – Dihedral Generator</h1><p>Rotation der WWHWWWH-Sequenz: alle 7 Modi in allen 12 Tonarten. Klicke einen Modus im Baum.</p><div id="mt3-stage"><canvas id="mt3-treeCanvas" width="620" height="620" class="tree"></canvas><div id="mt3-lyric"></div></div><div class="controls"><label class="mt3-l">Tonart: <select id="mt3-keySelect"></select></label><label class="mt3-l">Modus: <select id="mt3-modeSelect"></select></label><label class="mt3-l">Instrument: <select id="mt3-instr"><option value="harfe">Harfe</option><option value="blech">Blech</option><option value="floete">Flöte</option></select></label><label class="mt3-l"><input type="checkbox" id="mt3-drums"> Marschtrommel (Gugge)</label><label class="mt3-l">Tempo (BPM): <span id="mt3-tempoVal">120</span><input type="range" id="mt3-tempo" min="60" max="180" value="120"></label><label class="mt3-l">Zufall / Sprungweite (0–4): <span id="mt3-randVal">1</span><input type="range" id="mt3-rand" min="0" max="4" value="1"></label><button id="mt3-genBtn">Neue Variation generieren</button><button id="mt3-guggeBtn">Gugge-Loop: Tick-tack, zurück</button><button id="mt3-bridgeBtn">Bridge: Brücke aus Licht</button><br><button id="mt3-medBtn">Meditation: aus</button><button id="mt3-varBtn">Endlos variieren: aus</button><button id="mt3-fsBtn">⛶ Vollbild</button><label class="mt3-l"><input type="checkbox" id="mt3-mirror" checked=""> Spiegelung in Takt 8</label><button id="mt3-playBtn">▶ Vorschau</button><button id="mt3-stopBtn">■ Stopp</button><button id="mt3-loopBtn">Loop: aus</button><br><button id="mt3-csvBtn">CSV herunterladen</button><button id="mt3-copyBtn">CSV kopieren</button><button id="mt3-midBtn">.mid herunterladen</button><h2>Score: <span id="mt3-score" class="score">0</span>/888</h2><div id="mt3-scoreInfo"></div><h3>Noten &amp; Text</h3><table id="mt3-tbl"></table><h3>MIDI CC (Empfehlung)</h3><pre>CC1 (Modulation) 40–90 | CC7 Volume 100 | CC64 Sustain 0/127 (Marsch: 0, Harfe: 127)
+<div id="mt3"><style>#mt3{background:#000;color:#fff;font-family:Rosario,system-ui,sans-serif;margin:0;padding:20px}#mt3 h1,#mt3 h2,#mt3 h3{font-family:"Rockwell Extra Bold",Rockwell,serif;color:#FFD700}#mt3 #mt3-stage{position:relative;max-width:620px;margin:0 auto;background:#000}#mt3 #mt3-stage:fullscreen{max-width:none;display:flex;flex-direction:column;justify-content:center}#mt3 #mt3-stage:fullscreen .tree{max-width:90vh}#mt3 #mt3-lyric{text-align:center;font-family:"Rockwell Extra Bold",Rockwell,serif;color:#FFD700;font-size:1.4em;min-height:1.6em;opacity:0;transition:opacity 1.5s}#mt3 .tree{display:block;width:100%;max-width:620px;margin:20px auto;border:4px solid #FFD700;border-radius:50%;background:#111;cursor:pointer}#mt3 .controls{max-width:620px;margin:20px auto}#mt3 label{display:block;margin:8px 0 4px;font-weight:bold}#mt3 input[type=range]{width:100%}#mt3 select{background:#111;color:#FFD700;border:1px solid #FFD700;padding:4px}#mt3 .score{font-size:2.2em;color:#0F0;font-family:monospace}#mt3 pre{background:#111;padding:12px;overflow:auto;border:2px solid #444}#mt3 button{background:#FFD700;color:#000;border:none;padding:10px 18px;font-weight:bold;cursor:pointer;margin:4px}#mt3 button.on{background:#0F0}#mt3 table{border-collapse:collapse;width:100%;font-family:monospace}#mt3 td,#mt3 th{border:1px solid #444;padding:3px 6px;text-align:center}#mt3 th{color:#FFD700}#mt3{display:block;box-sizing:border-box;max-width:100%;text-align:left;line-height:1.4}#mt3 *{box-sizing:border-box}#mt3 p,#mt3 label{color:#fff}#mt3 canvas{height:auto;aspect-ratio:1/1}#mt3 button{font-size:15px;border-radius:0;text-transform:none;line-height:1.2;width:auto}#mt3 select{width:auto;max-width:100%;font-size:15px}#mt3 table td,#mt3 table th{color:#fff;background:#000}#mt3 h1,#mt3 h2,#mt3 h3{margin:.6em 0}#mt3 h1{font-size:2em}#mt3 h2{font-size:1.5em}#mt3 h3{font-size:1.17em}#mt3 table{border:0}#mt3 p{margin:.5em 0;font-size:16px}</style><h1>Music Theory Tree – Dihedral Generator</h1><p>Rotation der WWHWWWH-Sequenz: alle 7 Modi in allen 12 Tonarten. Klicke einen Modus im Baum.</p><div id="mt3-stage"><canvas id="mt3-treeCanvas" width="620" height="620" class="tree"></canvas><div id="mt3-lyric"></div></div><div class="controls"><label class="mt3-l">Tonart: <select id="mt3-keySelect"></select></label><label class="mt3-l">Modus: <select id="mt3-modeSelect"></select></label><label class="mt3-l">Akkord-Stil: <select id="mt3-chordStyle"><option value="unison">Unison Sound (Lush &amp; Deep)</option><option value="triad">Klassische Triaden</option></select></label><label class="mt3-l">Akkordfolge: <select id="mt3-unisonProg"><option value="auto">Melodie-Harmonisierung (Skala)</option><option value="0">Unison Basic 1 (I-iii-vi-IV6)</option><option value="1">Unison Basic 2 (IV-I-vim7-V)</option><option value="2">Unison Intermediate 1 (Cinematic)</option><option value="3">Unison Intermediate 2 (Ambient)</option><option value="4">Unison Advanced 1 (Neo-Soul 8 Takte)</option><option value="5">Unison Advanced 2 (Sacred 8 Takte)</option><option value="6">Unison Bonus Progression</option></select></label><label class="mt3-l">Instrument: <select id="mt3-instr"><option value="harfe">Unison Harfe (Stereo-Schimmer)</option><option value="unison_pad">Unison Pad (Lush Synth)</option><option value="glocke">Unison Glocke / E-Piano</option><option value="blech">Blech (Gugge)</option><option value="floete">Flöte</option></select></label><label class="mt3-l">Stimmung: <select id="mt3-tuning"><option value="434">434 Hz (Rosary Naturton)</option><option value="432">432 Hz (Solfeggio)</option><option value="440">440 Hz (Konzert Standard)</option></select></label><label class="mt3-l">Raumklang / Kathedrale: <span id="mt3-spaceVal">35%</span><input type="range" id="mt3-space" min="0" max="100" value="35"></label><label class="mt3-l"><input type="checkbox" id="mt3-drums"> Marschtrommel (Gugge)</label><label class="mt3-l">Tempo (BPM): <span id="mt3-tempoVal">120</span><input type="range" id="mt3-tempo" min="60" max="180" value="120"></label><label class="mt3-l">Zufall / Sprungweite (0–4): <span id="mt3-randVal">1</span><input type="range" id="mt3-rand" min="0" max="4" value="1"></label><button id="mt3-genBtn">Neue Variation generieren</button><button id="mt3-guggeBtn">Gugge-Loop: Tick-tack, zurück</button><button id="mt3-bridgeBtn">Bridge: Brücke aus Licht</button><br><button id="mt3-medBtn">Meditation: aus</button><button id="mt3-varBtn">Endlos variieren: aus</button><button id="mt3-fsBtn">⛶ Vollbild</button><label class="mt3-l"><input type="checkbox" id="mt3-mirror" checked=""> Spiegelung in Takt 8</label><button id="mt3-playBtn">▶ Vorschau</button><button id="mt3-stopBtn">■ Stopp</button><button id="mt3-loopBtn">Loop: aus</button><br><button id="mt3-csvBtn">CSV herunterladen</button><button id="mt3-copyBtn">CSV kopieren</button><button id="mt3-midBtn">.mid herunterladen</button><h2>Score: <span id="mt3-score" class="score">0</span>/888</h2><div id="mt3-scoreInfo"></div><h3>Noten &amp; Text</h3><table id="mt3-tbl"></table><h3>MIDI CC (Empfehlung)</h3><pre>CC1 (Modulation) 40–90 | CC7 Volume 100 | CC64 Sustain 0/127 (Marsch: 0, Harfe: 127)
 CC91 Reverb 20–45 | CC10 Pan 45–82 | CC11 Expression 80–100</pre></div><script>
 (function(){
 // ===== Theorie (pure, node-testbar) =====
@@ -54,8 +54,8 @@ function buildMidi(notes,root,pat,bpm){const TPQ=480,us=Math.round(60000000/bpm)
  let ev=[[0,[0xC0,56]],[0,[0xB0,7,100]],[0,[0xB0,91,30]]],t=0;
  notes.forEach(n=>{ev.push([t,[0x90,n.midi,100],1]);t+=n.dur*TPQ;ev.push([t,[0x80,n.midi,0],0]);});
  const t1=track(ev);let ce=[[0,[0xC1,61]],[0,[0xB1,7,85]]];
- for(let b=1;b<=8;b++){const nb=notes.find(n=>n.bar===b);if(!nb)continue;const s=(b-1)*4*TPQ,e=b*4*TPQ;
-  triad(root,pat,nb.chord).forEach(m=>{ce.push([s,[0x91,m,70],1]);ce.push([e,[0x81,m,0],0]);});}
+ for(let b=1;b<=8;b++){const s=(b-1)*4*TPQ,e=b*4*TPQ;
+  getChordVoicing(b).forEach((m,idx)=>{const vel=(idx===0)?88:70;ce.push([s,[0x91,m,vel],1]);ce.push([e,[0x81,m,0],0]);});}
  const t2=track(ce);return new Uint8Array([0x4D,0x54,0x68,0x64,0,0,0,6,0,1,0,3,TPQ>>8,TPQ&255,...t0,...t1,...t2]);}
 if(typeof module!=="undefined")module.exports={bridgeNotes,degreeOf,KEYS,MODES,scaleOffsets,degreeToMidi,inScale,generateMelody,guggeNotes,buildMidi,toCSV,triad,chordName,rng,nameToMidi,vlq};
 var state={root:7,mode:4,pattern:"WWHWWHW",notes:[]};
@@ -87,13 +87,51 @@ function drawStatic(){ctx.clearRect(0,0,620,620);ctx.strokeStyle="#FFD700";ctx.l
   ctx.fillStyle="#000";ctx.font="bold 12px monospace";ctx.fillText(m.slice(0,4),x,y+4);ctx.fillStyle=sel?"#0F0":"#aaa";ctx.font="11px monospace";ctx.fillText(p,x,y+(y<310?-36:46));});}
 canvas.addEventListener("click",e=>{const r=canvas.getBoundingClientRect(),x=(e.clientX-r.left)*620/r.width,y=(e.clientY-r.top)*620/r.height;
  MODES.forEach((_,i)=>{const[px,py]=pos(i);if(Math.hypot(px-x,py-y)<34){$("modeSelect").value=i;generate();}});});
+
+function getChordVoicing(b){
+  const nb=state.notes.find(n=>n.bar===b);
+  const chordDeg=nb?nb.chord:0;
+  const chordStyle=$("chordStyle")?$("chordStyle").value:"unison";
+  const unisonProg=$("unisonProg")?$("unisonProg").value:"auto";
+  if(window.UnisonData&&chordStyle==="unison"){
+    if(unisonProg!=="auto"){
+      const progs=window.UnisonData.getProgressions(state.root,state.mode);
+      const pIdx=parseInt(unisonProg,10);
+      if(progs&&progs[pIdx]&&progs[pIdx].steps.length){
+        const step=progs[pIdx].steps[(b-1)%progs[pIdx].steps.length];
+        return step.notes;
+      }
+    }
+    return window.UnisonData.getVoicing(state.root,state.mode,chordDeg,()=>triad(state.root,state.pattern,chordDeg));
+  }
+  return triad(state.root,state.pattern,chordDeg);
+}
+function getChordLabel(deg,b){
+  const chordStyle=$("chordStyle")?$("chordStyle").value:"unison";
+  const unisonProg=$("unisonProg")?$("unisonProg").value:"auto";
+  if(window.UnisonData&&chordStyle==="unison"){
+    if(unisonProg!=="auto"){
+      const progs=window.UnisonData.getProgressions(state.root,state.mode);
+      const pIdx=parseInt(unisonProg,10);
+      if(progs&&progs[pIdx]){
+        return progs[pIdx].title.replace(/^\d+\s*-\s*[^-]+-\s*/,"");
+      }
+    }
+    const name=window.UnisonData.getChordName(state.root,state.mode,deg);
+    if(name)return name;
+  }
+  return chordName(state.root,state.pattern,deg);
+}
 function render(){drawTree();const sc=scoreOf(state.notes,state.root);$("score").textContent=sc.total;
- $("scoreInfo").textContent=`In Skala: ${Math.round(sc.inS*100)}% · Schrittbewegung: ${Math.round(sc.step*100)}% · Kadenz auf Tonika: ${sc.cad?"ja":"nein"}`;
- $("tbl").innerHTML="<tr><th>Takt</th><th>Note</th><th>MIDI</th><th>Dauer</th><th>Silbe</th><th>Akkord</th></tr>"+state.notes.map(n=>`<tr><td>${n.bar}</td><td>${noteName(n.midi)}</td><td>${n.midi}</td><td>${n.dur}</td><td>${n.syl}</td><td>${chordName(state.root,state.pattern,n.chord)}</td></tr>`).join("");}
+ const isUnison=$("chordStyle")&&$("chordStyle").value==="unison";
+ $("scoreInfo").textContent=`In Skala: ${Math.round(sc.inS*100)}% · Schritt: ${Math.round(sc.step*100)}% · Kadenz: ${sc.cad?"ja":"nein"}`+(isUnison?" · ✦ Unison Sound aktiv (5-stimmige Voicings)":"");
+ $("tbl").innerHTML="<tr><th>Takt</th><th>Note</th><th>MIDI</th><th>Dauer</th><th>Silbe</th><th>Akkord</th></tr>"+state.notes.map(n=>`<tr><td>${n.bar}</td><td>${noteName(n.midi)}</td><td>${n.midi}</td><td>${n.dur}</td><td>${n.syl}</td><td>${getChordLabel(n.chord,n.bar)}</td></tr>`).join("");}
 function generate(){sync();state.notes=generateMelody(state.root,state.pattern,+$("rand").value);render();}
 $("genBtn").onclick=generate;["keySelect","modeSelect","rand"].forEach(id=>$(id).addEventListener("input",()=>{$("randVal").textContent=$("rand").value;generate();}));
 $("tempo").addEventListener("input",()=>$("tempoVal").textContent=$("tempo").value);
 $("guggeBtn").onclick=()=>{$("keySelect").value=7;$("modeSelect").value=4;$("tempo").value=120;$("tempoVal").textContent=120;$("instr").value="blech";$("drums").checked=true;sync();state.notes=guggeNotes();render();};
+["chordStyle","unisonProg","tuning"].forEach(id=>{if($(id))$(id).addEventListener("change",()=>{if(id==="tuning"&&window.UnisonAudio){UnisonAudio.setTuning(parseFloat($(id).value));}render();});});
+if($("space")){$("space").addEventListener("input",()=>{$("spaceVal").textContent=$("space").value+"%";if(window.UnisonAudio){UnisonAudio.setSpace(parseFloat($("space").value)/100);}});}
 // Audio
 let ac=null,loop=false,timer=null,nodes=[];
 let med=false,vary=false,bus=null;
@@ -108,13 +146,20 @@ function voice(t,m,dur,vol){const i=$("instr").value,o=ac.createOscillator(),g=a
 function drum(t,snare){if(snare){const b=ac.createBuffer(1,ac.sampleRate*0.15,ac.sampleRate),d=b.getChannelData(0);for(let i=0;i<d.length;i++)d[i]=(Math.random()*2-1)*(1-i/d.length);
  const s=ac.createBufferSource(),g=ac.createGain(),f=ac.createBiquadFilter();f.type="highpass";f.frequency.value=1500;s.buffer=b;g.gain.value=0.25;s.connect(f);f.connect(g);g.connect(ac.destination);s.start(t);nodes.push(s);}
  else{const o=ac.createOscillator(),g=ac.createGain();o.frequency.setValueAtTime(120,t);o.frequency.exponentialRampToValueAtTime(40,t+0.2);g.gain.setValueAtTime(0.6,t);g.gain.exponentialRampToValueAtTime(0.001,t+0.25);o.connect(g);g.connect(ac.destination);o.start(t);o.stop(t+0.3);nodes.push(o);}}
-function play(){ac=ac||new(window.AudioContext||window.webkitAudioContext)();stop(true);const spb=60/+$("tempo").value,t0=ac.currentTime+0.1;let t=t0;V.ev=[];V.t0=t0;V.spb=spb;V.anim=true;
- state.notes.forEach(n=>{voice(t,n.midi,n.dur*spb*0.95,0.12);V.ev.push({t,type:"n",d:degreeOf(state.root,state.pattern,n.midi),dur:n.dur*spb,bar:n.bar});t+=n.dur*spb;});
+function play(){ac=ac||new(window.AudioContext||window.webkitAudioContext)();
+ if(window.UnisonAudio){UnisonAudio.init(ac);if($("tuning"))UnisonAudio.setTuning(parseFloat($("tuning").value));if($("space"))UnisonAudio.setSpace(parseFloat($("space").value)/100);}
+ stop(true);const spb=60/+$("tempo").value,t0=ac.currentTime+0.1;let t=t0;V.ev=[];V.t0=t0;V.spb=spb;V.anim=true;const instr=$("instr").value;
+ state.notes.forEach(n=>{
+  if(window.UnisonAudio){const vn=UnisonAudio.playVoice(t,n.midi,n.dur*spb*0.95,0.22,instr,0.1);nodes.push.apply(nodes,vn);}
+  else{voice(t,n.midi,n.dur*spb*0.95,0.12);}
+  V.ev.push({t,type:"n",d:degreeOf(state.root,state.pattern,n.midi),dur:n.dur*spb,bar:n.bar});t+=n.dur*spb;});
  for(let b=0;b<8;b++){const c=(state.notes.find(n=>n.bar===b+1)||{chord:0}).chord;V.ev.push({t:t0+b*4*spb,type:"c",ds:[0,2,4].map(i=>(c+i)%7),bar:b+1});
   for(let q=0;q<4;q++){V.ev.push({t:t0+(b*4+q)*spb,type:"beat"});if($("drums").checked){V.ev.push({t:t0+(b*4+q)*spb,type:"d"});if(q===3)V.ev.push({t:t0+(b*4+q+0.5)*spb,type:"d"});}}}
  V.ev.sort((a,b)=>a.t-b.t);V.end=t;
- for(let b=0;b<8;b++){triad(state.root,state.pattern,(state.notes.find(n=>n.bar===b+1)||{chord:0}).chord).forEach(m=>voice(t0+b*4*spb,m,4*spb*0.95,0.04));
-  if($("drums").checked)for(let q=0;q<4;q++){drum(t0+(b*4+q)*spb,q%2===1);if(q===3)drum(t0+(b*4+q+0.5)*spb,true);}}
+ for(let b=1;b<=8;b++){const chNotes=getChordVoicing(b),chordTime=t0+(b-1)*4*spb,chordDur=4*spb*0.96;
+  if(window.UnisonAudio){const chInstr=(instr==="blech"||instr==="floete")?"unison_pad":instr;const cn=UnisonAudio.playChord(chordTime,chNotes,chordDur,0.08,chInstr);nodes.push.apply(nodes,cn);}
+  else{chNotes.forEach(m=>voice(chordTime,m,chordDur,0.04));}
+  if($("drums").checked)for(let q=0;q<4;q++){drum(t0+((b-1)*4+q)*spb,q%2===1);if(q===3)drum(t0+((b-1)*4+q+0.5)*spb,true);}}
  timer=setTimeout(()=>{if(loop){if(vary){sync();state.notes=generateMelody(state.root,state.pattern,+$("rand").value);render();}play();}else V.anim=false;},(t-t0)*1000+50);}
 function stop(keepLoop){V.anim=!!keepLoop&&V.anim;$("lyric").style.opacity=0;V.act=null;V.chord=[];clearTimeout(timer);nodes.forEach(n=>{try{n.stop();}catch(e){}});nodes=[];V.parts=[];V.pulse=0;V.mirror=1;if(!V.anim)drawStatic();}
 function lyricFor(b){const ns=state.notes.filter(n=>n.bar===b);return ns.map(n=>n.syl).filter(Boolean).join(" ");}

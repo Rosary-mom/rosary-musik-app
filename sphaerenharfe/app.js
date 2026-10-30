@@ -10,14 +10,17 @@ var BASS=[43,31,50,45]; // G2 G1 D3 A2
 var ac=null,master=null,live=[],timers=[];
 function ctx(){if(!ac){ac=new(window.AudioContext||window.webkitAudioContext)();master=ac.createGain();master.gain.value=0.5;master.connect(ac.destination);}if(ac.state==="suspended")ac.resume();return ac;}
 function hz(m){return 440*Math.pow(2,(m-69)/12);}
-function pluck(m,t,dur,bass,vol){var a=ctx();t=t||a.currentTime;dur=dur||(bass?2.5:1.6);
- var f=hz(m),o=a.createOscillator(),o2=a.createOscillator(),g=a.createGain(),g2=a.createGain();
- o.type="triangle";o2.type="sine";o.frequency.value=f;o2.frequency.value=f*2;g2.gain.value=0.25;o2.connect(g2);g2.connect(g);o.connect(g);g.connect(master);
- var v=vol||(bass?0.5:0.35);g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(v,t+0.008);g.gain.exponentialRampToValueAtTime(0.0001,t+dur);
- o.start(t);o2.start(t);o.stop(t+dur+0.05);o2.stop(t+dur+0.05);live.push(o,o2);}
+function pluck(m,t,dur,bass,vol){var a=ctx();t=t||a.currentTime;dur=dur||(bass?2.8:1.9);var v=vol||(bass?0.42:0.32);
+ if(window.UnisonAudio){UnisonAudio.init(a);var pNodes=UnisonAudio.playVoice(t,m,dur,v,'unison_harfe',bass?-0.15:0.1);live.push.apply(live,pNodes);}
+ else{var f=hz(m),o=a.createOscillator(),o2=a.createOscillator(),g=a.createGain(),g2=a.createGain();
+  o.type="triangle";o2.type="sine";o.frequency.value=f;o2.frequency.value=f*2;g2.gain.value=0.25;o2.connect(g2);g2.connect(g);o.connect(g);g.connect(master);
+  g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(v,t+0.008);g.gain.exponentialRampToValueAtTime(0.0001,t+dur);
+  o.start(t);o2.start(t);o.stop(t+dur+0.05);o2.stop(t+dur+0.05);live.push(o,o2);}}
 // Flageolett: reiner Sinus auf Teilton n der Saite, ~6 s Ausklang
-function flag(m,n,t,vol){var a=ctx();t=t||a.currentTime;var o=a.createOscillator(),g=a.createGain();o.type="sine";o.frequency.value=hz(m)*n;o.connect(g);g.connect(master);
- g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(vol||0.25,t+0.01);g.gain.exponentialRampToValueAtTime(0.0001,t+6);o.start(t);o.stop(t+6.1);live.push(o);}
+function flag(m,n,t,vol){var a=ctx();t=t||a.currentTime;var targetMidi=m+Math.round(12*Math.log2(n));
+ if(window.UnisonAudio){UnisonAudio.init(a);var fNodes=UnisonAudio.playVoice(t,targetMidi,5.5,vol||0.26,'glocke',0.2);live.push.apply(live,fNodes);}
+ else{var o=a.createOscillator(),g=a.createGain();o.type="sine";o.frequency.value=hz(m)*n;o.connect(g);g.connect(master);
+  g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(vol||0.25,t+0.01);g.gain.exponentialRampToValueAtTime(0.0001,t+6);o.start(t);o.stop(t+6.1);live.push(o);}}
 function flagSet(m,t){[2,3,4].forEach(function(n,i){flag(m,n,(t||ctx().currentTime)+i*0.35,0.22-i*0.04);});}
 function stopAll(){live.forEach(function(o){try{o.stop();}catch(e){}});live=[];timers.forEach(clearTimeout);timers=[];clearKara();}
 // Aufnahme
@@ -92,6 +95,26 @@ function syncKara(){var rows=window.SH_KARA&&window.SH_KARA[trackKey()],t=au.cur
  if(syncLine!==r[0]){syncLine=r[0];showKara(LINES[r[0]][1]);$("sh-hex").textContent="Hexagramm "+r[4];$("sh-line").value=r[0];}
  var ks=$("sh-kara").children;for(var j=0;j<ks.length;j++)ks[j].className=t>=(r[3][j+1]!==undefined?r[3][j+1]:r[2])?"done":t>=r[3][j]?"on":"";}
 au.addEventListener("timeupdate",syncKara);(function loop(){if(!au.paused)syncKara();requestAnimationFrame(loop);})();
+// Unison Akkord-Begleiter & Tuning
+var padTimer=null,padNodes=[];
+function stopChordPad(){if(padTimer){clearInterval(padTimer);padTimer=null;}padNodes.forEach(function(n){try{n.stop();}catch(e){}});padNodes=[];
+ var btns=document.querySelectorAll("#sh-unison-chords button");[].forEach.call(btns,function(b){b.classList.remove("on");});}
+function playChordPad(idx){stopChordPad();if(idx===null||!window.UnisonData)return;
+ var keyChords=window.UnisonData.chords["2_0"]||[];if(!keyChords[idx])return;
+ var chNotes=keyChords[idx].notes;var btn=document.querySelector('#sh-unison-chords button[data-chord="'+idx+'"]');if(btn)btn.classList.add("on");
+ function loop(){var a=ctx();if(window.UnisonAudio){UnisonAudio.init(a);padNodes=UnisonAudio.playChord(a.currentTime+0.05,chNotes,4.2,0.07,"unison_pad");}}
+ loop();padTimer=setInterval(loop,3900);}
+function setPitch(hz){if(window.UnisonAudio)UnisonAudio.setTuning(hz);
+ if($("sh-pitch-434"))$("sh-pitch-434").classList.toggle("on",hz===434);
+ if($("sh-pitch-432"))$("sh-pitch-432").classList.toggle("on",hz===432);
+ if($("sh-pitch-440"))$("sh-pitch-440").classList.toggle("on",hz===440);}
+if($("sh-pitch-434"))$("sh-pitch-434").onclick=function(){setPitch(434);};
+if($("sh-pitch-432"))$("sh-pitch-432").onclick=function(){setPitch(432);};
+if($("sh-pitch-440"))$("sh-pitch-440").onclick=function(){setPitch(440);};
+var chordBtns=document.querySelectorAll("#sh-unison-chords button[data-chord]");
+[].forEach.call(chordBtns,function(b){b.onclick=function(){playChordPad(parseInt(this.getAttribute("data-chord"),10));};});
+if($("sh-chord-stop"))$("sh-chord-stop").onclick=stopChordPad;
+
 window.__sh={TUNINGS:TUNINGS,BASS:BASS,LINES:LINES,syncKara:syncKara,buildMidi:buildMidi,get tuning(){return tuning;}};
 if("serviceWorker" in navigator&&location.protocol!=="file:")navigator.serviceWorker.register("../service-worker.js",{scope:"../"}).catch(function(e){console.warn("SW",e);});
 })();

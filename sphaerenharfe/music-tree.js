@@ -50,8 +50,8 @@ function buildMidi(notes,root,pat,bpm){const TPQ=480,us=Math.round(60000000/bpm)
  let ev=[[0,[0xC0,56]],[0,[0xB0,7,100]],[0,[0xB0,91,30]]],t=0;
  notes.forEach(n=>{ev.push([t,[0x90,n.midi,100],1]);t+=n.dur*TPQ;ev.push([t,[0x80,n.midi,0],0]);});
  const t1=track(ev);let ce=[[0,[0xC1,61]],[0,[0xB1,7,85]]];
- for(let b=1;b<=8;b++){const nb=notes.find(n=>n.bar===b);if(!nb)continue;const s=(b-1)*4*TPQ,e=b*4*TPQ;
-  triad(root,pat,nb.chord).forEach(m=>{ce.push([s,[0x91,m,70],1]);ce.push([e,[0x81,m,0],0]);});}
+ for(let b=1;b<=8;b++){const s=(b-1)*4*TPQ,e=b*4*TPQ;
+  getChordVoicing(b).forEach((m,idx)=>{const vel=(idx===0)?88:70;ce.push([s,[0x91,m,vel],1]);ce.push([e,[0x81,m,0],0]);});}
  const t2=track(ce);return new Uint8Array([0x4D,0x54,0x68,0x64,0,0,0,6,0,1,0,3,TPQ>>8,TPQ&255,...t0,...t1,...t2]);}
 if(typeof module!=="undefined")module.exports={bridgeNotes,degreeOf,KEYS,MODES,scaleOffsets,degreeToMidi,inScale,generateMelody,guggeNotes,buildMidi,toCSV,triad,chordName,rng,nameToMidi,vlq};
 var state={root:7,mode:4,pattern:"WWHWWHW",notes:[]};
@@ -83,13 +83,51 @@ function drawStatic(){ctx.clearRect(0,0,620,620);ctx.strokeStyle="#FFD700";ctx.l
   ctx.fillStyle="#000";ctx.font="bold 12px monospace";ctx.fillText(m.slice(0,4),x,y+4);ctx.fillStyle=sel?"#0F0":"#aaa";ctx.font="11px monospace";ctx.fillText(p,x,y+(y<310?-36:46));});}
 canvas.addEventListener("click",e=>{const r=canvas.getBoundingClientRect(),x=(e.clientX-r.left)*620/r.width,y=(e.clientY-r.top)*620/r.height;
  MODES.forEach((_,i)=>{const[px,py]=pos(i);if(Math.hypot(px-x,py-y)<34){$("modeSelect").value=i;generate();}});});
+
+function getChordVoicing(b){
+  const nb=state.notes.find(n=>n.bar===b);
+  const chordDeg=nb?nb.chord:0;
+  const chordStyle=$("chordStyle")?$("chordStyle").value:"unison";
+  const unisonProg=$("unisonProg")?$("unisonProg").value:"auto";
+  if(window.UnisonData&&chordStyle==="unison"){
+    if(unisonProg!=="auto"){
+      const progs=window.UnisonData.getProgressions(state.root,state.mode);
+      const pIdx=parseInt(unisonProg,10);
+      if(progs&&progs[pIdx]&&progs[pIdx].steps.length){
+        const step=progs[pIdx].steps[(b-1)%progs[pIdx].steps.length];
+        return step.notes;
+      }
+    }
+    return window.UnisonData.getVoicing(state.root,state.mode,chordDeg,()=>triad(state.root,state.pattern,chordDeg));
+  }
+  return triad(state.root,state.pattern,chordDeg);
+}
+function getChordLabel(deg,b){
+  const chordStyle=$("chordStyle")?$("chordStyle").value:"unison";
+  const unisonProg=$("unisonProg")?$("unisonProg").value:"auto";
+  if(window.UnisonData&&chordStyle==="unison"){
+    if(unisonProg!=="auto"){
+      const progs=window.UnisonData.getProgressions(state.root,state.mode);
+      const pIdx=parseInt(unisonProg,10);
+      if(progs&&progs[pIdx]){
+        return progs[pIdx].title.replace(/^\d+\s*-\s*[^-]+-\s*/,"");
+      }
+    }
+    const name=window.UnisonData.getChordName(state.root,state.mode,deg);
+    if(name)return name;
+  }
+  return chordName(state.root,state.pattern,deg);
+}
 function render(){drawTree();const sc=scoreOf(state.notes,state.root);$("score").textContent=sc.total;
- $("scoreInfo").textContent=`In Skala: ${Math.round(sc.inS*100)}% · Schrittbewegung: ${Math.round(sc.step*100)}% · Kadenz auf Tonika: ${sc.cad?"ja":"nein"}`;
- $("tbl").innerHTML="<tr><th>Takt</th><th>Note</th><th>MIDI</th><th>Dauer</th><th>Silbe</th><th>Akkord</th></tr>"+state.notes.map(n=>`<tr><td>${n.bar}</td><td>${noteName(n.midi)}</td><td>${n.midi}</td><td>${n.dur}</td><td>${n.syl}</td><td>${chordName(state.root,state.pattern,n.chord)}</td></tr>`).join("");}
+ const isUnison=$("chordStyle")&&$("chordStyle").value==="unison";
+ $("scoreInfo").textContent=`In Skala: ${Math.round(sc.inS*100)}% · Schritt: ${Math.round(sc.step*100)}% · Kadenz: ${sc.cad?"ja":"nein"}`+(isUnison?" · ✦ Unison Sound aktiv (5-stimmige Voicings)":"");
+ $("tbl").innerHTML="<tr><th>Takt</th><th>Note</th><th>MIDI</th><th>Dauer</th><th>Silbe</th><th>Akkord</th></tr>"+state.notes.map(n=>`<tr><td>${n.bar}</td><td>${noteName(n.midi)}</td><td>${n.midi}</td><td>${n.dur}</td><td>${n.syl}</td><td>${getChordLabel(n.chord,n.bar)}</td></tr>`).join("");}
 function generate(){sync();state.notes=generateMelody(state.root,state.pattern,+$("rand").value);render();}
 $("genBtn").onclick=generate;["keySelect","modeSelect","rand"].forEach(id=>$(id).addEventListener("input",()=>{$("randVal").textContent=$("rand").value;generate();}));
 $("tempo").addEventListener("input",()=>$("tempoVal").textContent=$("tempo").value);
 $("guggeBtn").onclick=()=>{$("keySelect").value=7;$("modeSelect").value=4;$("tempo").value=120;$("tempoVal").textContent=120;$("instr").value="blech";$("drums").checked=true;sync();state.notes=guggeNotes();render();};
+["chordStyle","unisonProg","tuning"].forEach(id=>{if($(id))$(id).addEventListener("change",()=>{if(id==="tuning"&&window.UnisonAudio){UnisonAudio.setTuning(parseFloat($(id).value));}render();});});
+if($("space")){$("space").addEventListener("input",()=>{$("spaceVal").textContent=$("space").value+"%";if(window.UnisonAudio){UnisonAudio.setSpace(parseFloat($("space").value)/100);}});}
 // Audio
 let ac=null,loop=false,timer=null,nodes=[];
 let med=false,vary=false,bus=null;
@@ -104,13 +142,20 @@ function voice(t,m,dur,vol){const i=$("instr").value,o=ac.createOscillator(),g=a
 function drum(t,snare){if(snare){const b=ac.createBuffer(1,ac.sampleRate*0.15,ac.sampleRate),d=b.getChannelData(0);for(let i=0;i<d.length;i++)d[i]=(Math.random()*2-1)*(1-i/d.length);
  const s=ac.createBufferSource(),g=ac.createGain(),f=ac.createBiquadFilter();f.type="highpass";f.frequency.value=1500;s.buffer=b;g.gain.value=0.25;s.connect(f);f.connect(g);g.connect(ac.destination);s.start(t);nodes.push(s);}
  else{const o=ac.createOscillator(),g=ac.createGain();o.frequency.setValueAtTime(120,t);o.frequency.exponentialRampToValueAtTime(40,t+0.2);g.gain.setValueAtTime(0.6,t);g.gain.exponentialRampToValueAtTime(0.001,t+0.25);o.connect(g);g.connect(ac.destination);o.start(t);o.stop(t+0.3);nodes.push(o);}}
-function play(){ac=ac||new(window.AudioContext||window.webkitAudioContext)();stop(true);const spb=60/+$("tempo").value,t0=ac.currentTime+0.1;let t=t0;V.ev=[];V.t0=t0;V.spb=spb;V.anim=true;
- state.notes.forEach(n=>{voice(t,n.midi,n.dur*spb*0.95,0.12);V.ev.push({t,type:"n",d:degreeOf(state.root,state.pattern,n.midi),dur:n.dur*spb,bar:n.bar});t+=n.dur*spb;});
+function play(){ac=ac||new(window.AudioContext||window.webkitAudioContext)();
+ if(window.UnisonAudio){UnisonAudio.init(ac);if($("tuning"))UnisonAudio.setTuning(parseFloat($("tuning").value));if($("space"))UnisonAudio.setSpace(parseFloat($("space").value)/100);}
+ stop(true);const spb=60/+$("tempo").value,t0=ac.currentTime+0.1;let t=t0;V.ev=[];V.t0=t0;V.spb=spb;V.anim=true;const instr=$("instr").value;
+ state.notes.forEach(n=>{
+  if(window.UnisonAudio){const vn=UnisonAudio.playVoice(t,n.midi,n.dur*spb*0.95,0.22,instr,0.1);nodes.push.apply(nodes,vn);}
+  else{voice(t,n.midi,n.dur*spb*0.95,0.12);}
+  V.ev.push({t,type:"n",d:degreeOf(state.root,state.pattern,n.midi),dur:n.dur*spb,bar:n.bar});t+=n.dur*spb;});
  for(let b=0;b<8;b++){const c=(state.notes.find(n=>n.bar===b+1)||{chord:0}).chord;V.ev.push({t:t0+b*4*spb,type:"c",ds:[0,2,4].map(i=>(c+i)%7),bar:b+1});
   for(let q=0;q<4;q++){V.ev.push({t:t0+(b*4+q)*spb,type:"beat"});if($("drums").checked){V.ev.push({t:t0+(b*4+q)*spb,type:"d"});if(q===3)V.ev.push({t:t0+(b*4+q+0.5)*spb,type:"d"});}}}
  V.ev.sort((a,b)=>a.t-b.t);V.end=t;
- for(let b=0;b<8;b++){triad(state.root,state.pattern,(state.notes.find(n=>n.bar===b+1)||{chord:0}).chord).forEach(m=>voice(t0+b*4*spb,m,4*spb*0.95,0.04));
-  if($("drums").checked)for(let q=0;q<4;q++){drum(t0+(b*4+q)*spb,q%2===1);if(q===3)drum(t0+(b*4+q+0.5)*spb,true);}}
+ for(let b=1;b<=8;b++){const chNotes=getChordVoicing(b),chordTime=t0+(b-1)*4*spb,chordDur=4*spb*0.96;
+  if(window.UnisonAudio){const chInstr=(instr==="blech"||instr==="floete")?"unison_pad":instr;const cn=UnisonAudio.playChord(chordTime,chNotes,chordDur,0.08,chInstr);nodes.push.apply(nodes,cn);}
+  else{chNotes.forEach(m=>voice(chordTime,m,chordDur,0.04));}
+  if($("drums").checked)for(let q=0;q<4;q++){drum(t0+((b-1)*4+q)*spb,q%2===1);if(q===3)drum(t0+((b-1)*4+q+0.5)*spb,true);}}
  timer=setTimeout(()=>{if(loop){if(vary){sync();state.notes=generateMelody(state.root,state.pattern,+$("rand").value);render();}play();}else V.anim=false;},(t-t0)*1000+50);}
 function stop(keepLoop){V.anim=!!keepLoop&&V.anim;$("lyric").style.opacity=0;V.act=null;V.chord=[];clearTimeout(timer);nodes.forEach(n=>{try{n.stop();}catch(e){}});nodes=[];V.parts=[];V.pulse=0;V.mirror=1;if(!V.anim)drawStatic();}
 function lyricFor(b){const ns=state.notes.filter(n=>n.bar===b);return ns.map(n=>n.syl).filter(Boolean).join(" ");}
