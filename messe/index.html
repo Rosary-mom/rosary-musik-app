@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#6b1028">
 <link rel="manifest" href="../manifest.webmanifest"><link rel="icon" href="../icon-192.png"><title>Missa Baumeister · Rosary Musik</title>
-<link rel="stylesheet" href="../assets/theme.css">
+<link rel="stylesheet" href="../assets/theme.css"><script src="../assets/unison-sound.js"></script>
 <style>body{margin:0;background:#000;color:#fff;font-family:Rosario,system-ui,sans-serif}main{max-width:900px;margin:0 auto;padding:16px}
 h1,h2{color:#FFD700;font-family:Rockwell,serif}a{color:#FFD700}.t{background:#111;border:2px solid #FFD700;border-radius:12px;padding:12px;margin:10px 0;cursor:pointer}
 .t.on{background:#2a0a12}#kara{font-size:26px;text-align:center;min-height:2.4em;color:#fff}#kara span.on{color:#FFD700}#kara span.done{color:#c9a86a}
@@ -9,6 +9,7 @@ audio{width:100%}.h{color:#c9a86a;font-style:italic}</style></head><body>
 <main><p><a href="../">← Übersicht</a> · <a href="messe-liedblatt.pdf">Liedblatt (PDF)</a> · <a href="audio/messe-gesamt-48k.mp3">Gesamtaufnahme (61 min)</a></p>
 <p id="wid" class="h"></p>
 <audio id="au" controls></audio><div id="kara"></div><div id="lineinfo" class="h"></div>
+<div style="background:#140508;border:2px solid #7B1E2B;border-radius:10px;padding:12px;margin:12px 0;"><div style="color:#FFD700;font-weight:bold;font-size:16px;">✦ Chor mit hörbaren Stimmen (Live-Chor in Latein &amp; Deutsch)</div><p style="font-size:14px;color:#ddd;margin:4px 0 8px;">Ersetzt den Platzhalter-Chor durch eine klangvolle, getragene Chorstimme, die die lateinischen Messtexte und deutschen Verse synchron zur Partitur mitsingt:</p><div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;"><label style="display:inline-flex;align-items:center;color:#FFD700;font-weight:bold;cursor:pointer;"><input type="checkbox" id="live-choir-toggle" checked style="margin-right:8px;transform:scale(1.2)"> Live-Chorstimme aktiv</label><button id="btn-solo-antiphon" style="background:#FFD700;color:#000;border:none;font-weight:bold;padding:8px 14px;border-radius:6px;cursor:pointer;">✦ Aktuelle Strophe anstimmen</button></div></div>
 <h2>Teile</h2><div id="list"></div>
 <p class="h">Eigene Komposition, alle Klänge synthetisch. Chor = synthetischer Platzhalter. Lateinische Texte gemeinfrei (Ordinarium, Vulgata).</p></main>
 <script>
@@ -20,8 +21,22 @@ function play(i,e){cur=D.saetze[i];[].forEach.call(document.querySelectorAll(".t
 var last=null;function sync(){if(!cur||!cur.zeilen)return;var t=au.currentTime,z=null;
  for(var i=0;i<cur.zeilen.length;i++){var r=cur.zeilen[i];if(t>=r.start&&t<r.ende){z=r;break;}}
  if(!z){if(last){last=null;$("kara").innerHTML="";$("lineinfo").textContent="";}return;}
- if(last!==z){last=z;$("kara").innerHTML=(z.silben||[]).map(function(s){return"<span>"+s.s+"</span> "}).join("");$("lineinfo").textContent=z.stimme||"";}
+ if(last!==z){last=z;$("kara").innerHTML=(z.silben||[]).map(function(s){return"<span>"+s.s+"</span> "}).join("");$("lineinfo").textContent=z.stimme||"";
+  if($("live-choir-toggle")&&$("live-choir-toggle").checked&&window.UnisonChoir){
+    var cleanText=(z.text||z.zeile||"").replace(/[-_]+/g," ");
+    var lang=(/^[A-Z][a-z]+/.test(cleanText)&&/(in|Deo|Domine|Sanctus|Agnus|Kyrie|Christe|Credo|Pater|Lux|pacem)/i.test(cleanText))?"la":"de";
+    UnisonChoir.speak(cleanText,lang);
+  }}
  var k=$("kara").children,sb=z.silben||[];for(var j=0;j<k.length;j++){var n=sb[j+1]?sb[j+1].t:z.ende;k[j].className=t>=n?"done":t>=sb[j].t?"on":"";}}
 au.addEventListener("timeupdate",sync);(function L(){if(!au.paused)sync();requestAnimationFrame(L)})();
+
+if($("btn-solo-antiphon"))$("btn-solo-antiphon").onclick=function(){
+  if(!cur||!cur.zeilen||!window.UnisonChoir)return;
+  var z=last||cur.zeilen[0];if(!z)return;
+  var cleanText=(z.text||z.zeile||"").replace(/[-_]+/g," ");
+  var lang=/(in|Deo|Domine|Sanctus|Agnus|Kyrie|Christe|Credo|Pater|Lux|pacem)/i.test(cleanText)?"la":"de";
+  UnisonChoir.speak(cleanText,lang);
+};
+
 if("serviceWorker" in navigator&&location.protocol!=="file:")navigator.serviceWorker.register("../service-worker.js");
 </script></body></html>

@@ -343,6 +343,72 @@
 
         liveNodes.push(bg1, bg2);
 
+      } else if (instr === 'chor' || instr === 'choir') {
+        // Cathedral Choir Formant Synthesizer (Human vocal tract formant simulation [A] / [O])
+        var o1 = ac.createOscillator();
+        var o2 = ac.createOscillator();
+        var o3 = ac.createOscillator();
+        var vibrato = ac.createOscillator();
+        var vibGain = ac.createGain();
+
+        o1.type = 'sawtooth';
+        o2.type = 'sawtooth';
+        o3.type = 'triangle';
+
+        o1.frequency.setValueAtTime(f, t);
+        o2.frequency.setValueAtTime(f, t);
+        o3.frequency.setValueAtTime(f, t);
+
+        // Choral ensemble detune (Unison spread)
+        o1.detune.setValueAtTime(-7, t);
+        o2.detune.setValueAtTime(7, t);
+        o3.detune.setValueAtTime(0, t);
+
+        // Human vocal vibrato (5.3 Hz)
+        vibrato.frequency.setValueAtTime(5.3, t);
+        vibGain.gain.setValueAtTime(0.0001, t);
+        vibGain.gain.exponentialRampToValueAtTime(1.8, t + Math.min(0.35, dur * 0.4));
+        vibrato.connect(vibGain);
+        vibGain.connect(o1.frequency);
+        vibGain.connect(o2.frequency);
+        vibGain.connect(o3.frequency);
+
+        // Formant filters for vowel 'Ah' [a] and 'Oh' [o]
+        var f1 = ac.createBiquadFilter();
+        var f2 = ac.createBiquadFilter();
+        var f3 = ac.createBiquadFilter();
+        f1.type = 'bandpass'; f1.frequency.value = 750; f1.Q.value = 4.5;
+        f2.type = 'bandpass'; f2.frequency.value = 1250; f2.Q.value = 5.5;
+        f3.type = 'bandpass'; f3.frequency.value = 2500; f3.Q.value = 6.0;
+
+        var g1 = ac.createGain(); g1.gain.value = 0.85;
+        var g2 = ac.createGain(); g2.gain.value = 0.55;
+        var g3 = ac.createGain(); g3.gain.value = 0.30;
+
+        var choirMix = ac.createGain();
+        var oscMix = ac.createGain();
+        o1.connect(oscMix);
+        o2.connect(oscMix);
+        o3.connect(oscMix);
+
+        oscMix.connect(f1); f1.connect(g1); g1.connect(choirMix);
+        oscMix.connect(f2); f2.connect(g2); g2.connect(choirMix);
+        oscMix.connect(f3); f3.connect(g3); g3.connect(choirMix);
+
+        choirMix.connect(voiceGain);
+
+        var atk = Math.min(0.28, dur * 0.3);
+        voiceGain.gain.setValueAtTime(0.0001, t);
+        voiceGain.gain.linearRampToValueAtTime(vol * 0.95, t + atk);
+        voiceGain.gain.setValueAtTime(vol * 0.88, t + dur * 0.75);
+        voiceGain.gain.linearRampToValueAtTime(0.0001, t + dur + 0.2);
+
+        o1.start(t); o2.start(t); o3.start(t); vibrato.start(t);
+        var stopTChoir = t + dur + 0.25;
+        o1.stop(stopTChoir); o2.stop(stopTChoir); o3.stop(stopTChoir); vibrato.stop(stopTChoir);
+
+        liveNodes.push(o1, o2, o3, vibrato);
+
       } else if (instr === 'blech') {
         // Brass / Horn
         var ob = ac.createOscillator();
@@ -410,10 +476,120 @@
     }
   };
 
+  
+  var UnisonChoir = {
+    voices: [],
+    selectedVoice: null,
+    lang: 'la', // 'la' (Latin), 'de' (German), 'en' (English)
+    rate: 0.86,
+    pitch: 1.0,
+    volume: 1.0,
+
+    initVoices: function(callback) {
+      if (typeof window === 'undefined' || !window.speechSynthesis) return;
+      var that = this;
+      function update() {
+        that.voices = window.speechSynthesis.getVoices() || [];
+        if (typeof callback === 'function') callback(that.voices);
+      }
+      update();
+      if (window.speechSynthesis.onvoiceschanged !== undefined) {
+        window.speechSynthesis.onvoiceschanged = update;
+      }
+    },
+
+    getVoicesForLang: function(lang) {
+      lang = lang || this.lang;
+      var targets = (lang === 'la') ? ['it', 'la', 'es'] : [lang];
+      var matched = this.voices.filter(function(v) {
+        var l = (v.lang || '').toLowerCase();
+        return targets.some(function(t) { return l.indexOf(t) === 0; });
+      });
+      matched.sort(function(a, b) {
+        var aScore = (a.name.indexOf('Natural') >= 0 ? 10 : 0) + (a.name.indexOf('Google') >= 0 ? 5 : 0);
+        var bScore = (b.name.indexOf('Natural') >= 0 ? 10 : 0) + (b.name.indexOf('Google') >= 0 ? 5 : 0);
+        return bScore - aScore;
+      });
+      return matched.length ? matched : this.voices;
+    },
+
+    speak: function(text, lang, onWord, onEnd) {
+      if (typeof window === 'undefined' || !window.speechSynthesis) return null;
+      window.speechSynthesis.cancel();
+
+      var utter = new SpeechSynthesisUtterance(text);
+      lang = lang || this.lang;
+      utter.rate = this.rate;
+      utter.pitch = this.pitch;
+      utter.volume = this.volume;
+
+      var candidates = this.getVoicesForLang(lang);
+      if (this.selectedVoice) {
+        utter.voice = this.selectedVoice;
+      } else if (candidates.length) {
+        utter.voice = candidates[0];
+      }
+
+      if (lang === 'la') {
+        utter.lang = (utter.voice && utter.voice.lang) ? utter.voice.lang : 'it-IT';
+      } else {
+        utter.lang = (utter.voice && utter.voice.lang) ? utter.voice.lang : (lang === 'de' ? 'de-DE' : 'en-US');
+      }
+
+      if (typeof onWord === 'function') {
+        utter.onboundary = function(e) {
+          if (e.name === 'word') onWord(e.charIndex, text);
+        };
+      }
+      if (typeof onEnd === 'function') {
+        utter.onend = onEnd;
+      }
+
+      window.speechSynthesis.speak(utter);
+      return utter;
+    },
+
+    stop: function() {
+      if (typeof window !== 'undefined' && window.speechSynthesis) {
+        window.speechSynthesis.cancel();
+      }
+    },
+
+    antiphons: {
+      la: [
+        { id: 'kyrie', title: 'Kyrie eleison', text: 'Kyrie eleison. Christe eleison. Kyrie eleison.', notes: [62, 64, 66, 64, 62] },
+        { id: 'sanctus', title: 'Sanctus', text: 'Sanctus, Sanctus, Sanctus Dominus Deus Sabaoth. Pleni sunt caeli et terra gloria tua. Hosanna in excelsis.', notes: [62, 66, 69, 71, 69] },
+        { id: 'gloria', title: 'Gloria in excelsis', text: 'Gloria in excelsis Deo, et in terra pax hominibus bonae voluntatis.', notes: [62, 66, 69, 74, 69] },
+        { id: 'agnus', title: 'Agnus Dei', text: 'Agnus Dei, qui tollis peccata mundi, miserere nobis. Dona nobis pacem.', notes: [62, 64, 66, 67, 66, 64, 62] },
+        { id: 'christus_vincit', title: 'Christus vincit', text: 'Christus vincit, Christus regnat, Christus imperat.', notes: [62, 66, 69, 74, 69] },
+        { id: 'pater_noster', title: 'Pater noster', text: 'Pater noster, qui es in caelis, sanctificetur nomen tuum. Adveniat regnum tuum.', notes: [62, 64, 66, 64, 62] },
+        { id: 'lux', title: 'Lux in tenebris', text: 'Lux in tenebris lucet, et tenebrae eam non comprehenderunt.', notes: [62, 67, 69, 71, 69] },
+        { id: 'verbum', title: 'In principio erat Verbum', text: 'In principio erat Verbum, et Verbum erat apud Deum, et Deus erat Verbum.', notes: [62, 66, 69, 71, 69] },
+        { id: 'caritas', title: 'Ubi caritas', text: 'Ubi caritas et amor, Deus ibi est. Congregavit nos in unum Christi amor.', notes: [62, 64, 66, 69, 67, 66] },
+        { id: 'alleluia', title: 'Alleluia', text: 'Alleluia, Alleluia, Alleluia.', notes: [62, 66, 69, 74] }
+      ],
+      de: [
+        { id: 'baumeister', title: 'Christus baut auf', text: 'Christus baut auf, bau auch Du auf Christus.', notes: [72, 71, 69, 71, 69, 62, 69, 72] },
+        { id: 'bruecke', title: 'Brücke aus Licht', text: 'Über dem Teich eine Brücke aus Licht, Rosenkranz, Ringwald, wir fürchten uns nicht.', notes: [67, 69, 71, 69, 67, 69, 71, 74] },
+        { id: 'taize_hoffnung', title: 'Meine Hoffnung und Freude', text: 'Meine Hoffnung und meine Freude, meine Stärke, mein Licht: Christus meine Zuversicht, auf dich vertrau ich und fürcht mich nicht.', notes: [62, 66, 69, 71, 69] },
+        { id: 'huette', title: 'Baumeister, leg den ersten Stein', text: 'Baumeister, leg den ersten Stein und lass uns deine Hütte sein.', notes: [69, 71, 69, 67, 66, 64, 66, 62] },
+        { id: 'nebel', title: 'Im Nebel tanzen Geister', text: 'Im Nebel tanzen Geister leis, um Rosen, Teich und Hügelkreis.', notes: [62, 66, 69, 71, 69, 67, 66, 62] },
+        { id: 'vollendet', title: 'Vollendet ist der Kreis', text: 'Vollendet ist der Kreis, der Ring, zu dem die ganze Schöpfung singt.', notes: [62, 66, 69, 74, 71, 69, 66, 62] }
+      ],
+      en: [
+        { id: 'holy', title: 'Holy, Holy, Holy', text: 'Holy, Holy, Holy, Lord God of hosts. Heaven and earth are full of your glory.', notes: [62, 66, 69, 71, 69] },
+        { id: 'bless', title: 'Bless the Lord', text: 'Bless the Lord, my soul, and bless his holy name.', notes: [62, 64, 66, 69, 67, 62] },
+        { id: 'peace', title: 'Peace be with you', text: 'Peace be with you. The Lord be your light and salvation.', notes: [62, 66, 69, 74, 69] }
+      ]
+    }
+  };
+
   var rootObj = typeof window !== 'undefined' ? window : (typeof global !== 'undefined' ? global : this);
   rootObj.UnisonData = UnisonData;
   rootObj.UnisonAudio = UnisonAudio;
+  rootObj.UnisonChoir = UnisonChoir;
   if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { UnisonData: UnisonData, UnisonAudio: UnisonAudio };
+    module.exports = { UnisonData: UnisonData, UnisonAudio: UnisonAudio, UnisonChoir: UnisonChoir };
   }
+
 })(typeof window !== 'undefined' ? window : (typeof global !== 'undefined' ? global : this));

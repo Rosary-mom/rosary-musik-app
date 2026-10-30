@@ -7,12 +7,18 @@ ROWS.forEach(function(r,ri){var tr=g.insertRow(),th=document.createElement("th")
 function draw(){ROWS.forEach(function(r,ri){for(var c=0;c<COLS;c++)cells[ri][c].className=seq[c]===r[1]?"on":"";});$("nt-info").textContent=seq.filter(Boolean).length+" Noten";}
 var ac=null,timers=[];function ctx(){if(!ac)ac=new(window.AudioContext||window.webkitAudioContext)();if(ac.state==="suspended")ac.resume();return ac;}
 function tone(m,t,d){var a=ctx();
- if(window.UnisonAudio){UnisonAudio.init(a);UnisonAudio.playVoice(t,m,d,0.28,'unison_harfe');}
+ if(window.UnisonAudio){UnisonAudio.init(a);var sKind=$('nt-sound')?$('nt-sound').value:'unison_harfe';UnisonAudio.playVoice(t,m,d,0.28,sKind);}
  else{var o=a.createOscillator(),gn=a.createGain();o.type="triangle";o.frequency.value=440*Math.pow(2,(m-69)/12);o.connect(gn);gn.connect(a.destination);
   gn.gain.setValueAtTime(0.0001,t);gn.gain.exponentialRampToValueAtTime(0.35,t+0.01);gn.gain.exponentialRampToValueAtTime(0.0001,t+d);o.start(t);o.stop(t+d+0.05);}}
 function spb(){return 60/Math.max(40,Math.min(200,+$("nt-tempo").value||80));}
 function stop(){timers.forEach(clearTimeout);timers=[];draw();}
-$("nt-play").onclick=function(){stop();var a=ctx(),t0=a.currentTime+0.05,s=spb();seq.forEach(function(m,c){if(m)tone(m,t0+c*s,s*1.4);
+$("nt-play").onclick=function(){stop();var a=ctx(),t0=a.currentTime+0.05,s=spb();seq.forEach(function(m,c){if(m){
+  tone(m,t0+c*s,s*1.4);
+  if($("nt-voice-notes")&&$("nt-voice-notes").checked&&window.UnisonChoir){
+    var nName=ROWS.find(function(r){return r[1]===m;});
+    if(nName){setTimeout(function(){UnisonChoir.speak(nName[0].replace(/\d/,""),"la");},c*s*1000);}
+  }
+}
  timers.push(setTimeout(function(){draw();ROWS.forEach(function(r,ri){cells[ri][c].classList.add("play");});},c*s*1000));});timers.push(setTimeout(draw,COLS*s*1000));};
 $("nt-stop").onclick=stop;
 $("nt-bau").onclick=function(){seq=new Array(COLS).fill(null);[72,71,69,71,69,62,69,72].forEach(function(m,i){seq[i]=m;});draw();$("nt-info").textContent="Leitmotiv: Christus baut auf, bau auch Du auf Christus";};

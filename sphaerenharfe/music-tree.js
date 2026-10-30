@@ -162,7 +162,9 @@ function lyricFor(b){const ns=state.notes.filter(n=>n.bar===b);return ns.map(n=>
 function frame(){requestAnimationFrame(frame);const now=ac?ac.currentTime:0;V.pulse*=0.9;
  if(V.anim){while(V.ev.length&&V.ev[0].t<=now){const e=V.ev.shift();
   if(e.type==="beat")V.pulse=1;else if(e.type==="n"){V.act={d:e.d,grow:0,dur:e.dur};}
-  else if(e.type==="c"){V.chord=e.ds;V.bar=e.bar;V.mirror=(e.bar===8&&$("mirror").checked)?-1:1;const L=$("lyric");L.style.opacity=0;setTimeout(()=>{L.textContent=lyricFor(e.bar);L.style.opacity=1;},med?600:150);}
+  else if(e.type==="c"){V.chord=e.ds;V.bar=e.bar;V.mirror=(e.bar===8&&$("mirror").checked)?-1:1;const L=$("lyric");L.style.opacity=0;const txt=lyricFor(e.bar);
+   if(txt&&$("vocalChorus")&&$("vocalChorus").checked&&window.UnisonChoir){UnisonChoir.speak(txt,"de");}
+   setTimeout(()=>{L.textContent=txt;L.style.opacity=1;},med?600:150);}
   else if(e.type==="d"){for(let i=0;i<18;i++){const a=Math.random()*7,v=2+Math.random()*4;V.parts.push({x:310,y:310,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:1,c:Math.random()<0.5?"#FFD700":"#0F0"});}}}
   V.rot+=med?0.08:0.25;if(V.act)V.act.grow+=1/Math.max(6,V.act.dur*30);}
  V.parts.forEach(q=>{q.x+=q.vx;q.y+=q.vy;q.l-=0.02;});V.parts=V.parts.filter(q=>q.l>0);
