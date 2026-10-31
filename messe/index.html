@@ -1,58 +1,78 @@
-<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#6b1028">
-<link rel="manifest" href="../manifest.webmanifest"><link rel="icon" href="../icon-192.png"><title>Missa Baumeister · Rosary Musik</title>
-<link rel="stylesheet" href="../assets/theme.css"><script src="../assets/unison-sound.js"></script>
-<style>body{margin:0;background:#000;color:#fff;font-family:Rosario,system-ui,sans-serif}main{max-width:900px;margin:0 auto;padding:16px}
-h1,h2{color:#FFD700;font-family:Rockwell,serif}a{color:#FFD700}.t{background:#111;border:2px solid #FFD700;border-radius:12px;padding:12px;margin:10px 0;cursor:pointer}
-.t.on{background:#2a0a12}#kara{font-size:26px;text-align:center;min-height:2.4em;color:#fff}#kara span.on{color:#FFD700}#kara span.done{color:#c9a86a}
-audio{width:100%}.h{color:#c9a86a;font-style:italic}</style></head><body>
-<div class="rm-top"><img src="../assets/rosary-logo.png" alt="Rosary"><span class="rm-title">Missa Baumeister</span></div>
-<main><p><a href="../">← Übersicht</a> · <a href="messe-liedblatt.pdf">Liedblatt (PDF)</a> · <a href="audio/messe-gesamt-48k.mp3">Gesamtaufnahme (61 min)</a></p>
-<p id="wid" class="h"></p>
-<audio id="au" controls></audio><div id="kara"></div><div id="lineinfo" class="h"></div>
-<div style="background:#140508;border:2px solid #7B1E2B;border-radius:10px;padding:12px;margin:12px 0;"><div style="color:#FFD700;font-weight:bold;font-size:16px;">✦ Singstimmen-Chor (Latein &amp; Deutsch)</div><p style="font-size:14px;color:#ddd;margin:4px 0 8px;">Ersetzt den Platzhalter-Chor durch eine klangvolle, getragene Chorstimme, die die lateinischen Messtexte und deutschen Verse synchron zur Partitur mitsingt:</p><div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;"><label style="display:inline-flex;align-items:center;color:#FFD700;font-weight:bold;cursor:pointer;"><input type="checkbox" id="live-choir-toggle" checked style="margin-right:8px;transform:scale(1.2)"> Live-Chorstimme aktiv</label><button id="btn-solo-antiphon" style="background:#FFD700;color:#000;border:none;font-weight:bold;padding:8px 14px;border-radius:6px;cursor:pointer;">✦ Aktuelle Strophe anstimmen</button></div></div>
-<h2>Teile</h2><div id="list"></div>
-<p class="h">Eigene Komposition, alle Klänge synthetisch. Chor = synthetischer Platzhalter. Lateinische Texte gemeinfrei (Ordinarium, Vulgata).</p></main>
-<script>
-var $=function(i){return document.getElementById(i)},au=$("au"),D=null,cur=null;
-fetch("messe-karaoke.json").then(function(r){return r.json()}).then(function(d){D=d;$("wid").textContent=d.widmung||"";
- d.saetze.forEach(function(s,i){var e=document.createElement("div");e.className="t";e.textContent=s.satz;e.onclick=function(){play(i,e)};$("list").appendChild(e);});});
-function play(i,e){cur=D.saetze[i];[].forEach.call(document.querySelectorAll(".t"),function(x){x.classList.remove("on")});e.classList.add("on");
- au.src="audio/"+cur.datei+".mp3";au.play().catch(function(){});$("kara").innerHTML="";}
-var last=null;function sync(){if(!cur||!cur.zeilen)return;var t=au.currentTime,z=null;
- for(var i=0;i<cur.zeilen.length;i++){var r=cur.zeilen[i];if(t>=r.start&&t<r.ende){z=r;break;}}
- if(!z){if(last){last=null;$("kara").innerHTML="";$("lineinfo").textContent="";}return;}
- if(last!==z){last=z;$("kara").innerHTML=(z.silben||[]).map(function(s){return"<span>"+s.s+"</span> "}).join("");$("lineinfo").textContent=z.stimme||"";
-  if($("live-choir-toggle")&&$("live-choir-toggle").checked&&window.UnisonChoir){
-    var cleanText=(z.text||z.zeile||"").replace(/[-_]+/g," ");
-    var lang=/(in|Deo|Domine|Sanctus|Agnus|Kyrie|Christe|Credo|Pater|Lux|pacem|eleison|gloria|caelis)/i.test(cleanText)?"la":"de";
-    if(z.silben&&z.silben.length&&typeof UnisonChoir.singLineMelody==="function"){
-      var syls=z.silben.map(function(s){return s.s;});
-      var baseMidi=62;var contour=[0,2,4,2,0,-2,0];
-      var chantNotes=syls.map(function(_,idx){return baseMidi+contour[idx%contour.length];});
-      var chantDurs=z.silben.map(function(s,idx){var nextT=z.silben[idx+1]?z.silben[idx+1].t:z.ende;return Math.max(0.6,Math.min(2.5,nextT-s.t));});
-      UnisonChoir.singLineMelody(syls,chantNotes,chantDurs,null,lang);
-    }else{
-      UnisonChoir.speak(cleanText,lang);
-    }
-  }}
- var k=$("kara").children,sb=z.silben||[];for(var j=0;j<k.length;j++){var n=sb[j+1]?sb[j+1].t:z.ende;k[j].className=t>=n?"done":t>=sb[j].t?"on":"";}}
-au.addEventListener("timeupdate",sync);(function L(){if(!au.paused)sync();requestAnimationFrame(L)})();
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#6b1028">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../icon-192.png">
+<title>Missa Baumeister · Rosary Musik</title>
+<link rel="stylesheet" href="../assets/theme.css">
+<link rel="stylesheet" href="missa-live.css">
+<script src="../assets/unison-sound.js"></script>
+</head>
+<body class="ml-page">
+<div class="rm-top">
+  <img src="../assets/rosary-logo.png" alt="Rosary">
+  <span class="rm-title">Missa Baumeister</span>
+  <a href="../">← Übersicht</a>
+</div>
+<main class="ml-main">
+  <p><a href="messe-liedblatt.pdf">Liedblatt (PDF)</a> · <a href="audio/messe-gesamt-48k.mp3">Gesamtaufnahme (61 min)</a></p>
+  <p id="wid" class="ml-hint"></p>
 
-if($("btn-solo-antiphon"))$("btn-solo-antiphon").onclick=function(){
-  if(!cur||!cur.zeilen||!window.UnisonChoir)return;
-  var z=last||cur.zeilen[0];if(!z)return;
-  var cleanText=(z.text||z.zeile||"").replace(/[-_]+/g," ");
-  var lang=/(in|Deo|Domine|Sanctus|Agnus|Kyrie|Christe|Credo|Pater|Lux|pacem|eleison|gloria|caelis)/i.test(cleanText)?"la":"de";
-  if(z.silben&&z.silben.length&&typeof UnisonChoir.singLineMelody==="function"){
-    var syls=z.silben.map(function(s){return s.s;});
-    var baseMidi=62;var contour=[0,2,4,2,0,-2,0];
-    var chantNotes=syls.map(function(_,idx){return baseMidi+contour[idx%contour.length];});
-    var chantDurs=z.silben.map(function(s,idx){var nextT=z.silben[idx+1]?z.silben[idx+1].t:z.ende;return Math.max(0.6,Math.min(2.5,nextT-s.t));});
-    UnisonChoir.singLineMelody(syls,chantNotes,chantDurs,null,lang);
-  }else{
-    UnisonChoir.speak(cleanText,lang);
-  }
-};
+  <div class="ml-tools" role="toolbar" aria-label="Missa-Steuerung">
+    <button type="button" id="btn-beamer" aria-label="Beamer-Vollbild mit Karaoke öffnen">Beamer-Karaoke</button>
+    <button type="button" id="btn-live" aria-pressed="false" aria-label="Live-Modus ein- oder ausschalten">Live-Modus</button>
+    <button type="button" id="btn-offline" aria-label="Messe inklusive Audio für Offline speichern">Messe für offline speichern</button>
+    <div class="ml-lang" role="group" aria-label="Sprache der Karaoke-Zeilen">
+      <button type="button" data-lang="la" aria-pressed="false" aria-label="Nur Latein">LA</button>
+      <button type="button" data-lang="de" aria-pressed="false" aria-label="Nur Deutsch">DE</button>
+      <button type="button" data-lang="fr" aria-pressed="false" aria-label="Nur Französisch">FR</button>
+      <button type="button" data-lang="alle" aria-pressed="true" aria-label="Alle Sprachen">Alle</button>
+    </div>
+  </div>
+  <p id="offline-status" class="ml-status" role="status" aria-live="polite"></p>
+  <div class="ml-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Offline-Speicherfortschritt"><span id="offline-bar"></span></div>
 
-if("serviceWorker" in navigator&&location.protocol!=="file:")navigator.serviceWorker.register("../service-worker.js");
-</script></body></html>
+  <audio id="au" controls preload="metadata" aria-label="Aktueller Messeteil"></audio>
+  <div id="kara" class="karaoke" aria-live="polite"></div>
+  <div id="kara-next" class="ml-hint" aria-hidden="true"></div>
+  <div id="lineinfo" class="ml-hint"></div>
+
+  <div class="ml-choir">
+    <div class="tit">✦ Singstimmen-Chor (Latein &amp; Deutsch)</div>
+    <p>Ersetzt den Platzhalter-Chor durch eine getragene Chorstimme, synchron zur Partitur:</p>
+    <div class="ml-tools">
+      <label><input type="checkbox" id="live-choir-toggle" checked> Live-Chorstimme aktiv</label>
+      <button type="button" id="btn-solo-antiphon" aria-label="Aktuelle Strophe mit Unison-Chor anstimmen">✦ Aktuelle Strophe anstimmen</button>
+    </div>
+  </div>
+
+  <h2>Teile</h2>
+  <div id="list" role="list" aria-label="Messeteile"></div>
+  <p class="ml-hint">Eigene Komposition, Klänge synthetisch. Lateinische Texte gemeinfrei (Ordinarium, Vulgata). Tastatur: Leertaste Pause, ← → Teile, B Beamer, F Ausblenden, 1–9 Sprung.</p>
+</main>
+
+<div id="live-bar" class="ml-live-bar" role="region" aria-label="Live-Modus">
+  <button type="button" id="btn-prev" aria-label="Vorheriger Teil">◀</button>
+  <button type="button" id="btn-pause" aria-label="Pause oder Weiter">Pause / Weiter</button>
+  <button type="button" id="btn-fade" aria-label="Sanft ausblenden und stoppen">Ausblenden</button>
+  <button type="button" id="btn-next" aria-label="Nächster Teil">▶</button>
+  <span id="live-rest" class="ml-rest" aria-live="polite">Rest —:—</span>
+  <div id="live-grid" class="ml-live-grid" aria-label="Schnellwahl Teile"></div>
+</div>
+
+<div id="beamer" class="ml-beamer" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Beamer-Karaoke">
+  <div class="ml-b-meta"><span id="b-teil"></span><span id="b-rest"></span></div>
+  <div id="b-cur" class="ml-b-cur" aria-live="polite"></div>
+  <div id="b-next" class="ml-b-next"></div>
+  <div class="ml-beam-bar">
+    <button type="button" id="b-pause" aria-label="Pause oder Weiter">Pause / Weiter</button>
+    <button type="button" id="b-close" aria-label="Beamer schließen">Schließen (Esc)</button>
+  </div>
+</div>
+
+<script src="missa-live.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* Missa Live: Beamer, Live-Modus, Offline, Kontrast (Sand/Bordeaux/Gold), WCAG 2.1 AA */
+:root{
+  --ml-sand:#efe6d6; --ml-sand2:#fbf6ea; --ml-bord:#6b1028; --ml-bord2:#4a0814;
+  --ml-gold:#b8902f; --ml-gold2:#d9b75a; --ml-ink:#2a1a12; --ml-ink2:#5a4636;
+  --ml-focus:#0066cc;
+}
+body.ml-page{background:var(--ml-sand)!important;color:var(--ml-ink)!important;font-family:Rosario,system-ui,sans-serif;margin:0}
+.ml-main{max-width:960px;margin:0 auto;padding:16px}
+.ml-main h1,.ml-main h2{color:var(--ml-bord)!important;font-family:Rockwell,"Roboto Slab",serif}
+.ml-main a{color:var(--ml-bord)!important;text-decoration:underline;text-underline-offset:2px}
+.ml-main a:hover,.ml-main a:focus-visible{color:var(--ml-bord2)!important}
+.ml-hint{color:var(--ml-ink2)!important;font-style:italic}
+.ml-tools{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0;align-items:center}
+.ml-tools button,.ml-live-bar button,.ml-beam-bar button,.ml-lang button{
+  min-height:48px;min-width:48px;padding:10px 16px;font-size:16px;font-weight:700;
+  border-radius:8px;cursor:pointer;border:2px solid var(--ml-gold)!important;
+  background:var(--ml-bord)!important;color:var(--ml-sand)!important;
+}
+.ml-tools button:hover,.ml-live-bar button:hover,.ml-lang button:hover{background:var(--ml-bord2)!important}
+.ml-tools button:focus-visible,.ml-live-bar button:focus-visible,.ml-lang button:focus-visible,
+.ml-teil:focus-visible,.ml-beam-bar button:focus-visible,.ml-page audio:focus-visible{
+  outline:3px solid var(--ml-focus)!important;outline-offset:3px!important;
+}
+.ml-lang{display:inline-flex;gap:6px;flex-wrap:wrap}
+.ml-lang button[aria-pressed="true"]{background:var(--ml-gold)!important;color:var(--ml-ink)!important}
+.ml-status{font-size:15px;color:var(--ml-ink)!important;min-height:1.4em}
+.ml-progress{width:100%;height:12px;background:var(--ml-sand2);border:1px solid var(--ml-gold);border-radius:6px;overflow:hidden;margin-top:6px}
+.ml-progress>span{display:block;height:100%;width:0;background:var(--ml-bord);transition:width .2s}
+/* Teile-Liste: immer lesbar (vorher: dunkle Kachel + dunkle Schrift ≈ 1.13:1) */
+.ml-teil{
+  background:var(--ml-sand2)!important;color:var(--ml-ink)!important;
+  border:2px solid var(--ml-gold)!important;border-radius:12px;padding:14px 16px;margin:10px 0;
+  cursor:pointer;font-size:18px;font-weight:700;line-height:1.35;min-height:52px;
+  display:flex;align-items:center;gap:10px;text-align:left;width:100%;box-sizing:border-box;
+}
+.ml-teil .ml-nr{color:var(--ml-bord)!important;font-weight:800;min-width:2.6em}
+.ml-teil:hover{background:#fff8ea!important;border-color:var(--ml-bord)!important}
+.ml-teil.on,.ml-teil[aria-current="true"]{
+  background:var(--ml-bord)!important;color:var(--ml-sand)!important;border-color:var(--ml-gold)!important;
+}
+.ml-teil.on .ml-nr,.ml-teil[aria-current="true"] .ml-nr{color:var(--ml-gold2)!important}
+#kara{font-size:28px;text-align:center;min-height:2.6em;color:var(--ml-ink2)!important;font-family:Palatino,"EB Garamond",serif}
+#kara span{color:var(--ml-ink2)!important;margin:0 .15em}
+#kara span.on{color:var(--ml-bord)!important;text-shadow:0 0 4px var(--ml-gold2)}
+#kara span.done{color:var(--ml-ink)!important;opacity:.85}
+#kara-next{font-size:18px;text-align:center;min-height:1.5em;color:var(--ml-ink2)!important;opacity:.9}
+.ml-choir{background:#f6ead0;border:2px solid var(--ml-bord);border-radius:10px;padding:12px;margin:12px 0}
+.ml-choir .tit{color:var(--ml-bord)!important;font-weight:800}
+.ml-choir p{color:var(--ml-ink)!important;font-size:15px}
+.ml-choir label{color:var(--ml-bord)!important;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:8px;min-height:44px}
+/* Live-Leiste */
+.ml-live-bar{
+  position:sticky;bottom:0;left:0;right:0;z-index:40;
+  background:var(--ml-bord);border-top:4px solid var(--ml-gold);padding:10px 12px;
+  display:none;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center;
+}
+.ml-live-bar.open{display:flex}
+.ml-live-bar .ml-rest{color:var(--ml-sand)!important;font-weight:700;font-variant-numeric:tabular-nums;min-width:6em}
+.ml-live-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:8px;width:100%;margin-top:8px}
+.ml-live-grid button{min-height:52px;font-size:15px}
+.ml-live-grid button[aria-current="true"]{background:var(--ml-gold)!important;color:var(--ml-ink)!important}
+/* Beamer-Vollbild */
+.ml-beamer{
+  display:none;position:fixed;inset:0;z-index:100;background:#000;color:#FFD700;
+  flex-direction:column;align-items:center;justify-content:center;padding:4vw;text-align:center;
+}
+.ml-beamer.open{display:flex}
+.ml-beamer .ml-b-meta{position:absolute;top:12px;left:12px;right:12px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:18px;color:#c9a86a}
+.ml-beamer .ml-b-cur{font-size:clamp(36px,7vw,84px);font-family:Palatino,"EB Garamond",serif;line-height:1.25;max-width:95vw;color:#FFD700}
+.ml-beamer .ml-b-cur span.on{color:#fff;text-shadow:0 0 12px #FFD700}
+.ml-beamer .ml-b-cur span.done{color:#c9a86a}
+.ml-beamer .ml-b-cur span{color:#666;margin:0 .12em}
+.ml-beamer .ml-b-next{margin-top:1.2em;font-size:clamp(20px,3.5vw,40px);color:#c9a86a;max-width:90vw}
+.ml-beam-bar{position:absolute;bottom:16px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.ml-beam-bar button{background:#6b1028!important;color:#efe6d6!important;border-color:#FFD700!important}
+@media (prefers-reduced-motion:reduce){
+  .ml-progress>span,audio{transition:none!important}
+  .ml-fade{transition:none!important}
+}
+@media (prefers-contrast:more){
+  .ml-teil{border-width:3px!important;border-color:var(--ml-bord)!important;color:#000!important;background:#fff!important}
+  .ml-teil.on{background:#000!important;color:#fff!important}
+  #kara span.on{color:#000!important;background:#FFD700;padding:0 .1em}
+}
+@media (forced-colors:active){
+  .ml-teil,.ml-tools button,.ml-live-bar button{border:2px solid ButtonText!important;forced-color-adjust:none}
+  .ml-teil.on{outline:3px solid Highlight!important}
+  .ml-teil:focus-visible,button:focus-visible{outline:3px solid Highlight!important}
+}
