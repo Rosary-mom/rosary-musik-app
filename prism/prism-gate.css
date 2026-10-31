@@ -39,3 +39,6 @@ body.pg{margin:0;background:var(--pg-sand);color:var(--pg-ink);font-family:Rosar
   button:focus-visible{outline:3px solid Highlight}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.pg-credit{font-size:15px;color:var(--pg-ink2);margin:8px 0 14px;line-height:1.45}
+.pg-credit a{color:var(--pg-bord);font-weight:700}
