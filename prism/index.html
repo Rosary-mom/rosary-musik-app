@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#6b1028">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://argonsynth.si; base-uri 'self'; form-action 'self'; object-src 'none'">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../icon-192.png">
+<title>Prism (Drittanbieter) · Rosary Musik</title>
+<link rel="stylesheet" href="../assets/theme.css">
+<link rel="stylesheet" href="prism-gate.css">
+<!-- KEIN preconnect / prefetch / dns-prefetch zu argonsynth oder netlify -->
+</head>
+<body class="pg">
+<div class="rm-top">
+  <img src="../assets/rosary-logo.png" alt="Rosary">
+  <span class="rm-title">Prism · Drittanbieter</span>
+  <a href="../">← Übersicht</a>
+</div>
+<main class="pg-main">
+  <h1>Prism-Synthesizer (Einbettung)</h1>
+  <p>Werkzeug von <strong>Argonsynth</strong> (Slowenien/EU), gehostet u. a. über Netlify. Rosary stellt nur die Einbettungsseite bereit und speichert <strong>keine</strong> Zustimmung dauerhaft (nur in dieser Browser-Sitzung).</p>
+
+  <div class="pg-box pg-warn" role="note">
+    <span class="pg-draft">ENTWURF – anwaltlich prüfen</span>
+    <h2>Nutzungs- und Haftungshinweise (Rosary)</h2>
+    <p>Diese Hinweise sind ein <strong>Entwurf</strong> für die anwaltliche Prüfung. Sie ersetzen keine AGB und keine Rechtsberatung.</p>
+    <ul class="pg-list">
+      <li>Die Nutzung ist für <strong>Gemeinde- und Bildungszwecke</strong> gedacht, nicht für kommerzielle Anwendungen.</li>
+      <li>Prism ist ein <strong>fremdes Angebot</strong>. Rosary übernimmt keine Gewähr für Verfügbarkeit, Funktion, Inhalte oder Datenschutzpraxis des Drittanbieters.</li>
+      <li>Hochladen und Bearbeiten nur von <strong>eigenen Kompositionen</strong> bzw. eigenen Liedern der Nutzerinnen und Nutzer – auf eigene Verantwortung.</li>
+      <li><strong>Haftungshinweis (Entwurf):</strong> Eine Formulierung zum Rechtsweg und zu Ansprüchen gegenüber Rosary wegen Drittsoftware wird vom Anwalt geprüft und hier ggf. ersetzt. Bis dahin gilt: Nutzung auf eigenes Risiko; Rosary kann das Widget jederzeit deaktivieren.</li>
+      <li>Für Roll-out, Up-Stage und weitere Verbreitung behält sich Rosary <strong>weitere Nutzungsbedingungen</strong> vor.</li>
+    </ul>
+  </div>
+
+  <div id="consent-panel" class="pg-box" role="dialog" aria-labelledby="consent-title" aria-describedby="consent-desc">
+    <h2 id="consent-title">Zustimmung für diese Sitzung</h2>
+    <p id="consent-desc">Ohne Ihre ausdrückliche Zustimmung wird <strong>kein</strong> Prism-Inhalt geladen (kein iframe, keine Anfrage an argonsynth.si). Alle Punkte sind Pflicht und nicht vorausgewählt.</p>
+
+    <div class="pg-check">
+      <input type="checkbox" id="c-privacy">
+      <label for="c-privacy"><strong>1. Datenschutz:</strong> Ich bin damit einverstanden, dass beim Laden Daten an den Drittanbieter Argonsynth (Slowenien/EU) und an den Hoster Netlify (möglicherweise USA) gehen können, einschließlich IP-Adresse und technischer Verbindungsdaten.</label>
+    </div>
+    <div class="pg-check">
+      <input type="checkbox" id="c-cookies">
+      <label for="c-cookies"><strong>2. Cookies/Speicher:</strong> Ich bin damit einverstanden, dass der Drittanbieter Cookies oder ähnliche Speichertechniken setzen bzw. nutzen kann.</label>
+    </div>
+    <div class="pg-check">
+      <input type="checkbox" id="c-terms">
+      <label for="c-terms"><strong>3. Nutzungsbedingungen Rosary:</strong> Ich habe die oben stehenden Hinweise (ENTWURF – anwaltlich prüfen) gelesen und akzeptiere sie für diese Sitzung.</label>
+    </div>
+    <div class="pg-check">
+      <input type="checkbox" id="c-noncommercial">
+      <label for="c-noncommercial"><strong>4. Gemeinde-/Bildungsnutzung:</strong> Ich nutze Prism hier nicht kommerziell, sondern für Gemeinde- oder Bildungszwecke.</label>
+    </div>
+    <div class="pg-check">
+      <input type="checkbox" id="c-ownworks">
+      <label for="c-ownworks"><strong>5. Eigene Werke:</strong> Ich lade nur eigene Kompositionen bzw. eigene Lieder hoch und bearbeite sie auf eigene Verantwortung. Prism ist ein fremdes Angebot ohne Gewähr von Rosary.</label>
+    </div>
+
+    <div class="pg-tools">
+      <button type="button" id="btn-accept" disabled aria-describedby="consent-desc">Zustimmen und laden</button>
+      <button type="button" id="btn-decline" class="secondary">Ablehnen</button>
+      <a class="pg-btn secondary" href="https://argonsynth.si/prism/" target="_blank" rel="noopener noreferrer">Prism in neuem Tab öffnen</a>
+    </div>
+  </div>
+
+  <div class="pg-tools">
+    <button type="button" id="btn-revoke" class="secondary" hidden>Zustimmung widerrufen und entladen</button>
+  </div>
+  <p id="pg-status" class="pg-status" role="status" aria-live="polite"></p>
+  <div id="pg-frame-wrap" class="pg-frame-wrap" aria-label="Prism-Fenster"></div>
+</main>
+<script src="prism-gate.js"></script>
+<script>if("serviceWorker" in navigator&&location.protocol!=="file:")navigator.serviceWorker.register("../service-worker.js");</script>
+</body>
+</html>

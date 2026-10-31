@@ -1,0 +1,41 @@
+/* Prism-Einbettung hinter Einwilligung – Sand/Bordeaux/Gold, WCAG AA */
+:root{
+  --pg-sand:#efe6d6;--pg-sand2:#fbf6ea;--pg-bord:#6b1028;--pg-bord2:#4a0814;
+  --pg-gold:#b8902f;--pg-gold2:#d9b75a;--pg-ink:#2a1a12;--pg-ink2:#5a4636;--pg-focus:#0066cc;
+}
+body.pg{margin:0;background:var(--pg-sand);color:var(--pg-ink);font-family:Rosario,system-ui,sans-serif}
+.pg-main{max-width:960px;margin:0 auto;padding:16px}
+.pg-main h1,.pg-main h2{color:var(--pg-bord);font-family:Rockwell,"Roboto Slab",serif}
+.pg-main a{color:var(--pg-bord);text-underline-offset:2px}
+.pg-box{background:var(--pg-sand2);border:2px solid var(--pg-gold);border-radius:12px;padding:16px;margin:14px 0}
+.pg-warn{border-color:var(--pg-bord);background:#f6ead0}
+.pg-warn strong{color:var(--pg-bord)}
+.pg-draft{display:inline-block;background:var(--pg-bord);color:var(--pg-sand);padding:2px 8px;border-radius:4px;font-size:13px;font-weight:800;letter-spacing:.03em}
+.pg-tools{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.pg-tools button,.pg-tools a.pg-btn{
+  min-height:48px;padding:10px 16px;font-size:16px;font-weight:700;border-radius:8px;
+  border:2px solid var(--pg-gold);background:var(--pg-bord);color:var(--pg-sand);cursor:pointer;
+  text-decoration:none;display:inline-flex;align-items:center;
+}
+.pg-tools button:disabled{opacity:.45;cursor:not-allowed}
+.pg-tools button:focus-visible,.pg-tools a.pg-btn:focus-visible,input:focus-visible{
+  outline:3px solid var(--pg-focus);outline-offset:3px;
+}
+.pg-tools button.secondary{background:var(--pg-sand2);color:var(--pg-bord)}
+.pg-check{display:flex;gap:12px;align-items:flex-start;margin:12px 0;min-height:44px}
+.pg-check input{width:22px;height:22px;margin-top:2px;flex-shrink:0;accent-color:var(--pg-bord)}
+.pg-check label{color:var(--pg-ink);font-size:15px;line-height:1.4;cursor:pointer}
+.pg-frame-wrap{display:none;margin-top:12px;border:3px solid var(--pg-gold);border-radius:8px;overflow:hidden;background:#111;min-height:70vh}
+.pg-frame-wrap.open{display:block}
+.pg-frame-wrap iframe{width:100%;height:75vh;border:0;background:#000}
+.pg-status{color:var(--pg-ink2);font-style:italic;min-height:1.3em}
+.pg-list{margin:8px 0 0 1.2em;color:var(--pg-ink)}
+@media (prefers-contrast:more){
+  .pg-box{border-width:3px;border-color:#000;background:#fff;color:#000}
+  .pg-tools button{border-width:3px}
+}
+@media (forced-colors:active){
+  .pg-tools button,.pg-box{border:2px solid ButtonText}
+  button:focus-visible{outline:3px solid Highlight}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}

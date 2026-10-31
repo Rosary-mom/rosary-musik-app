@@ -191,6 +191,8 @@
     if (!bm) return;
     bm.classList.toggle("open", on);
     bm.setAttribute("aria-hidden", on ? "false" : "true");
+    document.documentElement.classList.toggle("ml-beamer-on", on);
+    document.body.classList.toggle("ml-beamer-on", on);
     if (on && bm.requestFullscreen) bm.requestFullscreen().catch(function () {});
     if (!on && document.fullscreenElement) document.exitFullscreen().catch(function () {});
     sync();

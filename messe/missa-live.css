@@ -59,10 +59,14 @@ body.ml-page{background:var(--ml-sand)!important;color:var(--ml-ink)!important;f
 .ml-live-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:8px;width:100%;margin-top:8px}
 .ml-live-grid button{min-height:52px;font-size:15px}
 .ml-live-grid button[aria-current="true"]{background:var(--ml-gold)!important;color:var(--ml-ink)!important}
-/* Beamer-Vollbild */
+/* Beamer-Vollbild – deckt Viewport komplett ab, sperrt Scrollen dahinter */
+html.ml-beamer-on,body.ml-beamer-on{overflow:hidden!important;height:100%!important;touch-action:none}
 .ml-beamer{
-  display:none;position:fixed;inset:0;z-index:100;background:#000;color:#FFD700;
+  display:none;position:fixed;top:0;left:0;right:0;bottom:0;inset:0;
+  width:100vw;width:100dvw;height:100vh;height:100dvh;max-height:100dvh;
+  z-index:2147483000;background:#000;color:#FFD700;box-sizing:border-box;
   flex-direction:column;align-items:center;justify-content:center;padding:4vw;text-align:center;
+  overflow:auto;-webkit-overflow-scrolling:touch;
 }
 .ml-beamer.open{display:flex}
 .ml-beamer .ml-b-meta{position:absolute;top:12px;left:12px;right:12px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:18px;color:#c9a86a}
